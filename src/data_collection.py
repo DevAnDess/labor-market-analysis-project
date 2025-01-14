@@ -26,7 +26,6 @@ def fetch_all_vacancies(query="аналитик данных", area=1):
 
         print(f"Собрано {len(vacancies)} вакансий с {page + 1}-й страницы")
 
-
         if len(vacancies) == 0 or page >= data.get("pages", 1) - 1:
             break
 
