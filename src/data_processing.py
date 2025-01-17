@@ -55,14 +55,14 @@ def process_data(raw_data):
     df["schedule"] = df["schedule"].apply(lambda x: x.get("name", "Не указано") if isinstance(x, dict) else x)
     df["experience"] = df["experience"].apply(lambda x: x.get("name", "Не указано") if isinstance(x, dict) else x)
 
-    df["requirement"] = df["snippet"].apply(lambda x: x.get("requirement", "Не указано") if isinstance(x, dict) else "Не указано")
-    df["responsibility"] = df["snippet"].apply(lambda x: x.get("responsibility", "Не указано") if isinstance(x, dict) else "Не указано")
+    df["requirement"] = df["snippet"].apply(
+        lambda x: x.get("requirement", "Не указано") if isinstance(x, dict) else "Не указано")
+    df["responsibility"] = df["snippet"].apply(
+        lambda x: x.get("responsibility", "Не указано") if isinstance(x, dict) else "Не указано")
     df = df.drop(columns=["snippet"])
 
-    print(df.head(10))
+    #  print(df.head(20))
 
     df = df.drop_duplicates()
-
-
 
     return df

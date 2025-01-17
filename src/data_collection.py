@@ -4,7 +4,7 @@ def fetch_all_vacancies(query="аналитик данных", area=1):
     url = "https://api.hh.ru/vacancies"
     all_vacancies = []
     page = 0
-    max_pages = 3
+    max_pages = 5
 
 
     while True:
