@@ -6,6 +6,7 @@ def process_data(raw_data):
     pd.set_option("display.max_rows", 10)
     columns_to_keep = ["name", "salary", "area", "employer"]
     df = df[columns_to_keep]
+    df["area"] = df["area"].apply(lambda x: x.get("name", "Не указано") if isinstance(x, dict) else x)
 
     df["salary"] = df["salary"].fillna("Не указана")
 
@@ -22,6 +23,14 @@ def process_data(raw_data):
         if isinstance(employer, dict):
             return employer.get("name", "Не указано")
         return employer
+
+    def extract_salary(salary):
+        if isinstance(salary, str) and " - " in salary:
+            min_salary = salary.split(" - ")[0]
+            return int(min_salary) if min_salary.isdigit() else None
+        return None
+
+    df["numeric_salary"] = df["salary"].apply(extract_salary)
 
     df["employer"] = df["employer"].apply(format_employer)
 
