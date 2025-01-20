@@ -20,15 +20,6 @@ def analyze_data(data):
     top_companies = data["employer"].value_counts().head(10).reset_index()
     top_companies.columns = ["Компания", "Количество вакансий"]
 
-    print("\nГруппировка по регионам:")
-    print(grouped_by_area)
-
-    print("\nСредняя зарплата по регионам:")
-    print(avg_salary_by_area)
-
-    print("\nТОП-10 компаний по количеству вакансий:")
-    print(top_companies)
-
     return {
         "grouped_by_area": grouped_by_area,
         "avg_salary_by_area": avg_salary_by_area,
@@ -38,22 +29,15 @@ def analyze_data(data):
 
 def plot_analysis(results):
     sns.set_style("whitegrid")
+    if "avg_salary_by_area" in results and not results["avg_salary_by_area"].empty:
+        plt.figure(figsize=(12, 6))
+        sns.histplot(results["avg_salary_by_area"]["Средняя зарплата"], bins=20, kde=True, color="blue")
+        plt.title("Распределение средней зарплаты по регионам", fontsize=14, fontweight='bold')
+        plt.xlabel("Средняя зарплата", fontsize=12)
+        plt.ylabel("Частота", fontsize=12)
+        plt.grid(axis="y", linestyle="--", alpha=0.7)
+        plt.show()
 
-    plt.figure(figsize=(12, 6))
-    sns.barplot(
-        y=results["grouped_by_area"]["area"],
-        x=results["grouped_by_area"]["Количество вакансий"],
-        hue=results["grouped_by_area"]["area"],
-        palette="Blues_r",
-        legend=False
-    )
-    plt.title("Количество вакансий по регионам", fontsize=14, fontweight='bold')
-    plt.xlabel("Количество вакансий", fontsize=12)
-    plt.ylabel("Регион", fontsize=12)
-    plt.xticks(fontsize=10)
-    plt.yticks(fontsize=10)
-    plt.grid(axis="x", linestyle="--", alpha=0.7)
-    plt.show()
 
     plt.figure(figsize=(12, 6))
     sns.barplot(
@@ -70,3 +54,21 @@ def plot_analysis(results):
     plt.yticks(fontsize=10)
     plt.grid(axis="x", linestyle="--", alpha=0.7)
     plt.show()
+
+
+    if "avg_salary_by_area" in results and not results["avg_salary_by_area"].empty:
+        plt.figure(figsize=(12, 6))
+        sns.barplot(
+            y=results["avg_salary_by_area"]["area"],
+            x=results["avg_salary_by_area"]["Средняя зарплата"],
+            hue=results["avg_salary_by_area"]["area"],
+            palette="coolwarm",
+            legend=False
+        )
+        plt.title("Средняя зарплата по регионам", fontsize=14, fontweight='bold')
+        plt.xlabel("Средняя зарплата", fontsize=12)
+        plt.ylabel("Регион", fontsize=12)
+        plt.xticks(fontsize=10)
+        plt.yticks(fontsize=10)
+        plt.grid(axis="x", linestyle="--", alpha=0.7)
+        plt.show()
