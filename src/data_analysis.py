@@ -1,13 +1,15 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+
+
+def extract_min_salary(salary):
+    if isinstance(salary, str) and " - " in salary:
+        min_salary = salary.split(" - ")[0]
+        return int(min_salary) if min_salary.isdigit() else None
+    return None
 
 
 def analyze_data(data):
-    data["min_salary"] = data["salary"].apply(
-        lambda x: int(x.split(" - ")[0]) if " - " in x and x.split(" - ")[0].isdigit() else None
-    )
-
+    data["min_salary"] = data["salary"].apply(extract_min_salary)
     grouped_by_area = data.groupby("area").size().reset_index(name="Количество вакансий")
 
     if "numeric_salary" in data.columns:
@@ -25,5 +27,3 @@ def analyze_data(data):
         "avg_salary_by_area": avg_salary_by_area,
         "top_companies": top_companies
     }
-
-

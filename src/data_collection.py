@@ -1,12 +1,11 @@
 import requests
 
+
 def fetch_all_vacancies(query="аналитик данных", area=1):
     url = "https://api.hh.ru/vacancies"
     all_vacancies = []
     page = 0
     max_pages = 20
-
-
 
     while True:
         params = {
@@ -37,5 +36,4 @@ def fetch_all_vacancies(query="аналитик данных", area=1):
     print(f"Всего собрано {len(all_vacancies)} вакансий")
     return all_vacancies
 
-
-#vacancies = fetch_all_vacancies()
+# vacancies = fetch_all_vacancies()

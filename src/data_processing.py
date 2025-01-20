@@ -44,7 +44,7 @@ def process_data(raw_data):
 
     df = df.dropna(subset=["name", "salary"]).drop_duplicates()
 
-#    print("\nОбработанные данные (первые 10 строк):")
-#    print(df.head(10))
+    #    print("\nОбработанные данные (первые 10 строк):")
+    #    print(df.head(10))
 
     return df
