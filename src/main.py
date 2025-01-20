@@ -1,6 +1,7 @@
 from src.data_collection import fetch_all_vacancies
 from src.data_processing import process_data
-from src.data_analysis import analyze_data, plot_analysis
+from src.data_analysis import analyze_data
+from src.plot_analysis import plot_analysis
 
 
 def main():
