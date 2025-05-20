@@ -1,39 +1,134 @@
+
+
+import os
 import requests
+import pandas as pd
+
+from src.data_processing import process_data
+from src.data_analysis import extract_min_salary
+
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 
-def fetch_all_vacancies(query="аналитик данных", area=1):
+def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 20) -> list[dict]:
+
     url = "https://api.hh.ru/vacancies"
     all_vacancies = []
     page = 0
-    max_pages = 20
 
-    while True:
+    while page < max_pages:
         params = {
             "text": query,
             "area": area,
             "per_page": 100,
             "page": page
         }
-        response = requests.get(url, params=params)
-
-        if response.status_code != 200:
+        resp = requests.get(url, params=params)
+        if resp.status_code != 200:
+            print(f"HH API returned {resp.status_code} on page {page}")
             break
 
-        data = response.json()
-        vacancies = data.get("items", [])
-        all_vacancies.extend(vacancies)
+        payload = resp.json()
+        items = payload.get("items", [])
+        all_vacancies.extend(items)
+        print(f"Собрано {len(items)} вакансий с страницы {page + 1}")
 
-        print(f"Собрано {len(vacancies)} вакансий с {page + 1}-й страницы")
-
-        if len(vacancies) == 0 or page >= data.get("pages", 1) - 1:
+        if not items or page >= payload.get("pages", 1) - 1:
             break
-
         page += 1
-        if page >= max_pages:
-            print("Достигнут лимит страниц")
-            break
 
-    print(f"Всего собрано {len(all_vacancies)} вакансий")
+    print(f"Всего собрано {len(all_vacancies)} вакансий из HH API")
     return all_vacancies
 
-# vacancies = fetch_all_vacancies()
+
+def fetch_kaggle_dataset_local(csv_filename: str = "data-science-job-salaries.csv") -> pd.DataFrame:
+    SRC_DIR = os.path.dirname(__file__)
+    kaggle_dir = os.path.join(SRC_DIR, "data", "raw", "kaggle")
+    csv_path = os.path.join(kaggle_dir, csv_filename)
+
+    if not os.path.exists(csv_path):
+        raise FileNotFoundError(f"CSV-файл не найден: {csv_path}")
+    df = pd.read_csv(csv_path)
+    print(f"Загружено {len(df)} строк из {csv_path}")
+    return df
+
+
+def _normalize_kaggle_records(df: pd.DataFrame) -> list[dict]:
+
+    records = []
+    for _, row in df.iterrows():
+        rec = {
+            # название вакансии
+            "name": row["job_title"],
+            # salary — вложенный dict со всеми полями
+            "salary": {
+                "from": row["salary_in_usd"],
+                "to":   row["salary_in_usd"],
+                "currency": "USD"
+            },
+
+            "numeric_salary": row["salary_in_usd"],
+            "min_salary": row["salary_in_usd"],
+
+            "area": {"name": row["employee_residence"]},
+
+            "employer": {"name": None},
+
+            "schedule": {"name": row["employment_type"]},
+            "experience": {"name": row["experience_level"]},
+
+            "snippet": {
+                "requirement": f"remote_ratio={row['remote_ratio']}",
+                "responsibility": f"company_location={row['company_location']}"
+            },
+
+            "published_at": None
+        }
+        records.append(rec)
+    return records
+
+
+def fetch_and_combine(query: str = "аналитик данных",
+                      area: int = 1,
+                      csv_filename: str = "data-science-job-salaries.csv") -> pd.DataFrame:
+    # 1) Kaggle
+    kaggle_df = fetch_kaggle_dataset_local(csv_filename)
+    kaggle_raw = _normalize_kaggle_records(kaggle_df)
+    df_kaggle = process_data(kaggle_raw)
+    df_kaggle["source"] = "kaggle"
+
+    df_kaggle["min_salary"] = df_kaggle["salary"].apply(extract_min_salary)
+
+    # 2) HH API
+    hh_raw = fetch_all_vacancies(query=query, area=area)
+    df_hh = process_data(hh_raw)
+    df_hh["source"] = "hh_api"
+    df_hh["min_salary"] = df_hh["salary"].apply(extract_min_salary)
+
+
+    expected_cols = [
+        "name", "salary", "numeric_salary", "min_salary", "area",
+        "employer", "schedule", "experience",
+        "requirement", "responsibility", "published_at", "source"
+    ]
+    for df in (df_kaggle, df_hh):
+        for col in expected_cols:
+            if col not in df.columns:
+                df[col] = pd.NA
+
+
+    combined = pd.concat([df_kaggle[expected_cols], df_hh[expected_cols]],
+                         ignore_index=True)
+    combined.drop_duplicates(
+        subset=["name", "employer", "published_at", "area"],
+        keep="first", inplace=True
+    )
+
+
+    proc_dir = os.path.join(os.path.dirname(__file__), "data", "processed")
+    os.makedirs(proc_dir, exist_ok=True)
+    out_csv = os.path.join(proc_dir, "combined_dataset.csv")
+    combined.to_csv(out_csv, index=False)
+    print(f"Сохранён объединённый датасет: {combined.shape} → {out_csv}")
+
+    return combined
