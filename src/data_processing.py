@@ -8,7 +8,7 @@ def process_data(raw_data):
     pd.set_option("display.width", 200)
     pd.set_option("display.max_colwidth", None)
 
-    columns_to_keep = ["name", "salary", "area", "employer", "schedule", "experience", "snippet", "published_at"]
+    columns_to_keep = ["name", "salary", "area", "employer", "schedule", "experience", "snippet", "published_at", "company_size"]
     df = df[[col for col in columns_to_keep if col in df.columns]]
 
     df["area"] = df["area"].apply(lambda x: x.get("name", "Не указано") if isinstance(x, dict) else x)

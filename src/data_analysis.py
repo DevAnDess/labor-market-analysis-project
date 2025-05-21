@@ -10,14 +10,17 @@ def extract_min_salary(salary):
 
 def analyze_data(data):
     data["min_salary"] = data["salary"].apply(extract_min_salary)
-    grouped_by_area = data.groupby("area").size().reset_index(name="Количество вакансий")
+    grouped_by_area = data.groupby("employee_residence").size().reset_index(name="Количество вакансий")
+    grouped_by_area.rename(columns={"employee_residence": "Регион"}, inplace=True)
 
-    if "numeric_salary" in data.columns:
-        data["numeric_salary"] = data["numeric_salary"].fillna(0).infer_objects(copy=False)
+    if "salary_in_usd" in data.columns:
+        data["salary_in_usd"] = data["salary_in_usd"].fillna(0).infer_objects(copy=False)
 
-        avg_salary_by_area = data.groupby("area")["numeric_salary"].mean().reset_index(name="Средняя зарплата")
+        avg_salary_by_area = data.groupby("employee_residence")["salary_in_usd"].mean().reset_index(
+            name="Средняя зарплата")
+        avg_salary_by_area.rename(columns={"employee_residence": "Регион"}, inplace=True)
     else:
-        avg_salary_by_area = pd.DataFrame(columns=["area", "Средняя зарплата"])
+        avg_salary_by_area = pd.DataFrame(columns=["Регион", "Средняя зарплата"])
 
     top_companies = data["employer"].value_counts().head(10).reset_index()
     top_companies.columns = ["Компания", "Количество вакансий"]

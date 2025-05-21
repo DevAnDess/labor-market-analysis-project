@@ -1,5 +1,3 @@
-
-
 import os
 import requests
 import pandas as pd
@@ -11,7 +9,6 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 
 def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 20) -> list[dict]:
-
     url = "https://api.hh.ru/vacancies"
     all_vacancies = []
     page = 0
@@ -54,34 +51,26 @@ def fetch_kaggle_dataset_local(csv_filename: str = "data-science-job-salaries.cs
 
 
 def _normalize_kaggle_records(df: pd.DataFrame) -> list[dict]:
-
     records = []
     for _, row in df.iterrows():
         rec = {
-            # название вакансии
             "name": row["job_title"],
-            # salary — вложенный dict со всеми полями
             "salary": {
                 "from": row["salary_in_usd"],
-                "to":   row["salary_in_usd"],
+                "to": row["salary_in_usd"],
                 "currency": "USD"
             },
-
             "numeric_salary": row["salary_in_usd"],
             "min_salary": row["salary_in_usd"],
-
             "area": {"name": row["employee_residence"]},
-
             "employer": {"name": None},
-
             "schedule": {"name": row["employment_type"]},
             "experience": {"name": row["experience_level"]},
-
+            "company_size": row["company_size"],
             "snippet": {
                 "requirement": f"remote_ratio={row['remote_ratio']}",
                 "responsibility": f"company_location={row['company_location']}"
             },
-
             "published_at": row["work_year"]
         }
         records.append(rec)
@@ -91,24 +80,28 @@ def _normalize_kaggle_records(df: pd.DataFrame) -> list[dict]:
 def fetch_and_combine(query: str = "аналитик данных",
                       area: int = 1,
                       csv_filename: str = "data-science-job-salaries.csv") -> pd.DataFrame:
-    # 1) Kaggle
+    import os
+    import pandas as pd
+    from src.data_processing import process_data
+    from src.data_analysis import extract_min_salary
+
+    # Kaggle
     kaggle_df = fetch_kaggle_dataset_local(csv_filename)
     kaggle_raw = _normalize_kaggle_records(kaggle_df)
     df_kaggle = process_data(kaggle_raw)
     df_kaggle["source"] = "kaggle"
-
     df_kaggle["min_salary"] = df_kaggle["salary"].apply(extract_min_salary)
 
-    # 2) HH API
+    # HH API
     hh_raw = fetch_all_vacancies(query=query, area=area)
     df_hh = process_data(hh_raw)
     df_hh["source"] = "hh_api"
     df_hh["min_salary"] = df_hh["salary"].apply(extract_min_salary)
 
-
+    # Объединение
     expected_cols = [
         "name", "salary", "numeric_salary", "min_salary", "area",
-        "employer", "schedule", "experience",
+        "employer", "schedule", "experience", "company_size",
         "requirement", "responsibility", "published_at", "source"
     ]
     for df in (df_kaggle, df_hh):
@@ -116,19 +109,63 @@ def fetch_and_combine(query: str = "аналитик данных",
             if col not in df.columns:
                 df[col] = pd.NA
 
+    combined = pd.concat([df_kaggle[expected_cols], df_hh[expected_cols]], ignore_index=True)
+    combined.drop_duplicates(subset=["name", "employer", "published_at", "area"], keep="first", inplace=True)
 
-    combined = pd.concat([df_kaggle[expected_cols], df_hh[expected_cols]],
-                         ignore_index=True)
-    combined.drop_duplicates(
-        subset=["name", "employer", "published_at", "area"],
-        keep="first", inplace=True
+
+    combined.rename(columns={
+        "name": "job_title",
+        "area": "employee_residence",
+        "experience": "experience_level",
+        "schedule": "employment_type",
+        "numeric_salary": "salary_in_usd"
+    }, inplace=True)
+
+
+    combined["salary_currency"] = combined["salary"].apply(
+        lambda x: x.split()[-1] if isinstance(x, str) and len(x.split()) > 1 else "USD"
     )
+
+    experience_map = {
+        "EN": "Junior", "MI": "Mid", "SE": "Senior", "EX": "Executive",
+        "Junior": "Junior", "Mid": "Mid", "Senior": "Senior", "Executive": "Executive"
+    }
+    combined["experience_level"] = combined["experience_level"].map(experience_map).fillna("Unknown")
+
+
+    employment_map = {
+        "FT": "Full-time", "PT": "Part-time", "CT": "Contract", "FL": "Freelance",
+        "Full-time": "Full-time", "Part-time": "Part-time", "Contract": "Contract", "Freelance": "Freelance"
+    }
+    combined["employment_type"] = combined["employment_type"].map(employment_map).fillna("Unknown")
+
+
+    combined["remote_ratio"] = combined["requirement"].str.extract(r"remote_ratio=(\d+)").astype("Int64")
+    combined["company_location"] = combined["responsibility"].str.extract(r"company_location=([A-Z]{2})")
+
+
+    combined.loc[combined["source"] == "hh_api", "company_location"] = "RU"
+
+
+    combined["company_size"] = combined["company_size"].fillna("Unknown")
+
+
+    required_columns = [
+        "published_at", "job_title", "experience_level", "employment_type",
+        "salary", "salary_currency", "salary_in_usd",
+        "employee_residence", "remote_ratio", "company_location", "company_size",
+        "source", "employer"
+    ]
+    combined = combined[required_columns]
+
+
+    combined.rename(columns={"published_at": "work_year"}, inplace=True)
 
 
     proc_dir = os.path.join(os.path.dirname(__file__), "data", "processed")
     os.makedirs(proc_dir, exist_ok=True)
-    out_csv = os.path.join(proc_dir, "combined_dataset.csv")
+    out_csv = os.path.join(proc_dir, "combined_dataset_KT_format.csv")
     combined.to_csv(out_csv, index=False)
-    print(f"Сохранён объединённый датасет: {combined.shape} → {out_csv}")
+    print(f"Финальный датасет сохранён в: {out_csv}")
 
     return combined
