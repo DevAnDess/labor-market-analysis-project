@@ -82,7 +82,7 @@ def _normalize_kaggle_records(df: pd.DataFrame) -> list[dict]:
                 "responsibility": f"company_location={row['company_location']}"
             },
 
-            "published_at": None
+            "published_at": row["work_year"]
         }
         records.append(rec)
     return records
