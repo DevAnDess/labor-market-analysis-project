@@ -8,7 +8,7 @@ from src.data_analysis import extract_min_salary
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 
-def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 20) -> list[dict]:
+def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 10) -> list[dict]:
     url = "https://api.hh.ru/vacancies"
     all_vacancies = []
     page = 0
@@ -125,6 +125,11 @@ def fetch_and_combine(query: str = "аналитик данных",
     combined["salary_currency"] = combined["salary"].apply(
         lambda x: x.split()[-1] if isinstance(x, str) and len(x.split()) > 1 else "USD"
     )
+    combined["salary_in_usd"] = pd.to_numeric(combined["salary_in_usd"], errors="coerce")
+    # Конвертация в доллары
+    usd_to_rub = 90
+    combined.loc[combined["salary_currency"] == "RUR", "salary_in_usd"] = \
+        combined.loc[combined["salary_currency"] == "RUR", "salary_in_usd"] // usd_to_rub
 
     experience_map = {
         "EN": "Junior", "MI": "Mid", "SE": "Senior", "EX": "Executive",
@@ -157,10 +162,23 @@ def fetch_and_combine(query: str = "аналитик данных",
         "source", "employer"
     ]
     combined = combined[required_columns]
+    country_map = {
+        "RU": "Russia", "US": "United States", "GB": "United Kingdom", "DE": "Germany", "FR": "France",
+        "CA": "Canada", "IN": "India", "JP": "Japan", "CN": "China", "PL": "Poland",
+        "HN": "Honduras", "ES": "Spain", "NL": "Netherlands", "IT": "Italy",
+        "UA": "Ukraine", "CH": "Switzerland", "BE": "Belgium", "PT": "Portugal",
+        "BR": "Brazil", "MX": "Mexico", "AU": "Australia", "IE": "Ireland",
+        "LT": "Lithuania", "CZ": "Czech Republic", "AT": "Austria", "SE": "Sweden"
+    }
 
+
+    combined["employee_residence"] = combined["employee_residence"].map(country_map).fillna(
+        combined["employee_residence"])
+    combined["company_location"] = combined["company_location"].map(country_map).fillna(combined["company_location"])
 
     combined.rename(columns={"published_at": "work_year"}, inplace=True)
 
+    combined["work_year"] = combined["work_year"].astype(str).str[:4]
 
     proc_dir = os.path.join(os.path.dirname(__file__), "data", "processed")
     os.makedirs(proc_dir, exist_ok=True)
