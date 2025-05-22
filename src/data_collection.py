@@ -40,7 +40,7 @@ def fetch_all_vacancies(query: str = "аналитик данных", area: int 
         params = {
             "text": query,
             "area": area,
-            "per_page": 10,
+            "per_page": 100 ,
             "page": page
         }
         resp = requests.get(url, params=params)
@@ -102,6 +102,17 @@ def fetch_and_combine(query: str = "аналитик данных",
     # HH API
     hh_raw = fetch_all_vacancies(query=query, area=area)
     hh_raw = enrich_hh_descriptions(hh_raw)
+
+
+    analytics_keywords = [
+        "аналитик", "analyst", "data", "machine learning", "ml", "business intelligence", "bi", "data scientist"
+    ]
+    hh_raw = [
+        vac for vac in hh_raw
+        if any(kw in vac.get("name", "").lower() for kw in analytics_keywords)
+        or any(kw in (vac.get("description") or "").lower() for kw in ["sql", "power bi", "python", "аналитик", "отчет", "дашборд", "таблица"])
+    ]
+
     df_hh = process_data(hh_raw)
     df_hh["source"] = "hh_api"
     df_hh["min_salary"] = df_hh["salary"].apply(extract_min_salary)
@@ -118,7 +129,6 @@ def fetch_and_combine(query: str = "аналитик данных",
 
     combined = pd.concat([df_kaggle[expected_cols], df_hh[expected_cols]], ignore_index=True)
 
-
     combined.rename(columns={
         "name": "job_title",
         "area": "employee_residence",
@@ -128,7 +138,6 @@ def fetch_and_combine(query: str = "аналитик данных",
         "published_at": "work_year"
     }, inplace=True)
 
-    # Удаление дубликатов
     combined.drop_duplicates(
         subset=["job_title", "work_year", "employee_residence", "salary_in_usd"],
         keep="first",
@@ -139,9 +148,7 @@ def fetch_and_combine(query: str = "аналитик данных",
         lambda x: x.split()[-1] if isinstance(x, str) and len(x.split()) > 1 else "USD"
     )
     combined["salary_in_usd"] = pd.to_numeric(combined["salary_in_usd"], errors="coerce")
-    usd_to_rub = 90
-    combined.loc[combined["salary_currency"] == "RUR", "salary_in_usd"] //= usd_to_rub
-
+    combined.loc[combined["salary_currency"] == "RUR", "salary_in_usd"] //= 90
 
     experience_map = {
         "EN": "Junior", "MI": "Mid", "SE": "Senior", "EX": "Executive",
@@ -154,7 +161,6 @@ def fetch_and_combine(query: str = "аналитик данных",
         "Full-time": "Full-time", "Part-time": "Part-time", "Contract": "Contract", "Freelance": "Freelance"
     }
     combined["employment_type"] = combined["employment_type"].map(employment_map).fillna("Unknown")
-
 
     combined["remote_ratio"] = combined["requirement"].str.extract(r"remote_ratio=(\d+)").astype("Int64")
     combined["company_location"] = combined["responsibility"].str.extract(r"company_location=([A-Z]{2})")
@@ -174,7 +180,6 @@ def fetch_and_combine(query: str = "аналитик данных",
 
     combined["work_year"] = combined["work_year"].astype(str).str[:4]
 
-
     required_columns = [
         "work_year", "job_title", "experience_level", "employment_type",
         "salary", "salary_currency", "salary_in_usd",
@@ -182,7 +187,6 @@ def fetch_and_combine(query: str = "аналитик данных",
         "source", "employer", "requirement"
     ]
     combined = combined[required_columns]
-
 
     proc_dir = os.path.join(os.path.dirname(__file__), "data", "processed")
     os.makedirs(proc_dir, exist_ok=True)
