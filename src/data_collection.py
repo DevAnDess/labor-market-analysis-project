@@ -1,14 +1,50 @@
 import os
-import requests
 import pandas as pd
 
 from src.data_processing import process_data
 from src.data_analysis import extract_min_salary
+import time
+import requests
+from tqdm import tqdm
+
+
+def enrich_hh_descriptions(vacancies: list[dict], sleep_sec: float = 0.2) -> list[dict]:
+    """
+    Для каждой вакансии HH по ID запрашивает полное описание и сохраняет в поле 'description'.
+    Показывает прогресс с помощью tqdm.
+    """
+    enriched = []
+
+    print(f"\n🔍 Обогащаем вакансии HH подробными описаниями ({len(vacancies)} вакансий)...")
+    for vac in tqdm(vacancies, desc="Обработка вакансий", unit="вакансий"):
+        vacancy_id = vac.get("id")
+        if not vacancy_id:
+            vac["description"] = ""
+            enriched.append(vac)
+            continue
+
+        try:
+            resp = requests.get(f"https://api.hh.ru/vacancies/{vacancy_id}")
+            if resp.status_code == 200:
+                vacancy_data = resp.json()
+                vac["description"] = vacancy_data.get("description", "")
+            else:
+                vac["description"] = ""
+        except Exception as e:
+            print(f"[!] Ошибка при запросе ID {vacancy_id}: {e}")
+            vac["description"] = ""
+
+        enriched.append(vac)
+        time.sleep(sleep_sec)  # защита от блокировки API
+
+    print(" писание добавлено к вакансиям.")
+    return enriched
+
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 
-def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 10) -> list[dict]:
+def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 2) -> list[dict]:
     url = "https://api.hh.ru/vacancies"
     all_vacancies = []
     page = 0
@@ -17,7 +53,7 @@ def fetch_all_vacancies(query: str = "аналитик данных", area: int 
         params = {
             "text": query,
             "area": area,
-            "per_page": 100,
+            "per_page": 10,
             "page": page
         }
         resp = requests.get(url, params=params)
@@ -94,6 +130,9 @@ def fetch_and_combine(query: str = "аналитик данных",
 
     # HH API
     hh_raw = fetch_all_vacancies(query=query, area=area)
+    from src.data_collection import enrich_hh_descriptions
+    hh_raw = enrich_hh_descriptions(hh_raw)
+
     df_hh = process_data(hh_raw)
     df_hh["source"] = "hh_api"
     df_hh["min_salary"] = df_hh["salary"].apply(extract_min_salary)
@@ -102,7 +141,7 @@ def fetch_and_combine(query: str = "аналитик данных",
     expected_cols = [
         "name", "salary", "numeric_salary", "min_salary", "area",
         "employer", "schedule", "experience", "company_size",
-        "requirement", "responsibility", "published_at", "source"
+        "requirement", "responsibility", "published_at", "source",
     ]
     for df in (df_kaggle, df_hh):
         for col in expected_cols:
@@ -111,8 +150,6 @@ def fetch_and_combine(query: str = "аналитик данных",
 
     combined = pd.concat([df_kaggle[expected_cols], df_hh[expected_cols]], ignore_index=True)
     combined.drop_duplicates(subset=["name", "employer", "published_at", "area"], keep="first", inplace=True)
-
-
     combined.rename(columns={
         "name": "job_title",
         "area": "employee_residence",
@@ -120,7 +157,8 @@ def fetch_and_combine(query: str = "аналитик данных",
         "schedule": "employment_type",
         "numeric_salary": "salary_in_usd"
     }, inplace=True)
-
+    from src.data_processing import infer_missing_fields_from_text
+    combined = infer_missing_fields_from_text(combined)
 
     combined["salary_currency"] = combined["salary"].apply(
         lambda x: x.split()[-1] if isinstance(x, str) and len(x.split()) > 1 else "USD"
@@ -137,29 +175,24 @@ def fetch_and_combine(query: str = "аналитик данных",
     }
     combined["experience_level"] = combined["experience_level"].map(experience_map).fillna("Unknown")
 
-
     employment_map = {
         "FT": "Full-time", "PT": "Part-time", "CT": "Contract", "FL": "Freelance",
         "Full-time": "Full-time", "Part-time": "Part-time", "Contract": "Contract", "Freelance": "Freelance"
     }
     combined["employment_type"] = combined["employment_type"].map(employment_map).fillna("Unknown")
 
-
     combined["remote_ratio"] = combined["requirement"].str.extract(r"remote_ratio=(\d+)").astype("Int64")
     combined["company_location"] = combined["responsibility"].str.extract(r"company_location=([A-Z]{2})")
 
-
     combined.loc[combined["source"] == "hh_api", "company_location"] = "RU"
 
-
     combined["company_size"] = combined["company_size"].fillna("Unknown")
-
 
     required_columns = [
         "published_at", "job_title", "experience_level", "employment_type",
         "salary", "salary_currency", "salary_in_usd",
         "employee_residence", "remote_ratio", "company_location", "company_size",
-        "source", "employer"
+        "source", "employer", "requirement"
     ]
     combined = combined[required_columns]
     country_map = {
@@ -170,7 +203,6 @@ def fetch_and_combine(query: str = "аналитик данных",
         "BR": "Brazil", "MX": "Mexico", "AU": "Australia", "IE": "Ireland",
         "LT": "Lithuania", "CZ": "Czech Republic", "AT": "Austria", "SE": "Sweden"
     }
-
 
     combined["employee_residence"] = combined["employee_residence"].map(country_map).fillna(
         combined["employee_residence"])
