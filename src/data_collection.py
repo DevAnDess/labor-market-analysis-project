@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 
-from src.data_processing import process_data
-from src.data_analysis import extract_min_salary
+from src.data_processing import process_data, infer_missing_fields_from_text
+from src.data_analysis import extract_min_salary, extract_skills
 import time
 import requests
 from tqdm import tqdm
@@ -112,13 +112,13 @@ def _normalize_kaggle_records(df: pd.DataFrame) -> list[dict]:
 def assign_company_size_from_lists(df: pd.DataFrame) -> pd.DataFrame:
     import os
 
-    # Пути к файлам
+
     base_dir = os.path.dirname(__file__)
     ref_dir = os.path.join(base_dir, "data", "reference")
     large_path = os.path.join(ref_dir, "large_companies.txt")
     medium_path = os.path.join(ref_dir, "medium_companies.txt")
 
-    # Загружаем списки компаний
+
     def load_company_list(path):
         if os.path.exists(path):
             with open(path, encoding="utf-8") as f:
@@ -139,52 +139,46 @@ def assign_company_size_from_lists(df: pd.DataFrame) -> pd.DataFrame:
         else:
             return "S"
 
-    # Только для строк с "Unknown"
+
     mask = df["company_size"].isin(["Unknown", None, pd.NA])
     df.loc[mask, "company_size"] = df.loc[mask, "employer"].apply(detect_size)
 
     return df
 
 
+def fetch_and_combine(
+    query: str = "аналитик данных",
+    area: int = 1,
+    csv_filename: str = "data-science-job-salaries.csv"
+) -> pd.DataFrame:
 
-def fetch_and_combine(query: str = "аналитик данных",
-                      area: int = 1,
-                      csv_filename: str = "data-science-job-salaries.csv") -> pd.DataFrame:
-    # Kaggle
     kaggle_df = fetch_kaggle_dataset_local(csv_filename)
-    kaggle_raw = _normalize_kaggle_records(kaggle_df)
-    df_kaggle = process_data(kaggle_raw)
+    kaggle_normalized = _normalize_kaggle_records(kaggle_df)
+    df_kaggle = process_data(kaggle_normalized)
     df_kaggle["source"] = "kaggle"
     df_kaggle["min_salary"] = df_kaggle["salary"].apply(extract_min_salary)
 
+
     hh_all = fetch_all_vacancies(query=query, area=area)
 
-    title_keywords = [
-        "аналитик", "analyst", "data", "bi", "machine learning"
-    ]
-    stopwords = [
-        "директор", "manager", "менеджер", "qa", "тестировщик", "юрис", "маркетинг", "админ", "руководитель"
-    ]
+    title_keywords = ["аналитик", "analyst", "data", "bi", "machine learning"]
+    stopwords = ["директор", "manager", "менеджер", "qa", "тестировщик", "юрис", "маркетинг", "админ", "руководитель"]
 
     def is_relevant(vac):
         title = (vac.get("name") or "").lower()
-        if not any(kw in title for kw in title_keywords):
-            return False
-        if any(sw in title for sw in stopwords):
-            return False
-        return True
+        return any(kw in title for kw in title_keywords) and not any(sw in title for sw in stopwords)
 
     hh_filtered = [v for v in hh_all if is_relevant(v)]
     hh_enriched = enrich_hh_descriptions(hh_filtered)
-
     df_hh = process_data(hh_enriched)
     df_hh["source"] = "hh_api"
     df_hh["min_salary"] = df_hh["salary"].apply(extract_min_salary)
 
+
     expected_cols = [
         "name", "salary", "numeric_salary", "min_salary", "area",
         "employer", "schedule", "experience", "company_size",
-        "requirement", "responsibility", "published_at", "source"
+        "requirement", "published_at", "source", "skills"
     ]
     for df in (df_kaggle, df_hh):
         for col in expected_cols:
@@ -192,6 +186,7 @@ def fetch_and_combine(query: str = "аналитик данных",
                 df[col] = pd.NA
 
     combined = pd.concat([df_kaggle[expected_cols], df_hh[expected_cols]], ignore_index=True)
+
 
     combined.rename(columns={
         "name": "job_title",
@@ -204,16 +199,16 @@ def fetch_and_combine(query: str = "аналитик данных",
 
     combined.drop_duplicates(
         subset=["job_title", "work_year", "employee_residence", "salary_in_usd"],
-        keep="first",
-        inplace=True
+        keep="first", inplace=True
     )
 
-    # Валюта и пересчет в USD
+    # Валюта
     combined["salary_currency"] = combined["salary"].apply(
         lambda x: x.split()[-1] if isinstance(x, str) and len(x.split()) > 1 else "USD"
     )
     combined["salary_in_usd"] = pd.to_numeric(combined["salary_in_usd"], errors="coerce")
     combined.loc[combined["salary_currency"] == "RUR", "salary_in_usd"] //= 90
+
 
     experience_map = {
         "EN": "Junior", "MI": "Mid", "SE": "Senior", "EX": "Executive",
@@ -226,41 +221,50 @@ def fetch_and_combine(query: str = "аналитик данных",
     combined["experience_level"] = combined["experience_level"].map(experience_map).fillna("Unknown")
     combined["employment_type"] = combined["employment_type"].map(employment_map).fillna("Full-time")
 
-    # Доп. извлечения
+
     combined["remote_ratio"] = combined["requirement"].str.extract(r"remote_ratio=(\d+)").astype("Int64")
-    combined["company_location"] = combined["responsibility"].str.extract(r"company_location=([A-Z]{2})")
+    if "responsibility" in combined.columns:
+        combined["company_location"] = combined["responsibility"].str.extract(r"company_location=([A-Z]{2})")
+        combined.drop(columns=["responsibility"], inplace=True)
+    else:
+        combined["company_location"] = pd.NA
+
     combined.loc[combined["source"] == "hh_api", "company_location"] = "RU"
     combined["company_size"] = combined["company_size"].fillna("Unknown")
+    if 'responsibility' in combined.columns:
+        combined.drop(columns=['responsibility'], inplace=True)
+
 
     country_map = {
         "RU": "Russia", "US": "United States", "GB": "United Kingdom", "DE": "Germany", "FR": "France",
-        "CA": "Canada", "IN": "India", "JP": "Japan", "CN": "China", "PL": "Poland",
-        "HN": "Honduras", "ES": "Spain", "NL": "Netherlands", "IT": "Italy",
-        "UA": "Ukraine", "CH": "Switzerland", "BE": "Belgium", "PT": "Portugal",
-        "BR": "Brazil", "MX": "Mexico", "AU": "Australia", "IE": "Ireland",
-        "LT": "Lithuania", "CZ": "Czech Republic", "AT": "Austria", "SE": "Sweden"
+        "CA": "Canada", "IN": "India", "JP": "Japan", "CN": "China", "PL": "Poland", "HN": "Honduras",
+        "ES": "Spain", "NL": "Netherlands", "IT": "Italy", "UA": "Ukraine", "CH": "Switzerland",
+        "BE": "Belgium", "PT": "Portugal", "BR": "Brazil", "MX": "Mexico", "AU": "Australia",
+        "IE": "Ireland", "LT": "Lithuania", "CZ": "Czech Republic", "AT": "Austria", "SE": "Sweden"
     }
-    combined["employee_residence"] = combined["employee_residence"].map(country_map).fillna(
-        combined["employee_residence"])
+    combined["employee_residence"] = combined["employee_residence"].map(country_map).fillna(combined["employee_residence"])
     combined["company_location"] = combined["company_location"].map(country_map).fillna(combined["company_location"])
     combined["work_year"] = combined["work_year"].astype(str).str[:4]
 
-    required_columns = [
+
+    final_cols = [
         "work_year", "job_title", "experience_level", "employment_type",
         "salary", "salary_currency", "salary_in_usd",
         "employee_residence", "remote_ratio", "company_location", "company_size",
-        "source", "employer", "requirement"
+        "source", "employer", "requirement", "skills"
     ]
-    combined = combined[required_columns]
+    combined = combined[final_cols]
+    combined["skills"] = combined["requirement"].fillna("").astype(str).apply(extract_skills)
+    combined.drop(columns=["responsibility"], errors="ignore", inplace=True)
 
-
-    from src.data_processing import infer_missing_fields_from_text
     combined = infer_missing_fields_from_text(combined)
     combined = assign_company_size_from_lists(combined)
+
     proc_dir = os.path.join(os.path.dirname(__file__), "data", "processed")
     os.makedirs(proc_dir, exist_ok=True)
     out_csv = os.path.join(proc_dir, "combined_dataset_KT_format.csv")
     combined.to_csv(out_csv, index=False)
-    print(f"✅ Финальный датасет сохранён в: {out_csv}")
 
+    print(f" Финальный датасет сохранён в: {out_csv}")
     return combined
+

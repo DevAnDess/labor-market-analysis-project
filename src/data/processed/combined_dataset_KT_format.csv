@@ -1,601 +1,601 @@
-work_year,job_title,experience_level,employment_type,salary,salary_currency,salary_in_usd,employee_residence,remote_ratio,company_location,company_size,source,employer,requirement,responsibility
-2020,Data Scientist,Mid,Full-time,79833 - 79833 USD,USD,79833,Germany,0,Germany,L,kaggle,,remote_ratio=0,
-2020,Machine Learning Scientist,Senior,Full-time,260000 - 260000 USD,USD,260000,Japan,0,Japan,S,kaggle,,remote_ratio=0,
-2020,Big Data Engineer,Senior,Full-time,109024 - 109024 USD,USD,109024,United Kingdom,50,United Kingdom,M,kaggle,,remote_ratio=50,
-2020,Product Data Analyst,Mid,Full-time,20000 - 20000 USD,USD,20000,Honduras,0,Honduras,S,kaggle,,remote_ratio=0,
-2020,Machine Learning Engineer,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2020,Data Analyst,Junior,Full-time,72000 - 72000 USD,USD,72000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Lead Data Scientist,Senior,Full-time,190000 - 190000 USD,USD,190000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2020,Data Scientist,Mid,Full-time,35735 - 35735 USD,USD,35735,HU,50,HU,L,kaggle,,remote_ratio=50,
-2020,Business Data Analyst,Mid,Full-time,135000 - 135000 USD,USD,135000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Lead Data Engineer,Senior,Full-time,125000 - 125000 USD,USD,125000,NZ,50,NZ,S,kaggle,,remote_ratio=50,
-2020,Data Scientist,Junior,Full-time,51321 - 51321 USD,USD,51321,France,0,France,S,kaggle,,remote_ratio=0,
-2020,Data Scientist,Mid,Full-time,40481 - 40481 USD,USD,40481,India,0,India,L,kaggle,,remote_ratio=0,
-2020,Data Scientist,Junior,Full-time,39916 - 39916 USD,USD,39916,France,0,France,M,kaggle,,remote_ratio=0,
-2020,Lead Data Analyst,Mid,Full-time,87000 - 87000 USD,USD,87000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Data Analyst,Mid,Full-time,85000 - 85000 USD,USD,85000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Data Analyst,Mid,Full-time,8000 - 8000 USD,USD,8000,PK,50,PK,L,kaggle,,remote_ratio=50,
-2020,Data Engineer,Junior,Full-time,41689 - 41689 USD,USD,41689,Japan,100,Japan,S,kaggle,,remote_ratio=100,
-2020,Big Data Engineer,Senior,Full-time,114047 - 114047 USD,USD,114047,Poland,100,United Kingdom,S,kaggle,,remote_ratio=100,
-2020,Data Science Consultant,Junior,Full-time,5707 - 5707 USD,USD,5707,India,50,India,M,kaggle,,remote_ratio=50,
-2020,Lead Data Engineer,Mid,Full-time,56000 - 56000 USD,USD,56000,Portugal,100,United States,M,kaggle,,remote_ratio=100,
-2020,Machine Learning Engineer,Mid,Full-time,43331 - 43331 USD,USD,43331,China,0,China,M,kaggle,,remote_ratio=0,
-2020,Product Data Analyst,Mid,Full-time,6072 - 6072 USD,USD,6072,India,100,India,L,kaggle,,remote_ratio=100,
-2020,Data Engineer,Senior,Full-time,47899 - 47899 USD,USD,47899,GR,50,GR,L,kaggle,,remote_ratio=50,
-2020,BI Data Analyst,Mid,Full-time,98000 - 98000 USD,USD,98000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2020,Lead Data Scientist,Mid,Full-time,115000 - 115000 USD,USD,115000,AE,0,AE,L,kaggle,,remote_ratio=0,
-2020,Director of Data Science,Executive,Full-time,325000 - 325000 USD,USD,325000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Research Scientist,Junior,Full-time,42000 - 42000 USD,USD,42000,Netherlands,50,Netherlands,L,kaggle,,remote_ratio=50,
-2020,Data Engineer,Senior,Full-time,33511 - 33511 USD,USD,33511,Mexico,0,Mexico,S,kaggle,,remote_ratio=0,
-2020,Business Data Analyst,Junior,Contract,100000 - 100000 USD,USD,100000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Machine Learning Manager,Senior,Full-time,117104 - 117104 USD,USD,117104,Canada,50,Canada,L,kaggle,,remote_ratio=50,
-2020,Data Engineering Manager,Mid,Full-time,59303 - 59303 USD,USD,59303,Germany,100,Germany,S,kaggle,,remote_ratio=100,
-2020,Big Data Engineer,Junior,Full-time,70000 - 70000 USD,USD,70000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Data Scientist,Senior,Full-time,68428 - 68428 USD,USD,68428,GR,100,United States,L,kaggle,,remote_ratio=100,
-2020,Research Scientist,Mid,Full-time,450000 - 450000 USD,USD,450000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2020,Data Analyst,Mid,Full-time,46759 - 46759 USD,USD,46759,France,50,France,L,kaggle,,remote_ratio=50,
-2020,Data Engineer,Mid,Full-time,74130 - 74130 USD,USD,74130,Austria,50,Austria,L,kaggle,,remote_ratio=50,
-2020,Data Science Consultant,Mid,Full-time,103000 - 103000 USD,USD,103000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Machine Learning Engineer,Junior,Full-time,250000 - 250000 USD,USD,250000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2020,Data Analyst,Junior,Full-time,10000 - 10000 USD,USD,10000,NG,100,NG,S,kaggle,,remote_ratio=100,
-2020,Machine Learning Engineer,Junior,Full-time,138000 - 138000 USD,USD,138000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2020,Data Scientist,Mid,Full-time,45760 - 45760 USD,USD,45760,PH,100,United States,S,kaggle,,remote_ratio=100,
-2020,Data Engineering Manager,Executive,Full-time,79833 - 79833 USD,USD,79833,Spain,50,Spain,L,kaggle,,remote_ratio=50,
-2020,Machine Learning Infrastructure Engineer,Mid,Full-time,50180 - 50180 USD,USD,50180,Portugal,0,Portugal,M,kaggle,,remote_ratio=0,
-2020,Data Engineer,Mid,Full-time,106000 - 106000 USD,USD,106000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Data Engineer,Mid,Full-time,112872 - 112872 USD,USD,112872,United Kingdom,50,United Kingdom,L,kaggle,,remote_ratio=50,
-2020,ML Engineer,Junior,Part-time,15966 - 15966 USD,USD,15966,Germany,100,Germany,S,kaggle,,remote_ratio=100,
-2020,Data Scientist,Mid,Full-time,76958 - 76958 USD,USD,76958,United Kingdom,100,United Kingdom,S,kaggle,,remote_ratio=100,
-2020,Data Engineer,Senior,Full-time,188000 - 188000 USD,USD,188000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Data Scientist,Mid,Full-time,105000 - 105000 USD,USD,105000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Data Engineer,Mid,Full-time,70139 - 70139 USD,USD,70139,France,50,France,L,kaggle,,remote_ratio=50,
-2020,Data Analyst,Junior,Full-time,6072 - 6072 USD,USD,6072,India,0,India,S,kaggle,,remote_ratio=0,
-2020,Data Analyst,Junior,Full-time,91000 - 91000 USD,USD,91000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,AI Scientist,Junior,Full-time,45896 - 45896 USD,USD,45896,DK,50,DK,S,kaggle,,remote_ratio=50,
-2020,Data Engineer,Junior,Full-time,54742 - 54742 USD,USD,54742,PK,100,Germany,L,kaggle,,remote_ratio=100,
-2020,Computer Vision Engineer,Senior,Freelance,60000 - 60000 USD,USD,60000,Russia,100,United States,S,kaggle,,remote_ratio=100,
-2020,Principal Data Scientist,Senior,Full-time,148261 - 148261 USD,USD,148261,Germany,100,Germany,M,kaggle,,remote_ratio=100,
-2020,Data Scientist,Mid,Full-time,38776 - 38776 USD,USD,38776,Spain,100,Spain,M,kaggle,,remote_ratio=100,
-2020,Data Scientist,Mid,Full-time,118000 - 118000 USD,USD,118000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2020,Data Scientist,Senior,Full-time,120000 - 120000 USD,USD,120000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2020,Data Scientist,Mid,Full-time,138350 - 138350 USD,USD,138350,United States,100,United States,M,kaggle,,remote_ratio=100,
-2020,Data Engineer,Mid,Full-time,110000 - 110000 USD,USD,110000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Data Engineer,Mid,Full-time,130800 - 130800 USD,USD,130800,Spain,100,United States,M,kaggle,,remote_ratio=100,
-2020,Data Scientist,Junior,Part-time,21669 - 21669 USD,USD,21669,Italy,50,Italy,S,kaggle,,remote_ratio=50,
-2020,Data Scientist,Senior,Full-time,412000 - 412000 USD,USD,412000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2020,Machine Learning Engineer,Senior,Full-time,45618 - 45618 USD,USD,45618,HR,100,HR,S,kaggle,,remote_ratio=100,
-2020,Data Scientist,Junior,Full-time,62726 - 62726 USD,USD,62726,Germany,50,Germany,S,kaggle,,remote_ratio=50,
-2020,Data Scientist,Junior,Full-time,49268 - 49268 USD,USD,49268,Germany,0,Germany,S,kaggle,,remote_ratio=0,
-2020,Data Science Manager,Senior,Full-time,190200 - 190200 USD,USD,190200,United States,100,United States,M,kaggle,,remote_ratio=100,
-2020,Data Scientist,Senior,Full-time,91237 - 91237 USD,USD,91237,Austria,0,Austria,S,kaggle,,remote_ratio=0,
-2020,Data Scientist,Mid,Full-time,62726 - 62726 USD,USD,62726,France,50,LU,S,kaggle,,remote_ratio=50,
-2020,Data Scientist,Mid,Full-time,42197 - 42197 USD,USD,42197,France,50,France,S,kaggle,,remote_ratio=50,
-2021,Research Scientist,Junior,Full-time,82528 - 82528 USD,USD,82528,United Kingdom,50,United Kingdom,L,kaggle,,remote_ratio=50,
-2021,BI Data Analyst,Executive,Full-time,150000 - 150000 USD,USD,150000,India,100,United States,L,kaggle,,remote_ratio=100,
-2021,Head of Data,Executive,Full-time,235000 - 235000 USD,USD,235000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Senior,Full-time,53192 - 53192 USD,USD,53192,France,50,France,L,kaggle,,remote_ratio=50,
-2021,BI Data Analyst,Mid,Full-time,100000 - 100000 USD,USD,100000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,3D Computer Vision Researcher,Mid,Part-time,5409 - 5409 USD,USD,5409,India,50,India,M,kaggle,,remote_ratio=50,
-2021,ML Engineer,Mid,Contract,270000 - 270000 USD,USD,270000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Analyst,Junior,Full-time,80000 - 80000 USD,USD,80000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Data Analytics Engineer,Senior,Full-time,79197 - 79197 USD,USD,79197,Germany,100,Germany,L,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,140000 - 140000 USD,USD,140000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Applied Data Scientist,Mid,Full-time,54238 - 54238 USD,USD,54238,United Kingdom,50,Canada,L,kaggle,,remote_ratio=50,
-2021,Machine Learning Engineer,Mid,Full-time,47282 - 47282 USD,USD,47282,Spain,100,Spain,S,kaggle,,remote_ratio=100,
-2021,Director of Data Science,Executive,Full-time,153667 - 153667 USD,USD,153667,Italy,100,Poland,L,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,28476 - 28476 USD,USD,28476,Poland,100,Poland,L,kaggle,,remote_ratio=100,
-2021,Data Analyst,Junior,Full-time,59102 - 59102 USD,USD,59102,France,50,France,M,kaggle,,remote_ratio=50,
-2021,Data Analytics Engineer,Mid,Full-time,110000 - 110000 USD,USD,110000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Lead Data Analyst,Senior,Full-time,170000 - 170000 USD,USD,170000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Analyst,Senior,Full-time,80000 - 80000 USD,USD,80000,BG,100,United States,S,kaggle,,remote_ratio=100,
-2021,Marketing Data Analyst,Senior,Full-time,88654 - 88654 USD,USD,88654,GR,100,DK,L,kaggle,,remote_ratio=100,
-2021,Data Science Consultant,Junior,Full-time,76833 - 76833 USD,USD,76833,Germany,100,Germany,S,kaggle,,remote_ratio=100,
-2021,Lead Data Analyst,Mid,Full-time,19609 - 19609 USD,USD,19609,India,100,India,L,kaggle,,remote_ratio=100,
-2021,Lead Data Engineer,Senior,Full-time,276000 - 276000 USD,USD,276000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,Data Scientist,Junior,Full-time,29751 - 29751 USD,USD,29751,India,50,India,L,kaggle,,remote_ratio=50,
-2021,Cloud Data Engineer,Mid,Full-time,89294 - 89294 USD,USD,89294,SG,50,SG,L,kaggle,,remote_ratio=50,
-2021,AI Scientist,Junior,Part-time,12000 - 12000 USD,USD,12000,Brazil,100,United States,S,kaggle,,remote_ratio=100,
-2021,Financial Data Analyst,Mid,Full-time,450000 - 450000 USD,USD,450000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Computer Vision Software Engineer,Junior,Full-time,70000 - 70000 USD,USD,70000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Computer Vision Software Engineer,Mid,Full-time,95746 - 95746 USD,USD,95746,Germany,100,United States,S,kaggle,,remote_ratio=100,
-2021,Data Analyst,Mid,Full-time,75000 - 75000 USD,USD,75000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,Data Engineer,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,BI Data Analyst,Mid,Full-time,36259 - 36259 USD,USD,36259,HU,50,United States,L,kaggle,,remote_ratio=50,
-2021,Data Analyst,Mid,Full-time,62000 - 62000 USD,USD,62000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,Data Scientist,Mid,Full-time,73000 - 73000 USD,USD,73000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,Data Analyst,Mid,Full-time,51519 - 51519 USD,USD,51519,United Kingdom,50,United Kingdom,L,kaggle,,remote_ratio=50,
-2021,Research Scientist,Mid,Full-time,187442 - 187442 USD,USD,187442,Canada,100,Canada,L,kaggle,,remote_ratio=100,
-2021,Data Engineer,Senior,Full-time,115000 - 115000 USD,USD,115000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Data Engineer,Junior,Full-time,30428 - 30428 USD,USD,30428,India,100,India,L,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Senior,Full-time,94564 - 94564 USD,USD,94564,Germany,50,Germany,L,kaggle,,remote_ratio=50,
-2021,Director of Data Engineering,Senior,Full-time,113476 - 113476 USD,USD,113476,United Kingdom,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2021,Lead Data Engineer,Senior,Full-time,103160 - 103160 USD,USD,103160,United Kingdom,100,United Kingdom,S,kaggle,,remote_ratio=100,
-2021,AI Scientist,Junior,Part-time,12000 - 12000 USD,USD,12000,PK,100,United States,M,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,45391 - 45391 USD,USD,45391,Netherlands,100,Netherlands,L,kaggle,,remote_ratio=100,
-2021,Machine Learning Scientist,Junior,Full-time,225000 - 225000 USD,USD,225000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,50000 - 50000 USD,USD,50000,NG,100,NG,L,kaggle,,remote_ratio=100,
-2021,Data Science Engineer,Mid,Full-time,40189 - 40189 USD,USD,40189,GR,100,GR,M,kaggle,,remote_ratio=100,
-2021,Data Analyst,Junior,Full-time,90000 - 90000 USD,USD,90000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,200000 - 200000 USD,USD,200000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Big Data Engineer,Mid,Full-time,60000 - 60000 USD,USD,60000,Spain,50,RO,M,kaggle,,remote_ratio=50,
-2021,Principal Data Engineer,Senior,Full-time,200000 - 200000 USD,USD,200000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Data Analyst,Junior,Full-time,50000 - 50000 USD,USD,50000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Applied Data Scientist,Junior,Full-time,110037 - 110037 USD,USD,110037,United Kingdom,0,United Kingdom,L,kaggle,,remote_ratio=0,
-2021,Data Analyst,Junior,Part-time,10354 - 10354 USD,USD,10354,Spain,50,Spain,M,kaggle,,remote_ratio=50,
-2021,Principal Data Scientist,Mid,Full-time,151000 - 151000 USD,USD,151000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Machine Learning Scientist,Senior,Full-time,120000 - 120000 USD,USD,120000,United States,50,United States,S,kaggle,,remote_ratio=50,
-2021,Data Scientist,Mid,Full-time,9466 - 9466 USD,USD,9466,India,0,India,S,kaggle,,remote_ratio=0,
-2021,Machine Learning Engineer,Junior,Full-time,20000 - 20000 USD,USD,20000,India,100,India,S,kaggle,,remote_ratio=100,
-2021,Lead Data Scientist,Senior,Full-time,40570 - 40570 USD,USD,40570,India,50,India,L,kaggle,,remote_ratio=50,
-2021,Machine Learning Developer,Junior,Full-time,100000 - 100000 USD,USD,100000,IQ,50,IQ,S,kaggle,,remote_ratio=50,
-2021,Data Scientist,Junior,Full-time,49646 - 49646 USD,USD,49646,France,50,France,M,kaggle,,remote_ratio=50,
-2021,Applied Machine Learning Scientist,Mid,Full-time,38400 - 38400 USD,USD,38400,VN,100,United States,M,kaggle,,remote_ratio=100,
-2021,Computer Vision Engineer,Senior,Full-time,24000 - 24000 USD,USD,24000,Brazil,100,Brazil,M,kaggle,,remote_ratio=100,
-2021,Data Scientist,Junior,Full-time,100000 - 100000 USD,USD,100000,United States,0,United States,S,kaggle,,remote_ratio=0,
-2021,ML Engineer,Mid,Full-time,63711 - 63711 USD,USD,63711,Japan,50,Japan,S,kaggle,,remote_ratio=50,
-2021,ML Engineer,Mid,Full-time,77364 - 77364 USD,USD,77364,Japan,50,Japan,S,kaggle,,remote_ratio=50,
-2021,Principal Data Scientist,Senior,Full-time,220000 - 220000 USD,USD,220000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,Data Scientist,Junior,Full-time,80000 - 80000 USD,USD,80000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Data Analyst,Mid,Full-time,135000 - 135000 USD,USD,135000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Science Manager,Senior,Full-time,240000 - 240000 USD,USD,240000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,Data Engineering Manager,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,Data Scientist,Mid,Full-time,82500 - 82500 USD,USD,82500,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,100000 - 100000 USD,USD,100000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Senior,Full-time,82744 - 82744 USD,USD,82744,Belgium,50,Belgium,M,kaggle,,remote_ratio=50,
-2021,Research Scientist,Mid,Full-time,62649 - 62649 USD,USD,62649,France,50,France,M,kaggle,,remote_ratio=50,
-2021,Data Engineer,Mid,Full-time,90000 - 90000 USD,USD,90000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Engineering Manager,Senior,Full-time,153000 - 153000 USD,USD,153000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Cloud Data Engineer,Senior,Full-time,160000 - 160000 USD,USD,160000,Brazil,100,United States,S,kaggle,,remote_ratio=100,
-2021,Director of Data Science,Senior,Full-time,168000 - 168000 USD,USD,168000,Japan,0,Japan,S,kaggle,,remote_ratio=0,
-2021,Data Scientist,Mid,Full-time,150000 - 150000 USD,USD,150000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,75774 - 75774 USD,USD,75774,Canada,100,Canada,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Junior,Full-time,13400 - 13400 USD,USD,13400,Ukraine,100,Ukraine,L,kaggle,,remote_ratio=100,
-2021,Data Science Manager,Senior,Full-time,144000 - 144000 USD,USD,144000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Science Engineer,Senior,Full-time,127221 - 127221 USD,USD,127221,Canada,50,Canada,L,kaggle,,remote_ratio=50,
-2021,Data Scientist,Mid,Full-time,119059 - 119059 USD,USD,119059,SG,100,IL,M,kaggle,,remote_ratio=100,
-2021,Applied Machine Learning Scientist,Mid,Full-time,423000 - 423000 USD,USD,423000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2021,Data Analytics Manager,Senior,Full-time,120000 - 120000 USD,USD,120000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Junior,Full-time,125000 - 125000 USD,USD,125000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Head of Data,Executive,Full-time,230000 - 230000 USD,USD,230000,Russia,50,Russia,L,kaggle,,remote_ratio=50,
-2021,Head of Data Science,Executive,Full-time,85000 - 85000 USD,USD,85000,Russia,0,Russia,M,kaggle,,remote_ratio=0,
-2021,Data Engineer,Mid,Full-time,28369 - 28369 USD,USD,28369,MT,50,MT,L,kaggle,,remote_ratio=50,
-2021,Data Science Consultant,Junior,Full-time,63831 - 63831 USD,USD,63831,Germany,50,Germany,L,kaggle,,remote_ratio=50,
-2021,Director of Data Science,Executive,Full-time,130026 - 130026 USD,USD,130026,Germany,50,Germany,M,kaggle,,remote_ratio=50,
-2021,Data Specialist,Senior,Full-time,165000 - 165000 USD,USD,165000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Engineer,Junior,Full-time,80000 - 80000 USD,USD,80000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Director of Data Science,Executive,Full-time,250000 - 250000 USD,USD,250000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,BI Data Analyst,Junior,Full-time,55000 - 55000 USD,USD,55000,United States,50,United States,S,kaggle,,remote_ratio=50,
-2021,Data Architect,Mid,Full-time,150000 - 150000 USD,USD,150000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Architect,Mid,Full-time,170000 - 170000 USD,USD,170000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,82528 - 82528 USD,USD,82528,United Kingdom,100,United Kingdom,L,kaggle,,remote_ratio=100,
-2021,Data Analyst,Junior,Full-time,60000 - 60000 USD,USD,60000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Principal Data Scientist,Senior,Full-time,235000 - 235000 USD,USD,235000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Research Scientist,Senior,Full-time,60757 - 60757 USD,USD,60757,Portugal,50,Portugal,L,kaggle,,remote_ratio=50,
-2021,Data Engineering Manager,Senior,Full-time,174000 - 174000 USD,USD,174000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,2859 - 2859 USD,USD,2859,Mexico,0,Mexico,S,kaggle,,remote_ratio=0,
-2021,Data Scientist,Mid,Full-time,40038 - 40038 USD,USD,40038,CL,100,CL,L,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Junior,Full-time,81000 - 81000 USD,USD,81000,United States,50,United States,S,kaggle,,remote_ratio=50,
-2021,Data Scientist,Mid,Full-time,5679 - 5679 USD,USD,5679,India,100,United States,S,kaggle,,remote_ratio=100,
-2021,Big Data Engineer,Mid,Full-time,22611 - 22611 USD,USD,22611,India,0,India,L,kaggle,,remote_ratio=0,
-2021,Data Scientist,Mid,Full-time,90734 - 90734 USD,USD,90734,Germany,50,Germany,L,kaggle,,remote_ratio=50,
-2021,Data Engineer,Mid,Full-time,26005 - 26005 USD,USD,26005,RO,0,United States,L,kaggle,,remote_ratio=0,
-2021,Finance Data Analyst,Senior,Full-time,61896 - 61896 USD,USD,61896,United Kingdom,50,United Kingdom,L,kaggle,,remote_ratio=50,
-2021,Machine Learning Scientist,Mid,Freelance,12000 - 12000 USD,USD,12000,PK,50,PK,M,kaggle,,remote_ratio=50,
-2021,Data Engineer,Mid,Full-time,4000 - 4000 USD,USD,4000,IR,100,IR,M,kaggle,,remote_ratio=100,
-2021,Data Analytics Engineer,Senior,Full-time,50000 - 50000 USD,USD,50000,VN,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2021,Data Science Consultant,Executive,Full-time,69741 - 69741 USD,USD,69741,France,100,Spain,S,kaggle,,remote_ratio=100,
-2021,Data Engineer,Senior,Full-time,76833 - 76833 USD,USD,76833,RO,50,United Kingdom,S,kaggle,,remote_ratio=50,
-2021,Machine Learning Engineer,Mid,Full-time,74000 - 74000 USD,USD,74000,Japan,50,Japan,S,kaggle,,remote_ratio=50,
-2021,Data Science Manager,Senior,Full-time,152000 - 152000 USD,USD,152000,United States,100,France,L,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Junior,Full-time,21844 - 21844 USD,USD,21844,CO,50,CO,M,kaggle,,remote_ratio=50,
-2021,Big Data Engineer,Mid,Full-time,18000 - 18000 USD,USD,18000,MD,0,MD,S,kaggle,,remote_ratio=0,
-2021,Data Science Manager,Senior,Full-time,174000 - 174000 USD,USD,174000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Research Scientist,Senior,Full-time,96113 - 96113 USD,USD,96113,Canada,50,Canada,L,kaggle,,remote_ratio=50,
-2021,Data Scientist,Mid,Full-time,147000 - 147000 USD,USD,147000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2021,BI Data Analyst,Junior,Full-time,9272 - 9272 USD,USD,9272,KE,100,KE,S,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Senior,Full-time,24342 - 24342 USD,USD,24342,India,100,India,L,kaggle,,remote_ratio=100,
-2021,Data Science Manager,Senior,Full-time,54094 - 54094 USD,USD,54094,India,50,United States,L,kaggle,,remote_ratio=50,
-2021,Data Science Consultant,Junior,Full-time,90000 - 90000 USD,USD,90000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,61467 - 61467 USD,USD,61467,Germany,50,Austria,M,kaggle,,remote_ratio=50,
-2021,Machine Learning Infrastructure Engineer,Senior,Full-time,195000 - 195000 USD,USD,195000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,37825 - 37825 USD,USD,37825,Spain,100,Spain,L,kaggle,,remote_ratio=100,
-2021,Research Scientist,Senior,Full-time,50000 - 50000 USD,USD,50000,France,100,United States,S,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,160000 - 160000 USD,USD,160000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,12901 - 12901 USD,USD,12901,Brazil,0,Brazil,S,kaggle,,remote_ratio=0,
-2021,Machine Learning Engineer,Senior,Full-time,200000 - 200000 USD,USD,200000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Engineer,Senior,Full-time,165000 - 165000 USD,USD,165000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2021,Data Engineer,Mid,Freelance,20000 - 20000 USD,USD,20000,Italy,0,United States,L,kaggle,,remote_ratio=0,
-2021,Machine Learning Engineer,Mid,Full-time,24823 - 24823 USD,USD,24823,SI,50,SI,L,kaggle,,remote_ratio=50,
-2021,Research Scientist,Mid,Full-time,56738 - 56738 USD,USD,56738,France,50,France,S,kaggle,,remote_ratio=50,
-2021,Data Engineer,Mid,Full-time,66022 - 66022 USD,USD,66022,HK,50,United Kingdom,S,kaggle,,remote_ratio=50,
-2021,Big Data Engineer,Junior,Full-time,5882 - 5882 USD,USD,5882,India,0,Switzerland,L,kaggle,,remote_ratio=0,
-2021,Machine Learning Engineer,Junior,Full-time,24823 - 24823 USD,USD,24823,Germany,50,Germany,M,kaggle,,remote_ratio=50,
-2021,Principal Data Engineer,Senior,Full-time,185000 - 185000 USD,USD,185000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Computer Vision Engineer,Junior,Part-time,28609 - 28609 USD,USD,28609,DK,50,DK,S,kaggle,,remote_ratio=50,
-2021,Machine Learning Engineer,Mid,Full-time,88654 - 88654 USD,USD,88654,Belgium,100,Belgium,M,kaggle,,remote_ratio=100,
-2021,Data Analytics Manager,Senior,Full-time,140000 - 140000 USD,USD,140000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Mid,Full-time,46597 - 46597 USD,USD,46597,Poland,100,Poland,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,116914 - 116914 USD,USD,116914,United Kingdom,50,United Kingdom,L,kaggle,,remote_ratio=50,
-2021,Data Scientist,Mid,Full-time,33808 - 33808 USD,USD,33808,India,0,India,M,kaggle,,remote_ratio=0,
-2021,Data Scientist,Mid,Full-time,56256 - 56256 USD,USD,56256,United Kingdom,50,United Kingdom,L,kaggle,,remote_ratio=50,
-2021,Principal Data Scientist,Executive,Contract,416000 - 416000 USD,USD,416000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Data Scientist,Senior,Full-time,87738 - 87738 USD,USD,87738,Canada,100,Canada,S,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,88654 - 88654 USD,USD,88654,Germany,50,Germany,L,kaggle,,remote_ratio=50,
-2021,Data Scientist,Senior,Full-time,135000 - 135000 USD,USD,135000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2021,Data Analyst,Senior,Full-time,71786 - 71786 USD,USD,71786,Canada,100,Canada,M,kaggle,,remote_ratio=100,
-2021,Big Data Engineer,Junior,Full-time,16228 - 16228 USD,USD,16228,India,100,India,L,kaggle,,remote_ratio=100,
-2021,ML Engineer,Senior,Full-time,256000 - 256000 USD,USD,256000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Director of Data Engineering,Senior,Full-time,200000 - 200000 USD,USD,200000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Analyst,Senior,Full-time,200000 - 200000 USD,USD,200000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Architect,Mid,Full-time,180000 - 180000 USD,USD,180000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Head of Data Science,Mid,Full-time,110000 - 110000 USD,USD,110000,United States,0,United States,S,kaggle,,remote_ratio=0,
-2021,Research Scientist,Mid,Full-time,63810 - 63810 USD,USD,63810,Canada,100,Canada,M,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,46809 - 46809 USD,USD,46809,Spain,100,Spain,M,kaggle,,remote_ratio=100,
-2021,Data Scientist,Junior,Full-time,4000 - 4000 USD,USD,4000,VN,0,VN,M,kaggle,,remote_ratio=0,
-2021,Data Engineer,Junior,Full-time,21637 - 21637 USD,USD,21637,India,50,India,M,kaggle,,remote_ratio=50,
-2021,Data Scientist,Senior,Full-time,103691 - 103691 USD,USD,103691,Canada,100,Canada,L,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,110000 - 110000 USD,USD,110000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Senior,Full-time,165000 - 165000 USD,USD,165000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,AI Scientist,Junior,Full-time,18053 - 18053 USD,USD,18053,India,100,AS,S,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,72212 - 72212 USD,USD,72212,United Kingdom,50,United Kingdom,L,kaggle,,remote_ratio=50,
-2021,Data Scientist,Junior,Full-time,36643 - 36643 USD,USD,36643,France,50,France,L,kaggle,,remote_ratio=50,
-2021,Data Engineer,Mid,Full-time,12103 - 12103 USD,USD,12103,TR,0,TR,M,kaggle,,remote_ratio=0,
-2021,Data Engineer,Senior,Full-time,96282 - 96282 USD,USD,96282,United Kingdom,50,United Kingdom,L,kaggle,,remote_ratio=50,
-2021,Principal Data Analyst,Senior,Full-time,170000 - 170000 USD,USD,170000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,115000 - 115000 USD,USD,115000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2021,Data Scientist,Junior,Full-time,90000 - 90000 USD,USD,90000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2021,Principal Data Engineer,Executive,Full-time,600000 - 600000 USD,USD,600000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Junior,Full-time,28399 - 28399 USD,USD,28399,India,100,India,M,kaggle,,remote_ratio=100,
-2021,Data Analyst,Mid,Full-time,93000 - 93000 USD,USD,93000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Big Data Architect,Senior,Full-time,99703 - 99703 USD,USD,99703,Canada,50,Canada,M,kaggle,,remote_ratio=50,
-2021,Principal Data Scientist,Senior,Full-time,173762 - 173762 USD,USD,173762,Germany,100,Germany,M,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Senior,Full-time,185000 - 185000 USD,USD,185000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2021,Director of Data Science,Executive,Full-time,141846 - 141846 USD,USD,141846,Germany,0,Germany,L,kaggle,,remote_ratio=0,
-2021,Data Scientist,Mid,Full-time,130000 - 130000 USD,USD,130000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2021,Data Analyst,Senior,Full-time,63831 - 63831 USD,USD,63831,Germany,50,Germany,L,kaggle,,remote_ratio=50,
-2021,Data Scientist,Mid,Full-time,16904 - 16904 USD,USD,16904,India,100,India,S,kaggle,,remote_ratio=100,
-2021,Machine Learning Engineer,Senior,Full-time,66265 - 66265 USD,USD,66265,India,0,India,L,kaggle,,remote_ratio=0,
-2021,Data Scientist,Mid,Full-time,25532 - 25532 USD,USD,25532,RS,100,Germany,S,kaggle,,remote_ratio=100,
-2021,Lead Data Engineer,Senior,Full-time,160000 - 160000 USD,USD,160000,PR,50,United States,S,kaggle,,remote_ratio=50,
-2021,Data Engineer,Mid,Full-time,93150 - 93150 USD,USD,93150,United States,0,United States,M,kaggle,,remote_ratio=0,
-2021,Data Engineer,Mid,Full-time,111775 - 111775 USD,USD,111775,United States,0,United States,M,kaggle,,remote_ratio=0,
-2021,Data Engineer,Mid,Full-time,28016 - 28016 USD,USD,28016,TR,100,TR,M,kaggle,,remote_ratio=100,
-2021,Data Engineer,Junior,Full-time,65013 - 65013 USD,USD,65013,Germany,50,Germany,M,kaggle,,remote_ratio=50,
-2021,Data Engineer,Junior,Full-time,72500 - 72500 USD,USD,72500,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Computer Vision Engineer,Senior,Full-time,18907 - 18907 USD,USD,18907,Brazil,0,Brazil,M,kaggle,,remote_ratio=0,
-2021,Machine Learning Engineer,Junior,Full-time,85000 - 85000 USD,USD,85000,Netherlands,100,Germany,S,kaggle,,remote_ratio=100,
-2021,Data Scientist,Senior,Full-time,77684 - 77684 USD,USD,77684,France,50,France,M,kaggle,,remote_ratio=50,
-2021,Data Scientist,Junior,Full-time,58000 - 58000 USD,USD,58000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2021,AI Scientist,Senior,Full-time,55000 - 55000 USD,USD,55000,Spain,100,Spain,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Senior,Full-time,20171 - 20171 USD,USD,20171,TR,50,TR,L,kaggle,,remote_ratio=50,
-2021,Business Data Analyst,Junior,Full-time,59102 - 59102 USD,USD,59102,LU,100,LU,L,kaggle,,remote_ratio=100,
-2021,Data Engineer,Mid,Full-time,112000 - 112000 USD,USD,112000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2021,Research Scientist,Junior,Full-time,100000 - 100000 USD,USD,100000,JE,0,China,L,kaggle,,remote_ratio=0,
-2021,Data Engineer,Mid,Part-time,69741 - 69741 USD,USD,69741,Netherlands,100,Netherlands,L,kaggle,,remote_ratio=100,
-2021,Staff Data Scientist,Senior,Contract,105000 - 105000 USD,USD,105000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2021,Research Scientist,Mid,Full-time,69999 - 69999 USD,USD,69999,Czech Republic,50,Czech Republic,L,kaggle,,remote_ratio=50,
-2021,Data Science Manager,Senior,Full-time,94665 - 94665 USD,USD,94665,India,50,India,L,kaggle,,remote_ratio=50,
-2021,Head of Data,Senior,Full-time,102839 - 102839 USD,USD,102839,SI,100,SI,L,kaggle,,remote_ratio=100,
-2021,Data Scientist,Mid,Full-time,109000 - 109000 USD,USD,109000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2021,Machine Learning Engineer,Mid,Full-time,51064 - 51064 USD,USD,51064,Italy,50,Italy,L,kaggle,,remote_ratio=50,
-2022,Data Engineer,Senior,Full-time,135000 - 135000 USD,USD,135000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,155000 - 155000 USD,USD,155000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,120600 - 120600 USD,USD,120600,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,130000 - 130000 USD,USD,130000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Mid,Full-time,90000 - 90000 USD,USD,90000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Mid,Full-time,170000 - 170000 USD,USD,170000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,150000 - 150000 USD,USD,150000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,102100 - 102100 USD,USD,102100,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,84900 - 84900 USD,USD,84900,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,136620 - 136620 USD,USD,136620,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,99360 - 99360 USD,USD,99360,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,117789 - 117789 USD,USD,117789,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,104702 - 104702 USD,USD,104702,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,146000 - 146000 USD,USD,146000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,123000 - 123000 USD,USD,123000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Junior,Full-time,52351 - 52351 USD,USD,52351,United Kingdom,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,99000 - 99000 USD,USD,99000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Senior,Full-time,116000 - 116000 USD,USD,116000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Mid,Full-time,106260 - 106260 USD,USD,106260,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Mid,Full-time,126500 - 126500 USD,USD,126500,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Executive,Full-time,242000 - 242000 USD,USD,242000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Executive,Full-time,200000 - 200000 USD,USD,200000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,65438 - 65438 USD,USD,65438,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Mid,Full-time,39263 - 39263 USD,USD,39263,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Mid,Full-time,78526 - 78526 USD,USD,78526,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,165220 - 165220 USD,USD,165220,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Junior,Full-time,45807 - 45807 USD,USD,45807,United Kingdom,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,120160 - 120160 USD,USD,120160,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,90320 - 90320 USD,USD,90320,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,181940 - 181940 USD,USD,181940,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,132320 - 132320 USD,USD,132320,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,220110 - 220110 USD,USD,220110,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,160080 - 160080 USD,USD,160080,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,180000 - 180000 USD,USD,180000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,120000 - 120000 USD,USD,120000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2022,Data Analyst,Senior,Full-time,124190 - 124190 USD,USD,124190,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Executive,Full-time,130000 - 130000 USD,USD,130000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Executive,Full-time,110000 - 110000 USD,USD,110000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,170000 - 170000 USD,USD,170000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,115500 - 115500 USD,USD,115500,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,112900 - 112900 USD,USD,112900,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,165400 - 165400 USD,USD,165400,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,167000 - 167000 USD,USD,167000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,243900 - 243900 USD,USD,243900,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,136600 - 136600 USD,USD,136600,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,109280 - 109280 USD,USD,109280,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,128875 - 128875 USD,USD,128875,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,93700 - 93700 USD,USD,93700,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Head of Data Science,Executive,Full-time,224000 - 224000 USD,USD,224000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Head of Data Science,Executive,Full-time,167875 - 167875 USD,USD,167875,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Analytics Engineer,Executive,Full-time,175000 - 175000 USD,USD,175000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,156600 - 156600 USD,USD,156600,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,108800 - 108800 USD,USD,108800,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,95550 - 95550 USD,USD,95550,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,113000 - 113000 USD,USD,113000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2022,Data Analyst,Senior,Full-time,135000 - 135000 USD,USD,135000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Science Manager,Senior,Full-time,161342 - 161342 USD,USD,161342,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Science Manager,Senior,Full-time,137141 - 137141 USD,USD,137141,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,167000 - 167000 USD,USD,167000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,65438 - 65438 USD,USD,65438,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,211500 - 211500 USD,USD,211500,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Architect,Senior,Full-time,192400 - 192400 USD,USD,192400,Canada,100,Canada,M,kaggle,,remote_ratio=100,
-2022,Data Architect,Senior,Full-time,90700 - 90700 USD,USD,90700,Canada,100,Canada,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,130000 - 130000 USD,USD,130000,Canada,100,Canada,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,61300 - 61300 USD,USD,61300,Canada,100,Canada,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,160000 - 160000 USD,USD,160000,United States,0,United States,L,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,138600 - 138600 USD,USD,138600,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,136000 - 136000 USD,USD,136000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Mid,Full-time,58000 - 58000 USD,USD,58000,United States,0,United States,S,kaggle,,remote_ratio=0,
-2022,Analytics Engineer,Executive,Full-time,135000 - 135000 USD,USD,135000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,170000 - 170000 USD,USD,170000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Senior,Full-time,189650 - 189650 USD,USD,189650,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Machine Learning Engineer,Senior,Full-time,164996 - 164996 USD,USD,164996,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,ETL Developer,Mid,Full-time,54957 - 54957 USD,USD,54957,GR,0,GR,M,kaggle,,remote_ratio=0,
-2022,Lead Data Engineer,Executive,Full-time,118187 - 118187 USD,USD,118187,Canada,100,Canada,S,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,132000 - 132000 USD,USD,132000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Architect,Senior,Full-time,208775 - 208775 USD,USD,208775,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Architect,Senior,Full-time,147800 - 147800 USD,USD,147800,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,136994 - 136994 USD,USD,136994,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,101570 - 101570 USD,USD,101570,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,128875 - 128875 USD,USD,128875,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,93700 - 93700 USD,USD,93700,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Head of Machine Learning,Executive,Full-time,79039 - 79039 USD,USD,79039,India,50,India,L,kaggle,,remote_ratio=50,
-2022,Machine Learning Engineer,Junior,Full-time,37300 - 37300 USD,USD,37300,United Kingdom,100,United Kingdom,L,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,164000 - 164000 USD,USD,164000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,155000 - 155000 USD,USD,155000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Mid,Full-time,124333 - 124333 USD,USD,124333,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Machine Learning Engineer,Mid,Full-time,98158 - 98158 USD,USD,98158,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,AI Scientist,Mid,Full-time,120000 - 120000 USD,USD,120000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Analytics Manager,Senior,Full-time,145000 - 145000 USD,USD,145000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analytics Manager,Senior,Full-time,105400 - 105400 USD,USD,105400,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Mid,Full-time,87932 - 87932 USD,USD,87932,France,100,Germany,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,117789 - 117789 USD,USD,117789,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,215300 - 215300 USD,USD,215300,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,158200 - 158200 USD,USD,158200,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,209100 - 209100 USD,USD,209100,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,154600 - 154600 USD,USD,154600,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,115934 - 115934 USD,USD,115934,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Senior,Full-time,81666 - 81666 USD,USD,81666,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,175000 - 175000 USD,USD,175000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,98158 - 98158 USD,USD,98158,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,183600 - 183600 USD,USD,183600,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,52351 - 52351 USD,USD,52351,United Kingdom,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,71982 - 71982 USD,USD,71982,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Mid,Full-time,45807 - 45807 USD,USD,45807,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Mid,Full-time,65949 - 65949 USD,USD,65949,GR,100,GR,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,49461 - 49461 USD,USD,49461,GR,100,GR,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,58894 - 58894 USD,USD,58894,United Kingdom,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,260000 - 260000 USD,USD,260000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Science Engineer,Senior,Full-time,60000 - 60000 USD,USD,60000,AR,100,Mexico,L,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,63900 - 63900 USD,USD,63900,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Machine Learning Scientist,Mid,Full-time,160000 - 160000 USD,USD,160000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Machine Learning Scientist,Mid,Full-time,112300 - 112300 USD,USD,112300,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Science Manager,Mid,Full-time,241000 - 241000 USD,USD,241000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Science Manager,Mid,Full-time,159000 - 159000 USD,USD,159000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,80000 - 80000 USD,USD,80000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Mid,Full-time,82900 - 82900 USD,USD,82900,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,100800 - 100800 USD,USD,100800,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,49461 - 49461 USD,USD,49461,Spain,100,Spain,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,140400 - 140400 USD,USD,140400,United States,0,United States,L,kaggle,,remote_ratio=0,
-2022,Data Analyst,Mid,Full-time,39263 - 39263 USD,USD,39263,United Kingdom,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,43966 - 43966 USD,USD,43966,Spain,100,Spain,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,32974 - 32974 USD,USD,32974,Spain,100,Spain,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,87932 - 87932 USD,USD,87932,Spain,100,Spain,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,76940 - 76940 USD,USD,76940,Spain,100,Spain,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,104702 - 104702 USD,USD,104702,United Kingdom,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,91614 - 91614 USD,USD,91614,United Kingdom,100,United Kingdom,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,65949 - 65949 USD,USD,65949,Spain,100,Spain,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,87932 - 87932 USD,USD,87932,GR,100,GR,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,43966 - 43966 USD,USD,43966,GR,100,GR,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,32974 - 32974 USD,USD,32974,GR,100,GR,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,76940 - 76940 USD,USD,76940,GR,100,GR,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,180000 - 180000 USD,USD,180000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,ML Engineer,Junior,Full-time,21983 - 21983 USD,USD,21983,Portugal,100,Portugal,L,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,80000 - 80000 USD,USD,80000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Machine Learning Developer,Mid,Full-time,78791 - 78791 USD,USD,78791,Canada,100,Canada,M,kaggle,,remote_ratio=100,
-2022,Director of Data Science,Executive,Full-time,196979 - 196979 USD,USD,196979,Canada,50,Canada,L,kaggle,,remote_ratio=50,
-2022,Machine Learning Engineer,Mid,Full-time,120000 - 120000 USD,USD,120000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2022,Computer Vision Engineer,Junior,Full-time,125000 - 125000 USD,USD,125000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,NLP Engineer,Mid,Full-time,37236 - 37236 USD,USD,37236,United States,50,United States,L,kaggle,,remote_ratio=50,
-2022,Data Engineer,Senior,Full-time,105000 - 105000 USD,USD,105000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Lead Machine Learning Engineer,Senior,Full-time,87932 - 87932 USD,USD,87932,Germany,0,Germany,M,kaggle,,remote_ratio=0,
-2022,Business Data Analyst,Mid,Full-time,18442 - 18442 USD,USD,18442,India,100,India,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,31615 - 31615 USD,USD,31615,India,100,India,L,kaggle,,remote_ratio=100,
-2022,Machine Learning Infrastructure Engineer,Mid,Full-time,58255 - 58255 USD,USD,58255,Portugal,50,Portugal,L,kaggle,,remote_ratio=50,
-2022,Financial Data Analyst,Junior,Full-time,100000 - 100000 USD,USD,100000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2022,Data Engineer,Mid,Part-time,54957 - 54957 USD,USD,54957,Germany,50,Germany,L,kaggle,,remote_ratio=50,
-2022,Data Scientist,Junior,Full-time,18442 - 18442 USD,USD,18442,India,100,India,M,kaggle,,remote_ratio=100,
-2022,Principal Data Scientist,Senior,Full-time,162674 - 162674 USD,USD,162674,Germany,100,Germany,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Junior,Full-time,120000 - 120000 USD,USD,120000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Research Scientist,Senior,Full-time,144000 - 144000 USD,USD,144000,United States,50,United States,L,kaggle,,remote_ratio=50,
-2022,Data Scientist,Senior,Full-time,104890 - 104890 USD,USD,104890,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,100000 - 100000 USD,USD,100000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,140000 - 140000 USD,USD,140000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,50000 - 50000 USD,USD,50000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,220000 - 220000 USD,USD,220000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,183228 - 183228 USD,USD,183228,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Mid,Full-time,91614 - 91614 USD,USD,91614,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,185100 - 185100 USD,USD,185100,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Senior,Full-time,220000 - 220000 USD,USD,220000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,200000 - 200000 USD,USD,200000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Senior,Full-time,120000 - 120000 USD,USD,120000,AE,100,AE,S,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Senior,Full-time,65000 - 65000 USD,USD,65000,AE,100,AE,S,kaggle,,remote_ratio=100,
-2022,Data Engineer,Executive,Full-time,324000 - 324000 USD,USD,324000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Executive,Full-time,216000 - 216000 USD,USD,216000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,210000 - 210000 USD,USD,210000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,230000 - 230000 USD,USD,230000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Junior,Part-time,100000 - 100000 USD,USD,100000,DZ,50,DZ,M,kaggle,,remote_ratio=50,
-2022,Data Scientist,Mid,Freelance,100000 - 100000 USD,USD,100000,Canada,100,United States,M,kaggle,,remote_ratio=100,
-2022,Applied Machine Learning Scientist,Junior,Contract,31875 - 31875 USD,USD,31875,TN,100,Czech Republic,M,kaggle,,remote_ratio=100,
-2022,Head of Data,Senior,Full-time,200000 - 200000 USD,USD,200000,MY,100,United States,M,kaggle,,remote_ratio=100,
-2022,Principal Data Analyst,Mid,Full-time,75000 - 75000 USD,USD,75000,Canada,100,Canada,S,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,35590 - 35590 USD,USD,35590,Poland,100,Poland,L,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,100000 - 100000 USD,USD,100000,Brazil,100,United States,M,kaggle,,remote_ratio=100,
-2022,Machine Learning Scientist,Mid,Full-time,153000 - 153000 USD,USD,153000,United States,50,United States,M,kaggle,,remote_ratio=50,
-2022,Data Engineer,Junior,Full-time,58035 - 58035 USD,USD,58035,PK,100,Germany,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,165000 - 165000 USD,USD,165000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Research Scientist,Senior,Full-time,93427 - 93427 USD,USD,93427,France,50,France,L,kaggle,,remote_ratio=50,
-2022,Data Scientist,Junior,Full-time,52396 - 52396 USD,USD,52396,Canada,100,Canada,L,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Senior,Full-time,62651 - 62651 USD,USD,62651,Netherlands,100,Netherlands,L,kaggle,,remote_ratio=100,
-2022,Head of Data,Mid,Full-time,32974 - 32974 USD,USD,32974,EE,100,EE,S,kaggle,,remote_ratio=100,
-2022,Data Scientist,Junior,Full-time,40000 - 40000 USD,USD,40000,Japan,100,MY,L,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Mid,Full-time,87425 - 87425 USD,USD,87425,Australia,100,Australia,L,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,115000 - 115000 USD,USD,115000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Junior,Full-time,86703 - 86703 USD,USD,86703,Australia,50,Australia,M,kaggle,,remote_ratio=50,
-2022,Applied Machine Learning Scientist,Mid,Full-time,75000 - 75000 USD,USD,75000,BO,100,United States,L,kaggle,,remote_ratio=100,
-2022,Research Scientist,Mid,Full-time,64849 - 64849 USD,USD,64849,Austria,0,Austria,L,kaggle,,remote_ratio=0,
-2022,Research Scientist,Junior,Full-time,120000 - 120000 USD,USD,120000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Applied Data Scientist,Mid,Full-time,157000 - 157000 USD,USD,157000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Computer Vision Software Engineer,Junior,Full-time,150000 - 150000 USD,USD,150000,Australia,100,Australia,S,kaggle,,remote_ratio=100,
-2022,Business Data Analyst,Mid,Full-time,70912 - 70912 USD,USD,70912,Canada,50,Canada,L,kaggle,,remote_ratio=50,
-2022,Data Engineer,Junior,Full-time,65000 - 65000 USD,USD,65000,United States,100,United States,S,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Senior,Full-time,71444 - 71444 USD,USD,71444,Ireland,100,Ireland,S,kaggle,,remote_ratio=100,
-2022,Data Analytics Engineer,Junior,Full-time,20000 - 20000 USD,USD,20000,PK,0,PK,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Mid,Full-time,48000 - 48000 USD,USD,48000,Russia,100,United States,S,kaggle,,remote_ratio=100,
-2022,Data Science Manager,Senior,Full-time,152500 - 152500 USD,USD,152500,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Mid,Full-time,68147 - 68147 USD,USD,68147,France,100,France,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,122346 - 122346 USD,USD,122346,Switzerland,0,Switzerland,L,kaggle,,remote_ratio=0,
-2022,Applied Data Scientist,Senior,Full-time,380000 - 380000 USD,USD,380000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,69336 - 69336 USD,USD,69336,Canada,100,Canada,M,kaggle,,remote_ratio=100,
-2022,Computer Vision Engineer,Junior,Full-time,10000 - 10000 USD,USD,10000,Portugal,100,LU,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,20000 - 20000 USD,USD,20000,GR,100,GR,S,kaggle,,remote_ratio=100,
-2022,Data Analytics Lead,Senior,Full-time,405000 - 405000 USD,USD,405000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,135000 - 135000 USD,USD,135000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Applied Data Scientist,Senior,Full-time,177000 - 177000 USD,USD,177000,United States,100,United States,L,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,78000 - 78000 USD,USD,78000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,100000 - 100000 USD,USD,100000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,85000 - 85000 USD,USD,85000,Canada,0,Canada,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Mid,Full-time,75000 - 75000 USD,USD,75000,Canada,0,Canada,M,kaggle,,remote_ratio=0,
-2022,Machine Learning Engineer,Senior,Full-time,214000 - 214000 USD,USD,214000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Machine Learning Engineer,Senior,Full-time,192600 - 192600 USD,USD,192600,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Architect,Senior,Full-time,266400 - 266400 USD,USD,266400,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Architect,Senior,Full-time,213120 - 213120 USD,USD,213120,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,141300 - 141300 USD,USD,141300,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Scientist,Mid,Full-time,102100 - 102100 USD,USD,102100,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Mid,Full-time,206699 - 206699 USD,USD,206699,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Mid,Full-time,99100 - 99100 USD,USD,99100,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,130000 - 130000 USD,USD,130000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,110500 - 110500 USD,USD,110500,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,99050 - 99050 USD,USD,99050,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,205300 - 205300 USD,USD,205300,United States,0,United States,L,kaggle,,remote_ratio=0,
-2022,Data Scientist,Senior,Full-time,176000 - 176000 USD,USD,176000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,144000 - 144000 USD,USD,144000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,200100 - 200100 USD,USD,200100,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,145000 - 145000 USD,USD,145000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,70500 - 70500 USD,USD,70500,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Analytics Engineer,Senior,Full-time,205300 - 205300 USD,USD,205300,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Analytics Engineer,Senior,Full-time,184700 - 184700 USD,USD,184700,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,175100 - 175100 USD,USD,175100,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,140250 - 140250 USD,USD,140250,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,116150 - 116150 USD,USD,116150,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,54000 - 54000 USD,USD,54000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Mid,Full-time,65438 - 65438 USD,USD,65438,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Senior,Full-time,80000 - 80000 USD,USD,80000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Senior,Full-time,210000 - 210000 USD,USD,210000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,69000 - 69000 USD,USD,69000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,150075 - 150075 USD,USD,150075,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,25000 - 25000 USD,USD,25000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,105000 - 105000 USD,USD,105000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,110925 - 110925 USD,USD,110925,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Mid,Full-time,45807 - 45807 USD,USD,45807,United Kingdom,0,United Kingdom,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Senior,Full-time,60000 - 60000 USD,USD,60000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Architect,Senior,Full-time,192564 - 192564 USD,USD,192564,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Architect,Senior,Full-time,144854 - 144854 USD,USD,144854,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analytics Manager,Senior,Full-time,150260 - 150260 USD,USD,150260,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analytics Manager,Senior,Full-time,109280 - 109280 USD,USD,109280,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Scientist,Mid,Full-time,160000 - 160000 USD,USD,160000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Junior,Full-time,67000 - 67000 USD,USD,67000,Canada,0,Canada,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Junior,Full-time,52000 - 52000 USD,USD,52000,Canada,0,Canada,M,kaggle,,remote_ratio=0,
-2022,Data Engineer,Senior,Full-time,154000 - 154000 USD,USD,154000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Engineer,Senior,Full-time,126000 - 126000 USD,USD,126000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,Data Analyst,Senior,Full-time,129000 - 129000 USD,USD,129000,United States,0,United States,M,kaggle,,remote_ratio=0,
-2022,Data Analyst,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,100,United States,M,kaggle,,remote_ratio=100,
-2022,AI Scientist,Mid,Full-time,200000 - 200000 USD,USD,200000,India,100,United States,L,kaggle,,remote_ratio=100,
-2025,Аналитик,Unknown,Full-time,170000 - None RUR,RUR,1888,Москва,,Russia,S,hh_api,Точка,...массивами <highlighttext>данных</highlighttext>. Аналогичный опыт работы в качестве <highlighttext>аналитика</highlighttext> в ритейле или маркетинговой <highlighttext>аналитике</highlighttext> + дополнительные курсы по анализу <highlighttext>данных</highlighttext> приветствуются. ,
-2025,GR-аналитик в металлургический холдинг,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Новосталь-М,Умение работать с большим объемом <highlighttext>данных</highlighttext> и креативно решать задачи с открытыми вводными. Уровень владения английский языком B2-C...,
-2025,Аналитик отдела планирования,Junior,Full-time,200000 - None RUR,RUR,2222,Москва,,Russia,S,hh_api,ТЕЛОДВИЖЕНИЯ,"...Опыт в <highlighttext>аналитике</highlighttext> спроса/запасов от 2 лет (ритейл, FMCG, e-commerce).  Умение работать с большими массивами <highlighttext>данных</highlighttext> (100 000...",
-2025,Системный аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Л-ТЕХ,"Опыт работы с Jira, Confluence, Notion. Базовые знания SQL и принципов работы с базами <highlighttext>данных</highlighttext>. Опыт взаимодействия с внешними клиентами.",
-2025,Аналитик данных,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,ZOLLA,"Владение различными методиками систематизации и анализа информации, опыт обработки массивов <highlighttext>данных</highlighttext> (в том числе при помощи VBA и проч. ",
-2025,Разработчик-аналитик SQL (Junior),Junior,Full-time,140000 RUR,RUR,1555,Москва,,Russia,S,hh_api,"ДИКСИ, группа компаний","Хорошие знания MS SQL, опыт работы с колоночными таблицами. Навыки работы с Oracle/PostgreSQL будут преимуществом. Опыт построения корпоративной отчетности...",
-2025,Ассистент-аналитик в футбольный клуб,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Ведущий российский футбольный клуб,"Законченное высшее образование (экономическое, финансовое, юридическое). Опыт работы от 1 года в консалтинге. Экспертное знание и понимание футбола как игры...",
-2025,Аналитик данных,Unknown,Full-time,100000 - None RUR,RUR,1111,Москва,,Russia,S,hh_api,Айтиспортс,"...четко излагать мысли, обосновывать гипотезы. Знание английского языка не ниже уровня B1. Подготовка структурированных презентаций на основе проанализированных <highlighttext>данных</highlighttext>.",
-2025,Аналитик данных,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Мегамаркет,"Продвинутый Excel (сводные таблицы, сложные формулы). SQL (CTE, оконные функции, джойны). Визуализация <highlighttext>данных</highlighttext> (желательно Visiology, Looker studio). Построение финансовых моделей. ",
-2025,Бизнес-аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,ИНВИТРО,"Понимание, умение работать с интеграциями между системами (API, шина <highlighttext>данных</highlighttext>). Базовые понятия о проектировании UX/UI. Понимание принципов проектирования API...",
-2025,Аналитик-разработчик отчётности,Mid,Full-time,450000 RUR,RUR,5000,Москва,,Russia,S,hh_api,Экспобанк,"Опыт проектирования и разработки аналитических моделей, дашбордов и отчетов в Power BI – от 3 лет. Опыт работы с SQL Server...",
-2025,Аналитик,Mid,Full-time,200000 - 200000 RUR,RUR,2222,Москва,,Russia,S,hh_api,Айсорс,"Обязательные навыки и опыт: - Опыт работы бизнес-<highlighttext>аналитиком</highlighttext> от 3 лет. - Умение выявлять, анализировать и формализовать требования бизнеса. - ",
-2025,Аналитик данных (Data Analyst),Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Qugo,Навыки работы с BI-инструментами и системами визуализации <highlighttext>данных</highlighttext>. Способность формулировать гипотезы и проверять их на основе <highlighttext>данных</highlighttext>.,
-2025,Бизнес Аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,АФЛТ-Системс,Опыт работы на аналогичной должности от 2-х лет. Знание жизненного цикла разработки программного обеспечения и роли бизнес-требований на...,
-2025,Бизнес-аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,PIX Robotics,"...Mining/Task Mining. Понимание метрик продукта (Retention, LTV, Conversion и др.). Навыки работы с SQL, Python/R (для анализа <highlighttext>данных</highlighttext>).",
-2025,Системный аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,CHOICEIT,"Опыт работы системным <highlighttext>аналитиком</highlighttext> от 2 лет. Знание и праĸтическое использование нотаций: UML (диаграммы классов, последовательности, состояний и пр.), ER...",
-2025,Гуру таблиц (Excel/Google Sheets) для работы с аналитикой и отчетностью,Unknown,Full-time,800 - None USD,USD,800,Москва,,Russia,S,hh_api,Star Leads,"Имеете опыт анализа больших массивов <highlighttext>данных</highlighttext> (финансовые, маркетинговые, операционные метрики). Обладаете внимательностью к деталям: ловите несоответствия, умеете чистить данные. ",
-2025,Спортивный Аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,STC,"Знание терминологии букмекерской сферы: коэффициент, исход, рынок и т.д. Понимание букмекерских механик: движение линии, взаимосвязь рынков, реакция линии на...",
-2025,Младший системный аналитик,Junior,Full-time,80000 - 105000 RUR,RUR,888,Москва,,Russia,S,hh_api,АБР Тех,"Опыт работы в роли <highlighttext>аналитика</highlighttext> от 1 года. Высшее техническое образование/Неоконченное высшее образование. Желателен опыт разработки функциональных требований, технических...",
-2025,Системный аналитик,Unknown,Full-time,200000 - None RUR,RUR,2222,Москва,,Russia,S,hh_api,Ред Софт,"Что ждём от опыта: - опыт работы <highlighttext>аналитиком</highlighttext> от двух лет. - знание основ проектирования систем. - знание нотаций UML, ER, C4...",
-2025,Системный аналитик/Бизнес-аналитик,Junior,Full-time,150000 - None RUR,RUR,1666,Москва,,Russia,S,hh_api,АПТЕКА ВАША № 1,"Понимание принципов работы баз <highlighttext>данных</highlighttext>, API, web-сервисов. - Базовые знания SQL. - Опыт работы с инструментами для <highlighttext>аналитики</highlighttext> (например, Jira, Confluence...",
-2025,Бизнес-аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Инновационный центр КАМАЗ,"Опыт работы бизнес-<highlighttext>аналитиком</highlighttext> в IT (от 2 лет).  Глубокое понимание API (REST, SOAP), умение читать и составлять спецификации.  ",
-2025,Аналитик данных,Unknown,Full-time,100000 - 150000 RUR,RUR,1111,Москва,,Russia,S,hh_api,Secunda,"Хорошие познания SQL - самостоятельно писать, читать и разбираться в запросах. Excel на уровне знания формул и построения сводных таблиц. ",
-2025,BI-аналитик,Unknown,Full-time,150000 - 170000 RUR,RUR,1666,Москва,,Russia,S,hh_api,ГБУ Московское долголетие,"Уверенные знания SQL (JOIN, CTE, оконные функции, агрегаты, подзапросы). Знание библиотек Python для <highlighttext>аналитики</highlighttext> (опыт работы с pandas, numpy и...",
-2025,Аналитик баз данных,Unknown,Full-time,240000 - None RUR,RUR,2666,Москва,,Russia,S,hh_api,АБП,"Понимание архитектуры хранилищ <highlighttext>данных</highlighttext>, моделей <highlighttext>данных</highlighttext>. Опыт работы с корпоративными хранилищами <highlighttext>данных</highlighttext> DWH. Опыт работы с СУБД: Greenplum, MS SQL...",
-2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,L,hh_api,FIX PRICE,"Опыт разработки детальных функциональных и технических спецификаций, прототипов пользовательского интерфейса. Знания основ реляционных баз <highlighttext>данных</highlighttext>. Знание методик и инструментов описания...",
-2025,Ведущий экономист-аналитик,Senior,Full-time,280000 - 280000 RUR,RUR,3111,Москва,,Russia,S,hh_api,ГК Дамате,"Высшее образование: Финансовое, Экономическое (CIMA, Dipifr будет преимуществом). Высокий уровень навыка работы с Excel. Знание и навык работы с Power...",
-2025,Аналитик данных,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Авиакомпания НордСтар,"Высшее образование в области экономики, финансов или математики. Умение работать с большими объемами <highlighttext>данных</highlighttext> и проводить их анализ. ",
-2025,Бизнес-аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,АльфаСтрахование Жизнь,"Высшее техническое образование, опыт работы на аналогичной позиции от года. Понимание принципов работы информационных систем, принципов и методов анализа бизнес...",
-2025,Аналитик данных,Unknown,Full-time,180000 - None RUR,RUR,2000,Москва,,Russia,S,hh_api,Intouch Group,"Знание 1С и Битрикс 24. Опыт работы <highlighttext>аналитиком</highlighttext> от 2-х лет. Проактивный подход, самостоятельность в работе. ",
-2025,Бизнес-аналитик,Junior,Full-time,240000 - 268000 RUR,RUR,2666,Москва,,Russia,S,hh_api,Selecty,"Базовые знания SQL. Уверенное владение Excel: сводные таблицы, <highlighttext>аналитика</highlighttext>. Опыт работы в Agile и/или Waterfall. Грамотная коммуникация, умение находить...",
-2025,Бизнес-аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Северсталь,Знаете основные инструменты анализа <highlighttext>данных</highlighttext> и бизнес-моделирования. Имеете опыт работы с базами <highlighttext>данных</highlighttext> и SQL. Имеете работать с BI...,
-2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Помощь интернет магазинам,"Опыт работы работы в качестве <highlighttext>аналитика</highlighttext> не менее 2-х лет в продуктовой разработке. Представление о форматах <highlighttext>данных</highlighttext>, применяемых в...",
-2025,Аналитик данных в направление Поиска,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Звук,"Технологии, с которыми будешь работать: SQL. Опыт работы дата-<highlighttext>аналитиком</highlighttext> от 2х лет в крупных ИТ-компаниях, телекоме или...",
-2025,Ведущий системный аналитик (middle+/senior),Mid,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Right Line,"Знание и опыт проектирования межсистемных интеграций (REST, SOAP, gRPC, очереди). - Знания и опыт применения нотаций BPMN и UML, описание алгоритмов...",
-2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Школа 21,"Знания и опыт проектирования микросервисов. Работа с реляционными базами <highlighttext>данных</highlighttext> NoSQL-СУБД (MongoDB, Redis). Знания в области безопасности web-приложений...",
-2025,Аналитик данных (Вьетнам),Unknown,Full-time,2500 - None USD,USD,2500,Москва,,Russia,S,hh_api,Finstar Financial Group,"Имеешь опыт работы <highlighttext>аналитиком</highlighttext> от 2ух лет. Хочешь развиваться в направлении <highlighttext>аналитики</highlighttext> бизнеса, а также активно развивать свои технические...",
-2025,Аналитик продаж,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Байерсдорф,"Знание языков программирования приветствуется. Умение работать с большими массивами <highlighttext>данных</highlighttext>, строить понятные и прозрачные отчеты, графики, визуализировать данные. ",
-2025,Data-аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,LOYMAX AI,Опыт работы в <highlighttext>аналитике</highlighttext> <highlighttext>данных</highlighttext> от 1 года. Уверенное владение SQL и навыки извлечения <highlighttext>данных</highlighttext> из различных источников. ,
-2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Гриндата,"Знание SQL. Знание нотации BPMN. Понимание основ баз <highlighttext>данных</highlighttext> и проектирования/ разработки ПО. Опыт бизнес-анализа, разработки и описания бизнес...",
-2025,Системный аналитик,Unknown,Full-time,350000 - None RUR,RUR,3888,Москва,,Russia,S,hh_api,Demis Group,"...лет, навыки работы с информационно-аналитическими системами и большими базами <highlighttext>данных</highlighttext>. Опыт анализа проекта и написания постановок на разработку с...",
-2025,System Analyst (MyKaspersky),Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Лаборатория Касперского,Что вам необходимо для этого: Опыт работы системным <highlighttext>аналитиком</highlighttext> от 2 лет. Высшее образование в области информационных технологий. ,
-2025,Data analyst / Аналитик данных,Unknown,Full-time,3000 - None USD,USD,3000,Москва,,Russia,S,hh_api,ГЛОБУС,"Выпускник с математическим/техническим образованием. Хочешь развиваться в направлении <highlighttext>аналитики</highlighttext> бизнеса, а также активно развивать свои технические скиллы. ",
-2025,Аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Гриндата,понимание основ баз <highlighttext>данных</highlighttext> и проектирования/разработки ПО. — базовые знания API (для анализа <highlighttext>данных</highlighttext>). — умение взаимодействовать с внешними партнёрами и...,
-2025,Аналитик данных (работа с ИИ),Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Галс-Девелопмент,Желательно: - опыт работы с Whisper для обработки audio <highlighttext>данных</highlighttext>. - опыт работы с Jupyter Notebooks для интерактивного анализа <highlighttext>данных</highlighttext>. - ,
-2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,LIFE PAY,...описания технических требований по интеграции с внешними системами (по протоколам HTTP и/или SOAP). Опыт работы с реляционными базами <highlighttext>данных</highlighttext>.,
-2025,Бизнес-аналитик Middle,Mid,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,ITECH,"...Битрикс24 (опционально), прочие сертификаты вендора. Опыт описания и проектирования логики информационного обмена между компонентами разных систем и источниками <highlighttext>данных</highlighttext>.",
-2025,Forensic Analyst,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,ХайдельбергЦемент Рус,"Опыт работы с базами <highlighttext>данных</highlighttext> СПАРК, Контур, опыт поиска информации и знание открытых источников информации для проверки контрагентов. ",
-2025,Аналитик данных,Junior,Full-time,40000 - 80000 RUR,RUR,444,Москва,,Russia,S,hh_api,КСК-Эйч Ар,"Уверенный уровень SQL. - Знания Python для <highlighttext>аналитики</highlighttext> <highlighttext>данных</highlighttext> (pandas, numPy, sklearn). - Базовые знания матстата и комбинаторики. - Уверенный уровень Excel (включая...",
-2025,Бизнес-аналитик (Business Analyst),Unknown,Full-time,240000 - None RUR,RUR,2666,Москва,,Russia,S,hh_api,Интегро,"Разговорный английский. Знание SQL / MS SQL. Опыт QA в прошлом/настоящем (функциональное и регресс тестирование, работа с данными). ",
-2025,"Data Scientist, Картиночный поиск",Unknown,Full-time,Не указано,указано,0,Москва,,Russia,L,hh_api,Ozon,Умение анализировать результаты экспериментов и делать выводы на основе <highlighttext>данных</highlighttext>. Ответственность и внимание к деталям. Будет плюсом: Опыт разработки продуктов...,
-2025,Аналитик,Mid,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Corporate Performance Systems,SOAP. ETL (пакетная обработка <highlighttext>данных</highlighttext>). Messaging (брокеры сообщений). Практический опыт работы с современными нотациями графического моделирования: BPMN. UML. ,
-2025,Младший дата аналитик/ Junior data аnalyst,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Медиапоинт,"Уверенное владение Python (библиотеки для анализа <highlighttext>данных</highlighttext> и моделирования), yмение писать эффективный и читаемый код для извлечения и трансформации <highlighttext>данных</highlighttext>. ",
-2025,Аналитик данных,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Солар,"Знание разных видов регулярной отчётности, ad-hoc <highlighttext>аналитика</highlighttext>, поиск инсайтов по результатам. Опыт в настройке аналитических систем для веб-<highlighttext>аналитики</highlighttext>...",
-2025,Middle Business Analyst,Mid,Full-time,180000 - None RUR,RUR,2000,Москва,,Russia,S,hh_api,DarwinSoft (ООО Дарвин),Опыт работы на позиции бизнес или системного <highlighttext>аналитика</highlighttext> от 2 лет. Умение работать с комплексными сервисами: от проектирования до внедрения...,
-2025,Junior product analyst,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,"РЕСО-Гарантия, САО",Способного работать с большими массивами новой информации. - Внимательного к деталям и изучению <highlighttext>данных</highlighttext>. - Ориентированного на результат. Что будет плюсом. - ,
-2025,Аналитик,Unknown,Full-time,150000 - None RUR,RUR,1666,Москва,,Russia,S,hh_api,ГБУЗ ГКБ №24 ДЗМ,Отлично умеет работать с разными CРМ системами и быстро их осваивать. С высокими аналитическими способностями и навыками работы в Eхеl...,
-2025,Бизнес-аналитик AI / n8n / NoCode,Unknown,Full-time,70000 - 120000 RUR,RUR,777,Москва,,Russia,S,hh_api,МБС,"Понимание принципов работы баз <highlighttext>данных</highlighttext>. Умение проводить интервью с заказчиками и выявлять потребности. Лидерские качества, самостоятельность в принятии решений и...",
-2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,АГ-Логистик,"...REST, брокеров сообщений, шины <highlighttext>данных</highlighttext> (опционально). Опыт проектирования баз <highlighttext>данных</highlighttext>: составление логической и физической модели <highlighttext>данных</highlighttext>. Опыт проектирования архитектурных решений. ",
-2025,Аналитик данных BI (Tableau),Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Спортмастер,"Опыт работы с различными источниками <highlighttext>данных</highlighttext> и data blending в Tableau: объединение <highlighttext>данных</highlighttext> с разной детализацией, настройка связей между источниками...",
-2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,DZ Systems,"Опыт REST API, PBR. Опыт с реляционными БД. Знание основ реляционных баз <highlighttext>данных</highlighttext> и SQL-запросов. Опыт работы с Jira...",
-2025,Системный/бизнес аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,МСП Банк,"Грамотная устная и письменная речь, умение доступно выражать мысли. Опыт работы <highlighttext>аналитиком</highlighttext> от 2 лет на проектах FinTech, предпочтительно с...",
-2025,Бизнес-аналитик (начальный уровень),Junior,Full-time,Не указано,указано,0,Москва,,Russia,L,hh_api,FIX PRICE,Опыт работы бизнес-<highlighttext>аналитиком</highlighttext>/бизнес-технологом от 1 года в канале e-commerce. Понимание жизненного цикла проекта в IT. ,
-2025,Координатор - аналитик,Unknown,Full-time,85000 - None RUR,RUR,944,Москва,,Russia,S,hh_api,АТМС,"...представление <highlighttext>данных</highlighttext> (ВПР, сводные таблицы, Power Pivot). Аналитический склад ума, умение работать с большим объемом информации и большим массивом <highlighttext>данных</highlighttext>. ",
-2025,Fullstack аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Цифролаб,"Опыт работы системным <highlighttext>аналитиком</highlighttext> не менее 2-х лет. Знание современных типов архитектур программного обеспечения, систем управления базами <highlighttext>данных</highlighttext>, инструментов...",
-2025,Бизнес/системный аналитик (команда MarTech),Mid,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Туту,От вас нужно. — Опыт работы бизнес/системным <highlighttext>аналитиком</highlighttext> от 3 лет. — Практика разработки технического задания на программное обеспечение. — ,
+work_year,job_title,experience_level,employment_type,salary,salary_currency,salary_in_usd,employee_residence,remote_ratio,company_location,company_size,source,employer,requirement,skills
+2020,Data Scientist,Mid,Full-time,79833 - 79833 USD,USD,79833,Germany,0,,L,kaggle,,remote_ratio=0,[]
+2020,Machine Learning Scientist,Senior,Full-time,260000 - 260000 USD,USD,260000,Japan,0,,S,kaggle,,remote_ratio=0,[]
+2020,Big Data Engineer,Senior,Full-time,109024 - 109024 USD,USD,109024,United Kingdom,50,,M,kaggle,,remote_ratio=50,[]
+2020,Product Data Analyst,Mid,Full-time,20000 - 20000 USD,USD,20000,Honduras,0,,S,kaggle,,remote_ratio=0,[]
+2020,Machine Learning Engineer,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Analyst,Junior,Full-time,72000 - 72000 USD,USD,72000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Lead Data Scientist,Senior,Full-time,190000 - 190000 USD,USD,190000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Mid,Full-time,35735 - 35735 USD,USD,35735,HU,50,,L,kaggle,,remote_ratio=50,[]
+2020,Business Data Analyst,Mid,Full-time,135000 - 135000 USD,USD,135000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Lead Data Engineer,Senior,Full-time,125000 - 125000 USD,USD,125000,NZ,50,,S,kaggle,,remote_ratio=50,[]
+2020,Data Scientist,Junior,Full-time,51321 - 51321 USD,USD,51321,France,0,,S,kaggle,,remote_ratio=0,[]
+2020,Data Scientist,Mid,Full-time,40481 - 40481 USD,USD,40481,India,0,,L,kaggle,,remote_ratio=0,[]
+2020,Data Scientist,Junior,Full-time,39916 - 39916 USD,USD,39916,France,0,,M,kaggle,,remote_ratio=0,[]
+2020,Lead Data Analyst,Mid,Full-time,87000 - 87000 USD,USD,87000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Data Analyst,Mid,Full-time,85000 - 85000 USD,USD,85000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Data Analyst,Mid,Full-time,8000 - 8000 USD,USD,8000,PK,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Engineer,Junior,Full-time,41689 - 41689 USD,USD,41689,Japan,100,,S,kaggle,,remote_ratio=100,[]
+2020,Big Data Engineer,Senior,Full-time,114047 - 114047 USD,USD,114047,Poland,100,,S,kaggle,,remote_ratio=100,[]
+2020,Data Science Consultant,Junior,Full-time,5707 - 5707 USD,USD,5707,India,50,,M,kaggle,,remote_ratio=50,[]
+2020,Lead Data Engineer,Mid,Full-time,56000 - 56000 USD,USD,56000,Portugal,100,,M,kaggle,,remote_ratio=100,[]
+2020,Machine Learning Engineer,Mid,Full-time,43331 - 43331 USD,USD,43331,China,0,,M,kaggle,,remote_ratio=0,[]
+2020,Product Data Analyst,Mid,Full-time,6072 - 6072 USD,USD,6072,India,100,,L,kaggle,,remote_ratio=100,[]
+2020,Data Engineer,Senior,Full-time,47899 - 47899 USD,USD,47899,GR,50,,L,kaggle,,remote_ratio=50,[]
+2020,BI Data Analyst,Mid,Full-time,98000 - 98000 USD,USD,98000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2020,Lead Data Scientist,Mid,Full-time,115000 - 115000 USD,USD,115000,AE,0,,L,kaggle,,remote_ratio=0,[]
+2020,Director of Data Science,Executive,Full-time,325000 - 325000 USD,USD,325000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Research Scientist,Junior,Full-time,42000 - 42000 USD,USD,42000,Netherlands,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Engineer,Senior,Full-time,33511 - 33511 USD,USD,33511,Mexico,0,,S,kaggle,,remote_ratio=0,[]
+2020,Business Data Analyst,Junior,Contract,100000 - 100000 USD,USD,100000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Machine Learning Manager,Senior,Full-time,117104 - 117104 USD,USD,117104,Canada,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Engineering Manager,Mid,Full-time,59303 - 59303 USD,USD,59303,Germany,100,,S,kaggle,,remote_ratio=100,[]
+2020,Big Data Engineer,Junior,Full-time,70000 - 70000 USD,USD,70000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Senior,Full-time,68428 - 68428 USD,USD,68428,GR,100,,L,kaggle,,remote_ratio=100,[]
+2020,Research Scientist,Mid,Full-time,450000 - 450000 USD,USD,450000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2020,Data Analyst,Mid,Full-time,46759 - 46759 USD,USD,46759,France,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Engineer,Mid,Full-time,74130 - 74130 USD,USD,74130,Austria,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Science Consultant,Mid,Full-time,103000 - 103000 USD,USD,103000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Machine Learning Engineer,Junior,Full-time,250000 - 250000 USD,USD,250000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Analyst,Junior,Full-time,10000 - 10000 USD,USD,10000,NG,100,,S,kaggle,,remote_ratio=100,[]
+2020,Machine Learning Engineer,Junior,Full-time,138000 - 138000 USD,USD,138000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Mid,Full-time,45760 - 45760 USD,USD,45760,PH,100,,S,kaggle,,remote_ratio=100,[]
+2020,Data Engineering Manager,Executive,Full-time,79833 - 79833 USD,USD,79833,Spain,50,,L,kaggle,,remote_ratio=50,[]
+2020,Machine Learning Infrastructure Engineer,Mid,Full-time,50180 - 50180 USD,USD,50180,Portugal,0,,M,kaggle,,remote_ratio=0,[]
+2020,Data Engineer,Mid,Full-time,106000 - 106000 USD,USD,106000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Data Engineer,Mid,Full-time,112872 - 112872 USD,USD,112872,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2020,ML Engineer,Junior,Part-time,15966 - 15966 USD,USD,15966,Germany,100,,S,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Mid,Full-time,76958 - 76958 USD,USD,76958,United Kingdom,100,,S,kaggle,,remote_ratio=100,[]
+2020,Data Engineer,Senior,Full-time,188000 - 188000 USD,USD,188000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Mid,Full-time,105000 - 105000 USD,USD,105000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Data Engineer,Mid,Full-time,70139 - 70139 USD,USD,70139,France,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Analyst,Junior,Full-time,6072 - 6072 USD,USD,6072,India,0,,S,kaggle,,remote_ratio=0,[]
+2020,Data Analyst,Junior,Full-time,91000 - 91000 USD,USD,91000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,AI Scientist,Junior,Full-time,45896 - 45896 USD,USD,45896,DK,50,,S,kaggle,,remote_ratio=50,[]
+2020,Data Engineer,Junior,Full-time,54742 - 54742 USD,USD,54742,PK,100,,L,kaggle,,remote_ratio=100,[]
+2020,Computer Vision Engineer,Senior,Freelance,60000 - 60000 USD,USD,60000,Russia,100,,S,kaggle,,remote_ratio=100,[]
+2020,Principal Data Scientist,Senior,Full-time,148261 - 148261 USD,USD,148261,Germany,100,,M,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Mid,Full-time,38776 - 38776 USD,USD,38776,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Mid,Full-time,118000 - 118000 USD,USD,118000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Senior,Full-time,120000 - 120000 USD,USD,120000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2020,Data Scientist,Mid,Full-time,138350 - 138350 USD,USD,138350,United States,100,,M,kaggle,,remote_ratio=100,[]
+2020,Data Engineer,Mid,Full-time,110000 - 110000 USD,USD,110000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Data Engineer,Mid,Full-time,130800 - 130800 USD,USD,130800,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Junior,Part-time,21669 - 21669 USD,USD,21669,Italy,50,,S,kaggle,,remote_ratio=50,[]
+2020,Data Scientist,Senior,Full-time,412000 - 412000 USD,USD,412000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2020,Machine Learning Engineer,Senior,Full-time,45618 - 45618 USD,USD,45618,HR,100,,S,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Junior,Full-time,62726 - 62726 USD,USD,62726,Germany,50,,S,kaggle,,remote_ratio=50,[]
+2020,Data Scientist,Junior,Full-time,49268 - 49268 USD,USD,49268,Germany,0,,S,kaggle,,remote_ratio=0,[]
+2020,Data Science Manager,Senior,Full-time,190200 - 190200 USD,USD,190200,United States,100,,M,kaggle,,remote_ratio=100,[]
+2020,Data Scientist,Senior,Full-time,91237 - 91237 USD,USD,91237,Austria,0,,S,kaggle,,remote_ratio=0,[]
+2020,Data Scientist,Mid,Full-time,62726 - 62726 USD,USD,62726,France,50,,S,kaggle,,remote_ratio=50,[]
+2020,Data Scientist,Mid,Full-time,42197 - 42197 USD,USD,42197,France,50,,S,kaggle,,remote_ratio=50,[]
+2021,Research Scientist,Junior,Full-time,82528 - 82528 USD,USD,82528,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2021,BI Data Analyst,Executive,Full-time,150000 - 150000 USD,USD,150000,India,100,,L,kaggle,,remote_ratio=100,[]
+2021,Head of Data,Executive,Full-time,235000 - 235000 USD,USD,235000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Senior,Full-time,53192 - 53192 USD,USD,53192,France,50,,L,kaggle,,remote_ratio=50,[]
+2021,BI Data Analyst,Mid,Full-time,100000 - 100000 USD,USD,100000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,3D Computer Vision Researcher,Mid,Part-time,5409 - 5409 USD,USD,5409,India,50,,M,kaggle,,remote_ratio=50,[]
+2021,ML Engineer,Mid,Contract,270000 - 270000 USD,USD,270000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Junior,Full-time,80000 - 80000 USD,USD,80000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Analytics Engineer,Senior,Full-time,79197 - 79197 USD,USD,79197,Germany,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,140000 - 140000 USD,USD,140000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Applied Data Scientist,Mid,Full-time,54238 - 54238 USD,USD,54238,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2021,Machine Learning Engineer,Mid,Full-time,47282 - 47282 USD,USD,47282,Spain,100,,S,kaggle,,remote_ratio=100,[]
+2021,Director of Data Science,Executive,Full-time,153667 - 153667 USD,USD,153667,Italy,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,28476 - 28476 USD,USD,28476,Poland,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Junior,Full-time,59102 - 59102 USD,USD,59102,France,50,,M,kaggle,,remote_ratio=50,[]
+2021,Data Analytics Engineer,Mid,Full-time,110000 - 110000 USD,USD,110000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Lead Data Analyst,Senior,Full-time,170000 - 170000 USD,USD,170000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Senior,Full-time,80000 - 80000 USD,USD,80000,BG,100,,S,kaggle,,remote_ratio=100,[]
+2021,Marketing Data Analyst,Senior,Full-time,88654 - 88654 USD,USD,88654,GR,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Science Consultant,Junior,Full-time,76833 - 76833 USD,USD,76833,Germany,100,,S,kaggle,,remote_ratio=100,[]
+2021,Lead Data Analyst,Mid,Full-time,19609 - 19609 USD,USD,19609,India,100,,L,kaggle,,remote_ratio=100,[]
+2021,Lead Data Engineer,Senior,Full-time,276000 - 276000 USD,USD,276000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Junior,Full-time,29751 - 29751 USD,USD,29751,India,50,,L,kaggle,,remote_ratio=50,[]
+2021,Cloud Data Engineer,Mid,Full-time,89294 - 89294 USD,USD,89294,SG,50,,L,kaggle,,remote_ratio=50,[]
+2021,AI Scientist,Junior,Part-time,12000 - 12000 USD,USD,12000,Brazil,100,,S,kaggle,,remote_ratio=100,[]
+2021,Financial Data Analyst,Mid,Full-time,450000 - 450000 USD,USD,450000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Computer Vision Software Engineer,Junior,Full-time,70000 - 70000 USD,USD,70000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Computer Vision Software Engineer,Mid,Full-time,95746 - 95746 USD,USD,95746,Germany,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Mid,Full-time,75000 - 75000 USD,USD,75000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Engineer,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,BI Data Analyst,Mid,Full-time,36259 - 36259 USD,USD,36259,HU,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Analyst,Mid,Full-time,62000 - 62000 USD,USD,62000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Mid,Full-time,73000 - 73000 USD,USD,73000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Analyst,Mid,Full-time,51519 - 51519 USD,USD,51519,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2021,Research Scientist,Mid,Full-time,187442 - 187442 USD,USD,187442,Canada,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Senior,Full-time,115000 - 115000 USD,USD,115000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Junior,Full-time,30428 - 30428 USD,USD,30428,India,100,,L,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Senior,Full-time,94564 - 94564 USD,USD,94564,Germany,50,,L,kaggle,,remote_ratio=50,[]
+2021,Director of Data Engineering,Senior,Full-time,113476 - 113476 USD,USD,113476,United Kingdom,100,,M,kaggle,,remote_ratio=100,[]
+2021,Lead Data Engineer,Senior,Full-time,103160 - 103160 USD,USD,103160,United Kingdom,100,,S,kaggle,,remote_ratio=100,[]
+2021,AI Scientist,Junior,Part-time,12000 - 12000 USD,USD,12000,PK,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,45391 - 45391 USD,USD,45391,Netherlands,100,,L,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Scientist,Junior,Full-time,225000 - 225000 USD,USD,225000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,50000 - 50000 USD,USD,50000,NG,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Science Engineer,Mid,Full-time,40189 - 40189 USD,USD,40189,GR,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Junior,Full-time,90000 - 90000 USD,USD,90000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,200000 - 200000 USD,USD,200000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Big Data Engineer,Mid,Full-time,60000 - 60000 USD,USD,60000,Spain,50,,M,kaggle,,remote_ratio=50,[]
+2021,Principal Data Engineer,Senior,Full-time,200000 - 200000 USD,USD,200000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Junior,Full-time,50000 - 50000 USD,USD,50000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Applied Data Scientist,Junior,Full-time,110037 - 110037 USD,USD,110037,United Kingdom,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Analyst,Junior,Part-time,10354 - 10354 USD,USD,10354,Spain,50,,M,kaggle,,remote_ratio=50,[]
+2021,Principal Data Scientist,Mid,Full-time,151000 - 151000 USD,USD,151000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Scientist,Senior,Full-time,120000 - 120000 USD,USD,120000,United States,50,,S,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Mid,Full-time,9466 - 9466 USD,USD,9466,India,0,,S,kaggle,,remote_ratio=0,[]
+2021,Machine Learning Engineer,Junior,Full-time,20000 - 20000 USD,USD,20000,India,100,,S,kaggle,,remote_ratio=100,[]
+2021,Lead Data Scientist,Senior,Full-time,40570 - 40570 USD,USD,40570,India,50,,L,kaggle,,remote_ratio=50,[]
+2021,Machine Learning Developer,Junior,Full-time,100000 - 100000 USD,USD,100000,IQ,50,,S,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Junior,Full-time,49646 - 49646 USD,USD,49646,France,50,,M,kaggle,,remote_ratio=50,[]
+2021,Applied Machine Learning Scientist,Mid,Full-time,38400 - 38400 USD,USD,38400,VN,100,,M,kaggle,,remote_ratio=100,[]
+2021,Computer Vision Engineer,Senior,Full-time,24000 - 24000 USD,USD,24000,Brazil,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Junior,Full-time,100000 - 100000 USD,USD,100000,United States,0,,S,kaggle,,remote_ratio=0,[]
+2021,ML Engineer,Mid,Full-time,63711 - 63711 USD,USD,63711,Japan,50,,S,kaggle,,remote_ratio=50,[]
+2021,ML Engineer,Mid,Full-time,77364 - 77364 USD,USD,77364,Japan,50,,S,kaggle,,remote_ratio=50,[]
+2021,Principal Data Scientist,Senior,Full-time,220000 - 220000 USD,USD,220000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Junior,Full-time,80000 - 80000 USD,USD,80000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Mid,Full-time,135000 - 135000 USD,USD,135000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Science Manager,Senior,Full-time,240000 - 240000 USD,USD,240000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Engineering Manager,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Mid,Full-time,82500 - 82500 USD,USD,82500,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,100000 - 100000 USD,USD,100000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Senior,Full-time,82744 - 82744 USD,USD,82744,Belgium,50,,M,kaggle,,remote_ratio=50,[]
+2021,Research Scientist,Mid,Full-time,62649 - 62649 USD,USD,62649,France,50,,M,kaggle,,remote_ratio=50,[]
+2021,Data Engineer,Mid,Full-time,90000 - 90000 USD,USD,90000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineering Manager,Senior,Full-time,153000 - 153000 USD,USD,153000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Cloud Data Engineer,Senior,Full-time,160000 - 160000 USD,USD,160000,Brazil,100,,S,kaggle,,remote_ratio=100,[]
+2021,Director of Data Science,Senior,Full-time,168000 - 168000 USD,USD,168000,Japan,0,,S,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Mid,Full-time,150000 - 150000 USD,USD,150000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,75774 - 75774 USD,USD,75774,Canada,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Junior,Full-time,13400 - 13400 USD,USD,13400,Ukraine,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Science Manager,Senior,Full-time,144000 - 144000 USD,USD,144000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Science Engineer,Senior,Full-time,127221 - 127221 USD,USD,127221,Canada,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Mid,Full-time,119059 - 119059 USD,USD,119059,SG,100,,M,kaggle,,remote_ratio=100,[]
+2021,Applied Machine Learning Scientist,Mid,Full-time,423000 - 423000 USD,USD,423000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Analytics Manager,Senior,Full-time,120000 - 120000 USD,USD,120000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Junior,Full-time,125000 - 125000 USD,USD,125000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Head of Data,Executive,Full-time,230000 - 230000 USD,USD,230000,Russia,50,,L,kaggle,,remote_ratio=50,[]
+2021,Head of Data Science,Executive,Full-time,85000 - 85000 USD,USD,85000,Russia,0,,M,kaggle,,remote_ratio=0,[]
+2021,Data Engineer,Mid,Full-time,28369 - 28369 USD,USD,28369,MT,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Science Consultant,Junior,Full-time,63831 - 63831 USD,USD,63831,Germany,50,,L,kaggle,,remote_ratio=50,[]
+2021,Director of Data Science,Executive,Full-time,130026 - 130026 USD,USD,130026,Germany,50,,M,kaggle,,remote_ratio=50,[]
+2021,Data Specialist,Senior,Full-time,165000 - 165000 USD,USD,165000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Junior,Full-time,80000 - 80000 USD,USD,80000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Director of Data Science,Executive,Full-time,250000 - 250000 USD,USD,250000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,BI Data Analyst,Junior,Full-time,55000 - 55000 USD,USD,55000,United States,50,,S,kaggle,,remote_ratio=50,[]
+2021,Data Architect,Mid,Full-time,150000 - 150000 USD,USD,150000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Architect,Mid,Full-time,170000 - 170000 USD,USD,170000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,82528 - 82528 USD,USD,82528,United Kingdom,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Junior,Full-time,60000 - 60000 USD,USD,60000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Principal Data Scientist,Senior,Full-time,235000 - 235000 USD,USD,235000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Research Scientist,Senior,Full-time,60757 - 60757 USD,USD,60757,Portugal,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Engineering Manager,Senior,Full-time,174000 - 174000 USD,USD,174000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,2859 - 2859 USD,USD,2859,Mexico,0,,S,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Mid,Full-time,40038 - 40038 USD,USD,40038,CL,100,,L,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Junior,Full-time,81000 - 81000 USD,USD,81000,United States,50,,S,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Mid,Full-time,5679 - 5679 USD,USD,5679,India,100,,S,kaggle,,remote_ratio=100,[]
+2021,Big Data Engineer,Mid,Full-time,22611 - 22611 USD,USD,22611,India,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Mid,Full-time,90734 - 90734 USD,USD,90734,Germany,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Engineer,Mid,Full-time,26005 - 26005 USD,USD,26005,RO,0,,L,kaggle,,remote_ratio=0,[]
+2021,Finance Data Analyst,Senior,Full-time,61896 - 61896 USD,USD,61896,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2021,Machine Learning Scientist,Mid,Freelance,12000 - 12000 USD,USD,12000,PK,50,,M,kaggle,,remote_ratio=50,[]
+2021,Data Engineer,Mid,Full-time,4000 - 4000 USD,USD,4000,IR,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Analytics Engineer,Senior,Full-time,50000 - 50000 USD,USD,50000,VN,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Science Consultant,Executive,Full-time,69741 - 69741 USD,USD,69741,France,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Senior,Full-time,76833 - 76833 USD,USD,76833,RO,50,,S,kaggle,,remote_ratio=50,[]
+2021,Machine Learning Engineer,Mid,Full-time,74000 - 74000 USD,USD,74000,Japan,50,,S,kaggle,,remote_ratio=50,[]
+2021,Data Science Manager,Senior,Full-time,152000 - 152000 USD,USD,152000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Junior,Full-time,21844 - 21844 USD,USD,21844,CO,50,,M,kaggle,,remote_ratio=50,[]
+2021,Big Data Engineer,Mid,Full-time,18000 - 18000 USD,USD,18000,MD,0,,S,kaggle,,remote_ratio=0,[]
+2021,Data Science Manager,Senior,Full-time,174000 - 174000 USD,USD,174000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Research Scientist,Senior,Full-time,96113 - 96113 USD,USD,96113,Canada,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Mid,Full-time,147000 - 147000 USD,USD,147000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2021,BI Data Analyst,Junior,Full-time,9272 - 9272 USD,USD,9272,KE,100,,S,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Senior,Full-time,24342 - 24342 USD,USD,24342,India,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Science Manager,Senior,Full-time,54094 - 54094 USD,USD,54094,India,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Science Consultant,Junior,Full-time,90000 - 90000 USD,USD,90000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,61467 - 61467 USD,USD,61467,Germany,50,,M,kaggle,,remote_ratio=50,[]
+2021,Machine Learning Infrastructure Engineer,Senior,Full-time,195000 - 195000 USD,USD,195000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,37825 - 37825 USD,USD,37825,Spain,100,,L,kaggle,,remote_ratio=100,[]
+2021,Research Scientist,Senior,Full-time,50000 - 50000 USD,USD,50000,France,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,160000 - 160000 USD,USD,160000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,12901 - 12901 USD,USD,12901,Brazil,0,,S,kaggle,,remote_ratio=0,[]
+2021,Machine Learning Engineer,Senior,Full-time,200000 - 200000 USD,USD,200000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Senior,Full-time,165000 - 165000 USD,USD,165000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2021,Data Engineer,Mid,Freelance,20000 - 20000 USD,USD,20000,Italy,0,,L,kaggle,,remote_ratio=0,[]
+2021,Machine Learning Engineer,Mid,Full-time,24823 - 24823 USD,USD,24823,SI,50,,L,kaggle,,remote_ratio=50,[]
+2021,Research Scientist,Mid,Full-time,56738 - 56738 USD,USD,56738,France,50,,S,kaggle,,remote_ratio=50,[]
+2021,Data Engineer,Mid,Full-time,66022 - 66022 USD,USD,66022,HK,50,,S,kaggle,,remote_ratio=50,[]
+2021,Big Data Engineer,Junior,Full-time,5882 - 5882 USD,USD,5882,India,0,,L,kaggle,,remote_ratio=0,[]
+2021,Machine Learning Engineer,Junior,Full-time,24823 - 24823 USD,USD,24823,Germany,50,,M,kaggle,,remote_ratio=50,[]
+2021,Principal Data Engineer,Senior,Full-time,185000 - 185000 USD,USD,185000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Computer Vision Engineer,Junior,Part-time,28609 - 28609 USD,USD,28609,DK,50,,S,kaggle,,remote_ratio=50,[]
+2021,Machine Learning Engineer,Mid,Full-time,88654 - 88654 USD,USD,88654,Belgium,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Analytics Manager,Senior,Full-time,140000 - 140000 USD,USD,140000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Mid,Full-time,46597 - 46597 USD,USD,46597,Poland,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,116914 - 116914 USD,USD,116914,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Mid,Full-time,33808 - 33808 USD,USD,33808,India,0,,M,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Mid,Full-time,56256 - 56256 USD,USD,56256,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2021,Principal Data Scientist,Executive,Contract,416000 - 416000 USD,USD,416000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Senior,Full-time,87738 - 87738 USD,USD,87738,Canada,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,88654 - 88654 USD,USD,88654,Germany,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Senior,Full-time,135000 - 135000 USD,USD,135000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Analyst,Senior,Full-time,71786 - 71786 USD,USD,71786,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2021,Big Data Engineer,Junior,Full-time,16228 - 16228 USD,USD,16228,India,100,,L,kaggle,,remote_ratio=100,[]
+2021,ML Engineer,Senior,Full-time,256000 - 256000 USD,USD,256000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Director of Data Engineering,Senior,Full-time,200000 - 200000 USD,USD,200000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Senior,Full-time,200000 - 200000 USD,USD,200000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Architect,Mid,Full-time,180000 - 180000 USD,USD,180000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Head of Data Science,Mid,Full-time,110000 - 110000 USD,USD,110000,United States,0,,S,kaggle,,remote_ratio=0,[]
+2021,Research Scientist,Mid,Full-time,63810 - 63810 USD,USD,63810,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,46809 - 46809 USD,USD,46809,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Junior,Full-time,4000 - 4000 USD,USD,4000,VN,0,,M,kaggle,,remote_ratio=0,[]
+2021,Data Engineer,Junior,Full-time,21637 - 21637 USD,USD,21637,India,50,,M,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Senior,Full-time,103691 - 103691 USD,USD,103691,Canada,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,110000 - 110000 USD,USD,110000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Senior,Full-time,165000 - 165000 USD,USD,165000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,AI Scientist,Junior,Full-time,18053 - 18053 USD,USD,18053,India,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,72212 - 72212 USD,USD,72212,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Junior,Full-time,36643 - 36643 USD,USD,36643,France,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Engineer,Mid,Full-time,12103 - 12103 USD,USD,12103,TR,0,,M,kaggle,,remote_ratio=0,[]
+2021,Data Engineer,Senior,Full-time,96282 - 96282 USD,USD,96282,United Kingdom,50,,L,kaggle,,remote_ratio=50,[]
+2021,Principal Data Analyst,Senior,Full-time,170000 - 170000 USD,USD,170000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,115000 - 115000 USD,USD,115000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Junior,Full-time,90000 - 90000 USD,USD,90000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2021,Principal Data Engineer,Executive,Full-time,600000 - 600000 USD,USD,600000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Junior,Full-time,28399 - 28399 USD,USD,28399,India,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Analyst,Mid,Full-time,93000 - 93000 USD,USD,93000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Big Data Architect,Senior,Full-time,99703 - 99703 USD,USD,99703,Canada,50,,M,kaggle,,remote_ratio=50,[]
+2021,Principal Data Scientist,Senior,Full-time,173762 - 173762 USD,USD,173762,Germany,100,,M,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Senior,Full-time,185000 - 185000 USD,USD,185000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2021,Director of Data Science,Executive,Full-time,141846 - 141846 USD,USD,141846,Germany,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Mid,Full-time,130000 - 130000 USD,USD,130000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Analyst,Senior,Full-time,63831 - 63831 USD,USD,63831,Germany,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Mid,Full-time,16904 - 16904 USD,USD,16904,India,100,,S,kaggle,,remote_ratio=100,[]
+2021,Machine Learning Engineer,Senior,Full-time,66265 - 66265 USD,USD,66265,India,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Scientist,Mid,Full-time,25532 - 25532 USD,USD,25532,RS,100,,S,kaggle,,remote_ratio=100,[]
+2021,Lead Data Engineer,Senior,Full-time,160000 - 160000 USD,USD,160000,PR,50,,S,kaggle,,remote_ratio=50,[]
+2021,Data Engineer,Mid,Full-time,93150 - 93150 USD,USD,93150,United States,0,,M,kaggle,,remote_ratio=0,[]
+2021,Data Engineer,Mid,Full-time,111775 - 111775 USD,USD,111775,United States,0,,M,kaggle,,remote_ratio=0,[]
+2021,Data Engineer,Mid,Full-time,28016 - 28016 USD,USD,28016,TR,100,,M,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Junior,Full-time,65013 - 65013 USD,USD,65013,Germany,50,,M,kaggle,,remote_ratio=50,[]
+2021,Data Engineer,Junior,Full-time,72500 - 72500 USD,USD,72500,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Computer Vision Engineer,Senior,Full-time,18907 - 18907 USD,USD,18907,Brazil,0,,M,kaggle,,remote_ratio=0,[]
+2021,Machine Learning Engineer,Junior,Full-time,85000 - 85000 USD,USD,85000,Netherlands,100,,S,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Senior,Full-time,77684 - 77684 USD,USD,77684,France,50,,M,kaggle,,remote_ratio=50,[]
+2021,Data Scientist,Junior,Full-time,58000 - 58000 USD,USD,58000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2021,AI Scientist,Senior,Full-time,55000 - 55000 USD,USD,55000,Spain,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Senior,Full-time,20171 - 20171 USD,USD,20171,TR,50,,L,kaggle,,remote_ratio=50,[]
+2021,Business Data Analyst,Junior,Full-time,59102 - 59102 USD,USD,59102,LU,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Engineer,Mid,Full-time,112000 - 112000 USD,USD,112000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2021,Research Scientist,Junior,Full-time,100000 - 100000 USD,USD,100000,JE,0,,L,kaggle,,remote_ratio=0,[]
+2021,Data Engineer,Mid,Part-time,69741 - 69741 USD,USD,69741,Netherlands,100,,L,kaggle,,remote_ratio=100,[]
+2021,Staff Data Scientist,Senior,Contract,105000 - 105000 USD,USD,105000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2021,Research Scientist,Mid,Full-time,69999 - 69999 USD,USD,69999,Czech Republic,50,,L,kaggle,,remote_ratio=50,[]
+2021,Data Science Manager,Senior,Full-time,94665 - 94665 USD,USD,94665,India,50,,L,kaggle,,remote_ratio=50,[]
+2021,Head of Data,Senior,Full-time,102839 - 102839 USD,USD,102839,SI,100,,L,kaggle,,remote_ratio=100,[]
+2021,Data Scientist,Mid,Full-time,109000 - 109000 USD,USD,109000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2021,Machine Learning Engineer,Mid,Full-time,51064 - 51064 USD,USD,51064,Italy,50,,L,kaggle,,remote_ratio=50,[]
+2022,Data Engineer,Senior,Full-time,135000 - 135000 USD,USD,135000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,155000 - 155000 USD,USD,155000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,120600 - 120600 USD,USD,120600,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,130000 - 130000 USD,USD,130000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Mid,Full-time,90000 - 90000 USD,USD,90000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Mid,Full-time,170000 - 170000 USD,USD,170000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,150000 - 150000 USD,USD,150000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,102100 - 102100 USD,USD,102100,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,84900 - 84900 USD,USD,84900,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,136620 - 136620 USD,USD,136620,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,99360 - 99360 USD,USD,99360,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,117789 - 117789 USD,USD,117789,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,104702 - 104702 USD,USD,104702,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,146000 - 146000 USD,USD,146000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,123000 - 123000 USD,USD,123000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Junior,Full-time,52351 - 52351 USD,USD,52351,United Kingdom,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,99000 - 99000 USD,USD,99000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Senior,Full-time,116000 - 116000 USD,USD,116000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Mid,Full-time,106260 - 106260 USD,USD,106260,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Mid,Full-time,126500 - 126500 USD,USD,126500,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Executive,Full-time,242000 - 242000 USD,USD,242000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Executive,Full-time,200000 - 200000 USD,USD,200000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,65438 - 65438 USD,USD,65438,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Mid,Full-time,39263 - 39263 USD,USD,39263,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Mid,Full-time,78526 - 78526 USD,USD,78526,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,165220 - 165220 USD,USD,165220,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Junior,Full-time,45807 - 45807 USD,USD,45807,United Kingdom,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,120160 - 120160 USD,USD,120160,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,90320 - 90320 USD,USD,90320,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,181940 - 181940 USD,USD,181940,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,132320 - 132320 USD,USD,132320,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,220110 - 220110 USD,USD,220110,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,160080 - 160080 USD,USD,160080,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,180000 - 180000 USD,USD,180000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,120000 - 120000 USD,USD,120000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Senior,Full-time,124190 - 124190 USD,USD,124190,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Executive,Full-time,130000 - 130000 USD,USD,130000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Executive,Full-time,110000 - 110000 USD,USD,110000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,170000 - 170000 USD,USD,170000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,115500 - 115500 USD,USD,115500,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,112900 - 112900 USD,USD,112900,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,165400 - 165400 USD,USD,165400,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,167000 - 167000 USD,USD,167000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,243900 - 243900 USD,USD,243900,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,136600 - 136600 USD,USD,136600,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,109280 - 109280 USD,USD,109280,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,128875 - 128875 USD,USD,128875,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,93700 - 93700 USD,USD,93700,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Head of Data Science,Executive,Full-time,224000 - 224000 USD,USD,224000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Head of Data Science,Executive,Full-time,167875 - 167875 USD,USD,167875,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Analytics Engineer,Executive,Full-time,175000 - 175000 USD,USD,175000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,156600 - 156600 USD,USD,156600,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,108800 - 108800 USD,USD,108800,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,95550 - 95550 USD,USD,95550,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,113000 - 113000 USD,USD,113000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Senior,Full-time,135000 - 135000 USD,USD,135000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Science Manager,Senior,Full-time,161342 - 161342 USD,USD,161342,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Science Manager,Senior,Full-time,137141 - 137141 USD,USD,137141,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,167000 - 167000 USD,USD,167000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,65438 - 65438 USD,USD,65438,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,211500 - 211500 USD,USD,211500,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Architect,Senior,Full-time,192400 - 192400 USD,USD,192400,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Architect,Senior,Full-time,90700 - 90700 USD,USD,90700,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,130000 - 130000 USD,USD,130000,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,61300 - 61300 USD,USD,61300,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,160000 - 160000 USD,USD,160000,United States,0,,L,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,138600 - 138600 USD,USD,138600,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,136000 - 136000 USD,USD,136000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Mid,Full-time,58000 - 58000 USD,USD,58000,United States,0,,S,kaggle,,remote_ratio=0,[]
+2022,Analytics Engineer,Executive,Full-time,135000 - 135000 USD,USD,135000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,170000 - 170000 USD,USD,170000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Senior,Full-time,189650 - 189650 USD,USD,189650,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Machine Learning Engineer,Senior,Full-time,164996 - 164996 USD,USD,164996,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,ETL Developer,Mid,Full-time,54957 - 54957 USD,USD,54957,GR,0,,M,kaggle,,remote_ratio=0,[]
+2022,Lead Data Engineer,Executive,Full-time,118187 - 118187 USD,USD,118187,Canada,100,,S,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,132000 - 132000 USD,USD,132000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Architect,Senior,Full-time,208775 - 208775 USD,USD,208775,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Architect,Senior,Full-time,147800 - 147800 USD,USD,147800,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,136994 - 136994 USD,USD,136994,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,101570 - 101570 USD,USD,101570,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,128875 - 128875 USD,USD,128875,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,93700 - 93700 USD,USD,93700,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Head of Machine Learning,Executive,Full-time,79039 - 79039 USD,USD,79039,India,50,,L,kaggle,,remote_ratio=50,[]
+2022,Machine Learning Engineer,Junior,Full-time,37300 - 37300 USD,USD,37300,United Kingdom,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,164000 - 164000 USD,USD,164000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,155000 - 155000 USD,USD,155000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Mid,Full-time,124333 - 124333 USD,USD,124333,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Machine Learning Engineer,Mid,Full-time,98158 - 98158 USD,USD,98158,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,AI Scientist,Mid,Full-time,120000 - 120000 USD,USD,120000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analytics Manager,Senior,Full-time,145000 - 145000 USD,USD,145000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analytics Manager,Senior,Full-time,105400 - 105400 USD,USD,105400,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Mid,Full-time,87932 - 87932 USD,USD,87932,France,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,117789 - 117789 USD,USD,117789,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,215300 - 215300 USD,USD,215300,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,158200 - 158200 USD,USD,158200,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,209100 - 209100 USD,USD,209100,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,154600 - 154600 USD,USD,154600,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,115934 - 115934 USD,USD,115934,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Senior,Full-time,81666 - 81666 USD,USD,81666,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,175000 - 175000 USD,USD,175000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,98158 - 98158 USD,USD,98158,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,183600 - 183600 USD,USD,183600,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,52351 - 52351 USD,USD,52351,United Kingdom,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,71982 - 71982 USD,USD,71982,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Mid,Full-time,45807 - 45807 USD,USD,45807,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Mid,Full-time,65949 - 65949 USD,USD,65949,GR,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,49461 - 49461 USD,USD,49461,GR,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,58894 - 58894 USD,USD,58894,United Kingdom,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,260000 - 260000 USD,USD,260000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Science Engineer,Senior,Full-time,60000 - 60000 USD,USD,60000,AR,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,63900 - 63900 USD,USD,63900,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Machine Learning Scientist,Mid,Full-time,160000 - 160000 USD,USD,160000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Scientist,Mid,Full-time,112300 - 112300 USD,USD,112300,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Science Manager,Mid,Full-time,241000 - 241000 USD,USD,241000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Science Manager,Mid,Full-time,159000 - 159000 USD,USD,159000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,80000 - 80000 USD,USD,80000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Mid,Full-time,82900 - 82900 USD,USD,82900,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,100800 - 100800 USD,USD,100800,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,49461 - 49461 USD,USD,49461,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,140400 - 140400 USD,USD,140400,United States,0,,L,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Mid,Full-time,39263 - 39263 USD,USD,39263,United Kingdom,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,43966 - 43966 USD,USD,43966,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,32974 - 32974 USD,USD,32974,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,87932 - 87932 USD,USD,87932,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,76940 - 76940 USD,USD,76940,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,104702 - 104702 USD,USD,104702,United Kingdom,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,91614 - 91614 USD,USD,91614,United Kingdom,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,65949 - 65949 USD,USD,65949,Spain,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,87932 - 87932 USD,USD,87932,GR,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,43966 - 43966 USD,USD,43966,GR,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,32974 - 32974 USD,USD,32974,GR,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,76940 - 76940 USD,USD,76940,GR,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,180000 - 180000 USD,USD,180000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,ML Engineer,Junior,Full-time,21983 - 21983 USD,USD,21983,Portugal,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,80000 - 80000 USD,USD,80000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Developer,Mid,Full-time,78791 - 78791 USD,USD,78791,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2022,Director of Data Science,Executive,Full-time,196979 - 196979 USD,USD,196979,Canada,50,,L,kaggle,,remote_ratio=50,[]
+2022,Machine Learning Engineer,Mid,Full-time,120000 - 120000 USD,USD,120000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2022,Computer Vision Engineer,Junior,Full-time,125000 - 125000 USD,USD,125000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,NLP Engineer,Mid,Full-time,37236 - 37236 USD,USD,37236,United States,50,,L,kaggle,,remote_ratio=50,[]
+2022,Data Engineer,Senior,Full-time,105000 - 105000 USD,USD,105000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Lead Machine Learning Engineer,Senior,Full-time,87932 - 87932 USD,USD,87932,Germany,0,,M,kaggle,,remote_ratio=0,[]
+2022,Business Data Analyst,Mid,Full-time,18442 - 18442 USD,USD,18442,India,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,31615 - 31615 USD,USD,31615,India,100,,L,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Infrastructure Engineer,Mid,Full-time,58255 - 58255 USD,USD,58255,Portugal,50,,L,kaggle,,remote_ratio=50,[]
+2022,Financial Data Analyst,Junior,Full-time,100000 - 100000 USD,USD,100000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2022,Data Engineer,Mid,Part-time,54957 - 54957 USD,USD,54957,Germany,50,,L,kaggle,,remote_ratio=50,[]
+2022,Data Scientist,Junior,Full-time,18442 - 18442 USD,USD,18442,India,100,,M,kaggle,,remote_ratio=100,[]
+2022,Principal Data Scientist,Senior,Full-time,162674 - 162674 USD,USD,162674,Germany,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Junior,Full-time,120000 - 120000 USD,USD,120000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Research Scientist,Senior,Full-time,144000 - 144000 USD,USD,144000,United States,50,,L,kaggle,,remote_ratio=50,[]
+2022,Data Scientist,Senior,Full-time,104890 - 104890 USD,USD,104890,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,100000 - 100000 USD,USD,100000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,140000 - 140000 USD,USD,140000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,50000 - 50000 USD,USD,50000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,220000 - 220000 USD,USD,220000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,183228 - 183228 USD,USD,183228,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Mid,Full-time,91614 - 91614 USD,USD,91614,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,185100 - 185100 USD,USD,185100,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Senior,Full-time,220000 - 220000 USD,USD,220000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,200000 - 200000 USD,USD,200000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Senior,Full-time,120000 - 120000 USD,USD,120000,AE,100,,S,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Senior,Full-time,65000 - 65000 USD,USD,65000,AE,100,,S,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Executive,Full-time,324000 - 324000 USD,USD,324000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Executive,Full-time,216000 - 216000 USD,USD,216000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,210000 - 210000 USD,USD,210000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,230000 - 230000 USD,USD,230000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Junior,Part-time,100000 - 100000 USD,USD,100000,DZ,50,,M,kaggle,,remote_ratio=50,[]
+2022,Data Scientist,Mid,Freelance,100000 - 100000 USD,USD,100000,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2022,Applied Machine Learning Scientist,Junior,Contract,31875 - 31875 USD,USD,31875,TN,100,,M,kaggle,,remote_ratio=100,[]
+2022,Head of Data,Senior,Full-time,200000 - 200000 USD,USD,200000,MY,100,,M,kaggle,,remote_ratio=100,[]
+2022,Principal Data Analyst,Mid,Full-time,75000 - 75000 USD,USD,75000,Canada,100,,S,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,35590 - 35590 USD,USD,35590,Poland,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,100000 - 100000 USD,USD,100000,Brazil,100,,M,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Scientist,Mid,Full-time,153000 - 153000 USD,USD,153000,United States,50,,M,kaggle,,remote_ratio=50,[]
+2022,Data Engineer,Junior,Full-time,58035 - 58035 USD,USD,58035,PK,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,165000 - 165000 USD,USD,165000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Research Scientist,Senior,Full-time,93427 - 93427 USD,USD,93427,France,50,,L,kaggle,,remote_ratio=50,[]
+2022,Data Scientist,Junior,Full-time,52396 - 52396 USD,USD,52396,Canada,100,,L,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Senior,Full-time,62651 - 62651 USD,USD,62651,Netherlands,100,,L,kaggle,,remote_ratio=100,[]
+2022,Head of Data,Mid,Full-time,32974 - 32974 USD,USD,32974,EE,100,,S,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Junior,Full-time,40000 - 40000 USD,USD,40000,Japan,100,,L,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Mid,Full-time,87425 - 87425 USD,USD,87425,Australia,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,115000 - 115000 USD,USD,115000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Junior,Full-time,86703 - 86703 USD,USD,86703,Australia,50,,M,kaggle,,remote_ratio=50,[]
+2022,Applied Machine Learning Scientist,Mid,Full-time,75000 - 75000 USD,USD,75000,BO,100,,L,kaggle,,remote_ratio=100,[]
+2022,Research Scientist,Mid,Full-time,64849 - 64849 USD,USD,64849,Austria,0,,L,kaggle,,remote_ratio=0,[]
+2022,Research Scientist,Junior,Full-time,120000 - 120000 USD,USD,120000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Applied Data Scientist,Mid,Full-time,157000 - 157000 USD,USD,157000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Computer Vision Software Engineer,Junior,Full-time,150000 - 150000 USD,USD,150000,Australia,100,,S,kaggle,,remote_ratio=100,[]
+2022,Business Data Analyst,Mid,Full-time,70912 - 70912 USD,USD,70912,Canada,50,,L,kaggle,,remote_ratio=50,[]
+2022,Data Engineer,Junior,Full-time,65000 - 65000 USD,USD,65000,United States,100,,S,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Senior,Full-time,71444 - 71444 USD,USD,71444,Ireland,100,,S,kaggle,,remote_ratio=100,[]
+2022,Data Analytics Engineer,Junior,Full-time,20000 - 20000 USD,USD,20000,PK,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Mid,Full-time,48000 - 48000 USD,USD,48000,Russia,100,,S,kaggle,,remote_ratio=100,[]
+2022,Data Science Manager,Senior,Full-time,152500 - 152500 USD,USD,152500,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Mid,Full-time,68147 - 68147 USD,USD,68147,France,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,122346 - 122346 USD,USD,122346,Switzerland,0,,L,kaggle,,remote_ratio=0,[]
+2022,Applied Data Scientist,Senior,Full-time,380000 - 380000 USD,USD,380000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,69336 - 69336 USD,USD,69336,Canada,100,,M,kaggle,,remote_ratio=100,[]
+2022,Computer Vision Engineer,Junior,Full-time,10000 - 10000 USD,USD,10000,Portugal,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,20000 - 20000 USD,USD,20000,GR,100,,S,kaggle,,remote_ratio=100,[]
+2022,Data Analytics Lead,Senior,Full-time,405000 - 405000 USD,USD,405000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,135000 - 135000 USD,USD,135000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Applied Data Scientist,Senior,Full-time,177000 - 177000 USD,USD,177000,United States,100,,L,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,78000 - 78000 USD,USD,78000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,100000 - 100000 USD,USD,100000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,85000 - 85000 USD,USD,85000,Canada,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Mid,Full-time,75000 - 75000 USD,USD,75000,Canada,0,,M,kaggle,,remote_ratio=0,[]
+2022,Machine Learning Engineer,Senior,Full-time,214000 - 214000 USD,USD,214000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Machine Learning Engineer,Senior,Full-time,192600 - 192600 USD,USD,192600,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Architect,Senior,Full-time,266400 - 266400 USD,USD,266400,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Architect,Senior,Full-time,213120 - 213120 USD,USD,213120,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,141300 - 141300 USD,USD,141300,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Mid,Full-time,102100 - 102100 USD,USD,102100,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Mid,Full-time,206699 - 206699 USD,USD,206699,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Mid,Full-time,99100 - 99100 USD,USD,99100,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,130000 - 130000 USD,USD,130000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,110500 - 110500 USD,USD,110500,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,99050 - 99050 USD,USD,99050,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,205300 - 205300 USD,USD,205300,United States,0,,L,kaggle,,remote_ratio=0,[]
+2022,Data Scientist,Senior,Full-time,176000 - 176000 USD,USD,176000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,144000 - 144000 USD,USD,144000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,200100 - 200100 USD,USD,200100,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,145000 - 145000 USD,USD,145000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,70500 - 70500 USD,USD,70500,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Analytics Engineer,Senior,Full-time,205300 - 205300 USD,USD,205300,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Analytics Engineer,Senior,Full-time,184700 - 184700 USD,USD,184700,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,175100 - 175100 USD,USD,175100,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,140250 - 140250 USD,USD,140250,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,116150 - 116150 USD,USD,116150,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,54000 - 54000 USD,USD,54000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Mid,Full-time,65438 - 65438 USD,USD,65438,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Senior,Full-time,80000 - 80000 USD,USD,80000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Senior,Full-time,210000 - 210000 USD,USD,210000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,69000 - 69000 USD,USD,69000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,150075 - 150075 USD,USD,150075,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,25000 - 25000 USD,USD,25000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,105000 - 105000 USD,USD,105000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,110925 - 110925 USD,USD,110925,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Mid,Full-time,45807 - 45807 USD,USD,45807,United Kingdom,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Senior,Full-time,60000 - 60000 USD,USD,60000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Architect,Senior,Full-time,192564 - 192564 USD,USD,192564,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Architect,Senior,Full-time,144854 - 144854 USD,USD,144854,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analytics Manager,Senior,Full-time,150260 - 150260 USD,USD,150260,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analytics Manager,Senior,Full-time,109280 - 109280 USD,USD,109280,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Scientist,Mid,Full-time,160000 - 160000 USD,USD,160000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Junior,Full-time,67000 - 67000 USD,USD,67000,Canada,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Junior,Full-time,52000 - 52000 USD,USD,52000,Canada,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Engineer,Senior,Full-time,154000 - 154000 USD,USD,154000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Engineer,Senior,Full-time,126000 - 126000 USD,USD,126000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,Data Analyst,Senior,Full-time,129000 - 129000 USD,USD,129000,United States,0,,M,kaggle,,remote_ratio=0,[]
+2022,Data Analyst,Senior,Full-time,150000 - 150000 USD,USD,150000,United States,100,,M,kaggle,,remote_ratio=100,[]
+2022,AI Scientist,Mid,Full-time,200000 - 200000 USD,USD,200000,India,100,,L,kaggle,,remote_ratio=100,[]
+2025,Аналитик,Unknown,Full-time,170000 - None RUR,RUR,1888,Москва,,Russia,S,hh_api,Точка,...массивами <highlighttext>данных</highlighttext>. Аналогичный опыт работы в качестве <highlighttext>аналитика</highlighttext> в ритейле или маркетинговой <highlighttext>аналитике</highlighttext> + дополнительные курсы по анализу <highlighttext>данных</highlighttext> приветствуются. ,[]
+2025,Аналитик отдела планирования,Junior,Full-time,200000 - None RUR,RUR,2222,Москва,,Russia,S,hh_api,ТЕЛОДВИЖЕНИЯ,"...Опыт в <highlighttext>аналитике</highlighttext> спроса/запасов от 2 лет (ритейл, FMCG, e-commerce).  Умение работать с большими массивами <highlighttext>данных</highlighttext> (100 000...",[]
+2025,GR-аналитик в металлургический холдинг,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Новосталь-М,Умение работать с большим объемом <highlighttext>данных</highlighttext> и креативно решать задачи с открытыми вводными. Уровень владения английский языком B2-C...,[]
+2025,Аналитик (excel),Unknown,Full-time,Не указано,указано,0,Москва,,Russia,M,hh_api,Альфа-Банк,Высшее образование. Опыт работы на аналогичных позициях или в смежных областях не менее года. Продвинутый пользователь Excel (включая использование формул...,['excel']
+2025,Системный аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Л-ТЕХ,"Опыт работы с Jira, Confluence, Notion. Базовые знания SQL и принципов работы с базами <highlighttext>данных</highlighttext>. Опыт взаимодействия с внешними клиентами.","['sql', 'confluence', 'jira']"
+2025,Системный аналитик (Yappy),Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,RUTUBE,"Понимание основ микросервисной архитектуры и интеграционных процессов. Знание основ БД, опыт проектирования моделей <highlighttext>данных</highlighttext> и подготовки ER-диаграмм. ",[]
+2025,Бизнес-аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,ИНВИТРО,"Понимание, умение работать с интеграциями между системами (API, шина <highlighttext>данных</highlighttext>). Базовые понятия о проектировании UX/UI. Понимание принципов проектирования API...",[]
+2025,Гуру таблиц (Excel/Google Sheets) для работы с аналитикой и отчетностью,Unknown,Full-time,800 - None USD,USD,800,Москва,,Russia,S,hh_api,Star Leads,"Имеете опыт анализа больших массивов <highlighttext>данных</highlighttext> (финансовые, маркетинговые, операционные метрики). Обладаете внимательностью к деталям: ловите несоответствия, умеете чистить данные. ",[]
+2025,Аналитик данных,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,ZOLLA,"Владение различными методиками систематизации и анализа информации, опыт обработки массивов <highlighttext>данных</highlighttext> (в том числе при помощи VBA и проч. ",['vba']
+2025,Аналитик,Mid,Full-time,200000 - 200000 RUR,RUR,2222,Москва,,Russia,S,hh_api,Айсорс,"Обязательные навыки и опыт: - Опыт работы бизнес-<highlighttext>аналитиком</highlighttext> от 3 лет. - Умение выявлять, анализировать и формализовать требования бизнеса. - ",[]
+2025,Ассистент-аналитик в футбольный клуб,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Ведущий российский футбольный клуб,"Законченное высшее образование (экономическое, финансовое, юридическое). Опыт работы от 1 года в консалтинге. Экспертное знание и понимание футбола как игры...",[]
+2025,Аналитик данных,Unknown,Full-time,100000 - None RUR,RUR,1111,Москва,,Russia,S,hh_api,Айтиспортс,"...четко излагать мысли, обосновывать гипотезы. Знание английского языка не ниже уровня B1. Подготовка структурированных презентаций на основе проанализированных <highlighttext>данных</highlighttext>.",[]
+2025,Разработчик-аналитик SQL (Junior),Junior,Full-time,140000 RUR,RUR,1555,Москва,,Russia,S,hh_api,"ДИКСИ, группа компаний","Хорошие знания MS SQL, опыт работы с колоночными таблицами. Навыки работы с Oracle/PostgreSQL будут преимуществом. Опыт построения корпоративной отчетности...","['postgresql', 'sql']"
+2025,Аналитик-разработчик отчётности,Mid,Full-time,450000 RUR,RUR,5000,Москва,,Russia,S,hh_api,Экспобанк,"Опыт проектирования и разработки аналитических моделей, дашбордов и отчетов в Power BI – от 3 лет. Опыт работы с SQL Server...","['bi', 'sql']"
+2025,Аналитик продаж,Unknown,Full-time,190000 - 190000 RUR,RUR,2111,Москва,,Russia,S,hh_api,ТехноГрупп,"...базам <highlighttext>данных</highlighttext>. BI-инструменты (Power BI). Знание методов статистического анализа, визуализации <highlighttext>данных</highlighttext>. Приветствуется опыт с Python/R для углубленной <highlighttext>аналитики</highlighttext>. ","['bi', 'python', 'r']"
+2025,Бизнес Аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,АФЛТ-Системс,Опыт работы на аналогичной должности от 2-х лет. Знание жизненного цикла разработки программного обеспечения и роли бизнес-требований на...,[]
+2025,Аналитик данных (Data Analyst),Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Qugo,Навыки работы с BI-инструментами и системами визуализации <highlighttext>данных</highlighttext>. Способность формулировать гипотезы и проверять их на основе <highlighttext>данных</highlighttext>.,['bi']
+2025,Аналитик данных,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Мегамаркет,"Продвинутый Excel (сводные таблицы, сложные формулы). SQL (CTE, оконные функции, джойны). Визуализация <highlighttext>данных</highlighttext> (желательно Visiology, Looker studio). Построение финансовых моделей. ","['looker', 'sql', 'excel']"
+2025,Системный аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,CHOICEIT,"Опыт работы системным <highlighttext>аналитиком</highlighttext> от 2 лет. Знание и праĸтическое использование нотаций: UML (диаграммы классов, последовательности, состояний и пр.), ER...",[]
+2025,Аналитик данных в команду операционной аналитики,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,"Лента, федеральная розничная сеть","Какие знания и опыт нам необходимы: - Опыт в роли <highlighttext>аналитика</highlighttext> <highlighttext>данных</highlighttext> от 1 года в e-com, маркетплейсах, В2...",[]
+2025,Бизнес-аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,PIX Robotics,"...Mining/Task Mining. Понимание метрик продукта (Retention, LTV, Conversion и др.). Навыки работы с SQL, Python/R (для анализа <highlighttext>данных</highlighttext>).","['python', 'sql', 'r']"
+2025,Аналитик данных,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Авиакомпания НордСтар,"Высшее образование в области экономики, финансов или математики. Умение работать с большими объемами <highlighttext>данных</highlighttext> и проводить их анализ. ",[]
+2025,Бизнес-аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Инновационный центр КАМАЗ,"Опыт работы бизнес-<highlighttext>аналитиком</highlighttext> в IT (от 2 лет).  Глубокое понимание API (REST, SOAP), умение читать и составлять спецификации.  ",[]
+2025,Спортивный Аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,STC,"Знание терминологии букмекерской сферы: коэффициент, исход, рынок и т.д. Понимание букмекерских механик: движение линии, взаимосвязь рынков, реакция линии на...",[]
+2025,Младший системный аналитик,Junior,Full-time,80000 - 105000 RUR,RUR,888,Москва,,Russia,S,hh_api,АБР Тех,"Опыт работы в роли <highlighttext>аналитика</highlighttext> от 1 года. Высшее техническое образование/Неоконченное высшее образование. Желателен опыт разработки функциональных требований, технических...",[]
+2025,Аналитик данных,Unknown,Full-time,180000 - None RUR,RUR,2000,Москва,,Russia,S,hh_api,Intouch Group,"Знание 1С и Битрикс 24. Опыт работы <highlighttext>аналитиком</highlighttext> от 2-х лет. Проактивный подход, самостоятельность в работе. ",[]
+2025,Аналитик данных,Unknown,Full-time,100000 - 150000 RUR,RUR,1111,Москва,,Russia,S,hh_api,Secunda,"Хорошие познания SQL - самостоятельно писать, читать и разбираться в запросах. Excel на уровне знания формул и построения сводных таблиц. ","['sql', 'excel']"
+2025,Ведущий экономист-аналитик,Senior,Full-time,280000 - 280000 RUR,RUR,3111,Москва,,Russia,S,hh_api,ГК Дамате,"Высшее образование: Финансовое, Экономическое (CIMA, Dipifr будет преимуществом). Высокий уровень навыка работы с Excel. Знание и навык работы с Power...",['excel']
+2025,Системный аналитик,Unknown,Full-time,200000 - None RUR,RUR,2222,Москва,,Russia,S,hh_api,Ред Софт,"Что ждём от опыта: - опыт работы <highlighttext>аналитиком</highlighttext> от двух лет. - знание основ проектирования систем. - знание нотаций UML, ER, C4...",[]
+2025,Аналитик баз данных,Unknown,Full-time,240000 - None RUR,RUR,2666,Москва,,Russia,S,hh_api,АБП,"Понимание архитектуры хранилищ <highlighttext>данных</highlighttext>, моделей <highlighttext>данных</highlighttext>. Опыт работы с корпоративными хранилищами <highlighttext>данных</highlighttext> DWH. Опыт работы с СУБД: Greenplum, MS SQL...",['sql']
+2025,Системный аналитик/Бизнес-аналитик,Junior,Full-time,150000 - None RUR,RUR,1666,Москва,,Russia,S,hh_api,АПТЕКА ВАША № 1,"Понимание принципов работы баз <highlighttext>данных</highlighttext>, API, web-сервисов. - Базовые знания SQL. - Опыт работы с инструментами для <highlighttext>аналитики</highlighttext> (например, Jira, Confluence...","['sql', 'jira', 'confluence']"
+2025,Аналитик продаж,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Байерсдорф,"Знание языков программирования приветствуется. Умение работать с большими массивами <highlighttext>данных</highlighttext>, строить понятные и прозрачные отчеты, графики, визуализировать данные. ",[]
+2025,BI-аналитик,Unknown,Full-time,150000 - 170000 RUR,RUR,1666,Москва,,Russia,S,hh_api,ГБУ Московское долголетие,"Уверенные знания SQL (JOIN, CTE, оконные функции, агрегаты, подзапросы). Знание библиотек Python для <highlighttext>аналитики</highlighttext> (опыт работы с pandas, numpy и...","['python', 'sql']"
+2025,Бизнес-аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,АльфаСтрахование Жизнь,"Высшее техническое образование, опыт работы на аналогичной позиции от года. Понимание принципов работы информационных систем, принципов и методов анализа бизнес...",[]
+2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,L,hh_api,FIX PRICE,"Опыт разработки детальных функциональных и технических спецификаций, прототипов пользовательского интерфейса. Знания основ реляционных баз <highlighttext>данных</highlighttext>. Знание методик и инструментов описания...",[]
+2025,Аналитик данных в направление Поиска,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Звук,"Технологии, с которыми будешь работать: SQL. Опыт работы дата-<highlighttext>аналитиком</highlighttext> от 2х лет в крупных ИТ-компаниях, телекоме или...",['sql']
+2025,Системный аналитик,Unknown,Full-time,350000 - None RUR,RUR,3888,Москва,,Russia,S,hh_api,Demis Group,"...лет, навыки работы с информационно-аналитическими системами и большими базами <highlighttext>данных</highlighttext>. Опыт анализа проекта и написания постановок на разработку с...",[]
+2025,Ведущий системный аналитик (middle+/senior),Mid,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Right Line,"Знание и опыт проектирования межсистемных интеграций (REST, SOAP, gRPC, очереди). - Знания и опыт применения нотаций BPMN и UML, описание алгоритмов...",[]
+2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Гриндата,"Знание SQL. Знание нотации BPMN. Понимание основ баз <highlighttext>данных</highlighttext> и проектирования/ разработки ПО. Опыт бизнес-анализа, разработки и описания бизнес...",['sql']
+2025,Бизнес-аналитик,Junior,Full-time,240000 - 268000 RUR,RUR,2666,Москва,,Russia,S,hh_api,Selecty,"Базовые знания SQL. Уверенное владение Excel: сводные таблицы, <highlighttext>аналитика</highlighttext>. Опыт работы в Agile и/или Waterfall. Грамотная коммуникация, умение находить...","['sql', 'excel']"
+2025,Аналитик данных (Вьетнам),Unknown,Full-time,2500 - None USD,USD,2500,Москва,,Russia,S,hh_api,Finstar Financial Group,"Имеешь опыт работы <highlighttext>аналитиком</highlighttext> от 2ух лет. Хочешь развиваться в направлении <highlighttext>аналитики</highlighttext> бизнеса, а также активно развивать свои технические...",[]
+2025,Chief Data Officer (CDO),Senior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Цифровые технологии и платформы,"Опыт в разработке ПО, системной <highlighttext>аналитике</highlighttext> или архитектуре — от 5 лет. Практический опыт построения и развития хранилищ <highlighttext>данных</highlighttext> (DWH), внедрения...",[]
+2025,Бизнес-аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Северсталь,Знаете основные инструменты анализа <highlighttext>данных</highlighttext> и бизнес-моделирования. Имеете опыт работы с базами <highlighttext>данных</highlighttext> и SQL. Имеете работать с BI...,"['bi', 'sql']"
+2025,Data analyst / Аналитик данных,Unknown,Full-time,3000 - None USD,USD,3000,Москва,,Russia,S,hh_api,ГЛОБУС,"Выпускник с математическим/техническим образованием. Хочешь развиваться в направлении <highlighttext>аналитики</highlighttext> бизнеса, а также активно развивать свои технические скиллы. ",[]
+2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Помощь интернет магазинам,"Опыт работы работы в качестве <highlighttext>аналитика</highlighttext> не менее 2-х лет в продуктовой разработке. Представление о форматах <highlighttext>данных</highlighttext>, применяемых в...",[]
+2025,Data-аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,LOYMAX AI,Опыт работы в <highlighttext>аналитике</highlighttext> <highlighttext>данных</highlighttext> от 1 года. Уверенное владение SQL и навыки извлечения <highlighttext>данных</highlighttext> из различных источников. ,['sql']
+2025,Аналитик данных,Unknown,Full-time,110000 - None RUR,RUR,1222,Москва,,Russia,S,hh_api,Колтакова Светлана,"Основами <highlighttext>аналитики</highlighttext> <highlighttext>данных</highlighttext>. Умение быстро ориентироваться в интернете. Компьютер и интернет. Готовность к проявлению самоорганизации. ﻿﻿Ты любишь анализировать, работать с...",[]
+2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Школа 21,"Знания и опыт проектирования микросервисов. Работа с реляционными базами <highlighttext>данных</highlighttext> NoSQL-СУБД (MongoDB, Redis). Знания в области безопасности web-приложений...",['mongodb']
+2025,Аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Гриндата,понимание основ баз <highlighttext>данных</highlighttext> и проектирования/разработки ПО. — базовые знания API (для анализа <highlighttext>данных</highlighttext>). — умение взаимодействовать с внешними партнёрами и...,[]
+2025,Аналитик данных (работа с ИИ),Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Галс-Девелопмент,Желательно: - опыт работы с Whisper для обработки audio <highlighttext>данных</highlighttext>. - опыт работы с Jupyter Notebooks для интерактивного анализа <highlighttext>данных</highlighttext>. - ,[]
+2025,Аналитик,Mid,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Corporate Performance Systems,SOAP. ETL (пакетная обработка <highlighttext>данных</highlighttext>). Messaging (брокеры сообщений). Практический опыт работы с современными нотациями графического моделирования: BPMN. UML. ,['etl']
+2025,Младший дата аналитик/ Junior data аnalyst,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Медиапоинт,"Уверенное владение Python (библиотеки для анализа <highlighttext>данных</highlighttext> и моделирования), yмение писать эффективный и читаемый код для извлечения и трансформации <highlighttext>данных</highlighttext>. ",['python']
+2025,Forensic Analyst,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,ХайдельбергЦемент Рус,"Опыт работы с базами <highlighttext>данных</highlighttext> СПАРК, Контур, опыт поиска информации и знание открытых источников информации для проверки контрагентов. ",[]
+2025,Бизнес-аналитик (Business Analyst),Unknown,Full-time,240000 - None RUR,RUR,2666,Москва,,Russia,S,hh_api,Интегро,"Разговорный английский. Знание SQL / MS SQL. Опыт QA в прошлом/настоящем (функциональное и регресс тестирование, работа с данными). ",['sql']
+2025,Бизнес-аналитик Middle,Mid,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,ITECH,"...Битрикс24 (опционально), прочие сертификаты вендора. Опыт описания и проектирования логики информационного обмена между компонентами разных систем и источниками <highlighttext>данных</highlighttext>.",[]
+2025,Аналитик данных,Junior,Full-time,40000 - 80000 RUR,RUR,444,Москва,,Russia,S,hh_api,КСК-Эйч Ар,"Уверенный уровень SQL. - Знания Python для <highlighttext>аналитики</highlighttext> <highlighttext>данных</highlighttext> (pandas, numPy, sklearn). - Базовые знания матстата и комбинаторики. - Уверенный уровень Excel (включая...","['python', 'sql', 'excel']"
+2025,System Analyst (MyKaspersky),Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Лаборатория Касперского,Что вам необходимо для этого: Опыт работы системным <highlighttext>аналитиком</highlighttext> от 2 лет. Высшее образование в области информационных технологий. ,[]
+2025,Бизнес-аналитик (начальный уровень),Junior,Full-time,Не указано,указано,0,Москва,,Russia,L,hh_api,FIX PRICE,Опыт работы бизнес-<highlighttext>аналитиком</highlighttext>/бизнес-технологом от 1 года в канале e-commerce. Понимание жизненного цикла проекта в IT. ,[]
+2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,LIFE PAY,...описания технических требований по интеграции с внешними системами (по протоколам HTTP и/или SOAP). Опыт работы с реляционными базами <highlighttext>данных</highlighttext>.,[]
+2025,Младший аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,GlowByte,"Навыки владения процедурными языками СУБД (PL/SQL, T-SQL). Навыки в написании сложных запросов SQL. Базовое понимание физической модели <highlighttext>данных</highlighttext>...",['sql']
+2025,Аналитик данных,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Солар,"Знание разных видов регулярной отчётности, ad-hoc <highlighttext>аналитика</highlighttext>, поиск инсайтов по результатам. Опыт в настройке аналитических систем для веб-<highlighttext>аналитики</highlighttext>...",[]
+2025,Аналитик,Unknown,Full-time,150000 - None RUR,RUR,1666,Москва,,Russia,S,hh_api,ГБУЗ ГКБ №24 ДЗМ,Отлично умеет работать с разными CРМ системами и быстро их осваивать. С высокими аналитическими способностями и навыками работы в Eхеl...,[]
+2025,Middle Business Analyst,Mid,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,DarwinSoft (ООО Дарвин),Опыт работы на позиции бизнес или системного <highlighttext>аналитика</highlighttext> от 2 лет. Умение работать с комплексными сервисами: от проектирования до внедрения...,[]
+2025,Системный аналитик,Junior,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,Скала^р,"От 1 года в роли <highlighttext>аналитика</highlighttext> (бизнес-системного, инженера требований) в команде с развитыми процессами управления продуктом. Умение работать с...",[]
+2025,Системный аналитик,Unknown,Full-time,Не указано,указано,0,Москва,,Russia,S,hh_api,DZ Systems,"Опыт REST API, PBR. Опыт с реляционными БД. Знание основ реляционных баз <highlighttext>данных</highlighttext> и SQL-запросов. Опыт работы с Jira...","['sql', 'jira']"
+2025,Бизнес-аналитик (внутренние процессы),Unknown,Full-time,174000 - None RUR,RUR,1933,Москва,,Russia,S,hh_api,Первый ОФД,"Знание принципов интеграции распространенных систем, принципов проектирования и разработки обменов <highlighttext>данных</highlighttext>. Вдумчивость, внимание к деталям, умение выделять неявные требования и...",[]

@@ -1,6 +1,6 @@
 from src.data_collection import fetch_and_combine
 from src.data_processing import infer_missing_fields_from_text
-from src.data_analysis import analyze_data
+from src.data_analysis import analyze_data, get_top_skills
 from src.plot_analysis import plot_analysis
 
 
@@ -37,7 +37,7 @@ def main():
     for key, df in analysis_results.items():
         print(f"--- {key} ---")
         print(df.head(), "\n")
-
+    print(get_top_skills(combined))
     # plot_analysis(analysis_results)
 
 

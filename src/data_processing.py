@@ -143,10 +143,8 @@ def infer_missing_fields_from_text(df: pd.DataFrame) -> pd.DataFrame:
 
     if "requirement" not in df.columns:
         df["requirement"] = ""
-    if "responsibility" not in df.columns:
-        df["responsibility"] = ""
 
-    full_text = df["requirement"].fillna("").astype(str) + " " + df["responsibility"].fillna("").astype(str)
+    full_text = df["requirement"].fillna("").astype(str)
 
     experience_extracted = df.loc[hh_mask].apply(
         lambda row: extract_experience_level(row.get("requirement", ""), row.get("job_title", "")), axis=1
