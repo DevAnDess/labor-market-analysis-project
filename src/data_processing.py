@@ -107,14 +107,35 @@ def infer_missing_fields_from_text(df: pd.DataFrame) -> pd.DataFrame:
             return None
         text = text.lower()
 
-        if any(kw in text for kw in ["полная занятость", "полный рабочий день", "full-time"]):
-            return "Full-time"
-        if any(kw in text for kw in ["частичная занятость", "неполный рабочий день", "part-time"]):
-            return "Part-time"
-        if any(kw in text for kw in ["фриланс", "удалённая работа", "remote"]):
-            return "Freelance"
-        if any(kw in text for kw in ["контракт", "временный проект"]):
-            return "Contract"
+        full_time_keywords = [
+            "полная занятость", "полный рабочий день", "на полный день",
+            "full-time", "full time", "работа полный день"
+        ]
+        part_time_keywords = [
+            "частичная занятость", "неполный рабочий день", "на полставки",
+            "part-time", "part time", "работа по совместительству"
+        ]
+        freelance_keywords = [
+            "фриланс", "удаленная работа", "удалённая работа", "работа удаленно",
+            "на дому", "remote work", "remote", "home-based"
+        ]
+        contract_keywords = [
+            "контракт", "временный проект", "проектная работа", "contract", "project-based", "по контракту"
+        ]
+
+        for kw in full_time_keywords:
+            if kw in text:
+                return "Full-time"
+        for kw in part_time_keywords:
+            if kw in text:
+                return "Part-time"
+        for kw in freelance_keywords:
+            if kw in text:
+                return "Freelance"
+        for kw in contract_keywords:
+            if kw in text:
+                return "Contract"
+
         return None
 
     hh_mask = df["source"] == "hh_api"

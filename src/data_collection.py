@@ -109,6 +109,44 @@ def _normalize_kaggle_records(df: pd.DataFrame) -> list[dict]:
     return records
 
 
+def assign_company_size_from_lists(df: pd.DataFrame) -> pd.DataFrame:
+    import os
+
+    # Пути к файлам
+    base_dir = os.path.dirname(__file__)
+    ref_dir = os.path.join(base_dir, "data", "reference")
+    large_path = os.path.join(ref_dir, "large_companies.txt")
+    medium_path = os.path.join(ref_dir, "medium_companies.txt")
+
+    # Загружаем списки компаний
+    def load_company_list(path):
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                return set(line.strip().lower() for line in f if line.strip())
+        return set()
+
+    large = load_company_list(large_path)
+    medium = load_company_list(medium_path)
+
+    def detect_size(name):
+        if not isinstance(name, str) or name.strip() == "":
+            return "Unknown"
+        name = name.lower()
+        if name in large:
+            return "L"
+        elif name in medium:
+            return "M"
+        else:
+            return "S"
+
+    # Только для строк с "Unknown"
+    mask = df["company_size"].isin(["Unknown", None, pd.NA])
+    df.loc[mask, "company_size"] = df.loc[mask, "employer"].apply(detect_size)
+
+    return df
+
+
+
 def fetch_and_combine(query: str = "аналитик данных",
                       area: int = 1,
                       csv_filename: str = "data-science-job-salaries.csv") -> pd.DataFrame:
@@ -186,7 +224,7 @@ def fetch_and_combine(query: str = "аналитик данных",
         "Full-time": "Full-time", "Part-time": "Part-time", "Contract": "Contract", "Freelance": "Freelance"
     }
     combined["experience_level"] = combined["experience_level"].map(experience_map).fillna("Unknown")
-    combined["employment_type"] = combined["employment_type"].map(employment_map).fillna("Unknown")
+    combined["employment_type"] = combined["employment_type"].map(employment_map).fillna("Full-time")
 
     # Доп. извлечения
     combined["remote_ratio"] = combined["requirement"].str.extract(r"remote_ratio=(\d+)").astype("Int64")
@@ -215,8 +253,10 @@ def fetch_and_combine(query: str = "аналитик данных",
     ]
     combined = combined[required_columns]
 
+
     from src.data_processing import infer_missing_fields_from_text
     combined = infer_missing_fields_from_text(combined)
+    combined = assign_company_size_from_lists(combined)
     proc_dir = os.path.join(os.path.dirname(__file__), "data", "processed")
     os.makedirs(proc_dir, exist_ok=True)
     out_csv = os.path.join(proc_dir, "combined_dataset_KT_format.csv")
