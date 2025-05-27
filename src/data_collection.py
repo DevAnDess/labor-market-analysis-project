@@ -1,16 +1,16 @@
 import os
-import time
-import requests
 import pandas as pd
-from tqdm import tqdm
+
 from src.data_processing import process_data
 from src.data_analysis import extract_min_salary
-
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+import time
+import requests
+from tqdm import tqdm
 
 
 def enrich_hh_descriptions(vacancies: list[dict], sleep_sec: float = 0.2) -> list[dict]:
     enriched = []
+
     print(f"\n🔍 Обогащаем вакансии HH подробными описаниями ({len(vacancies)} вакансий)...")
     for vac in tqdm(vacancies, desc="Обработка вакансий", unit="вакансий"):
         vacancy_id = vac.get("id")
@@ -18,47 +18,63 @@ def enrich_hh_descriptions(vacancies: list[dict], sleep_sec: float = 0.2) -> lis
             vac["description"] = ""
             enriched.append(vac)
             continue
+
         try:
             resp = requests.get(f"https://api.hh.ru/vacancies/{vacancy_id}")
             if resp.status_code == 200:
-                vac["description"] = resp.json().get("description", "")
+                vacancy_data = resp.json()
+                vac["description"] = vacancy_data.get("description", "")
             else:
                 vac["description"] = ""
         except Exception as e:
             print(f"[!] Ошибка при запросе ID {vacancy_id}: {e}")
             vac["description"] = ""
+
         enriched.append(vac)
-        time.sleep(sleep_sec)
-    print("✅ Описание добавлено к вакансиям.")
+        time.sleep(sleep_sec)  # защита от блокировки API
+
+    print(" писание добавлено к вакансиям.")
     return enriched
+
+
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 
 def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 2) -> list[dict]:
     url = "https://api.hh.ru/vacancies"
     all_vacancies = []
-    for page in range(max_pages):
+    page = 0
+
+    while page < max_pages:
         params = {
             "text": query,
             "area": area,
-            "per_page": 100 ,
+            "per_page": 100,
             "page": page
         }
         resp = requests.get(url, params=params)
         if resp.status_code != 200:
             print(f"HH API returned {resp.status_code} on page {page}")
             break
-        items = resp.json().get("items", [])
+
+        payload = resp.json()
+        items = payload.get("items", [])
         all_vacancies.extend(items)
         print(f"Собрано {len(items)} вакансий с страницы {page + 1}")
-        if not items or page >= resp.json().get("pages", 1) - 1:
+
+        if not items or page >= payload.get("pages", 1) - 1:
             break
+        page += 1
+
     print(f"Всего собрано {len(all_vacancies)} вакансий из HH API")
     return all_vacancies
 
 
 def fetch_kaggle_dataset_local(csv_filename: str = "data-science-job-salaries.csv") -> pd.DataFrame:
-    kaggle_dir = os.path.join(os.path.dirname(__file__), "data", "raw", "kaggle")
+    SRC_DIR = os.path.dirname(__file__)
+    kaggle_dir = os.path.join(SRC_DIR, "data", "raw", "kaggle")
     csv_path = os.path.join(kaggle_dir, csv_filename)
+
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV-файл не найден: {csv_path}")
     df = pd.read_csv(csv_path)
@@ -69,9 +85,13 @@ def fetch_kaggle_dataset_local(csv_filename: str = "data-science-job-salaries.cs
 def _normalize_kaggle_records(df: pd.DataFrame) -> list[dict]:
     records = []
     for _, row in df.iterrows():
-        records.append({
+        rec = {
             "name": row["job_title"],
-            "salary": {"from": row["salary_in_usd"], "to": row["salary_in_usd"], "currency": "USD"},
+            "salary": {
+                "from": row["salary_in_usd"],
+                "to": row["salary_in_usd"],
+                "currency": "USD"
+            },
             "numeric_salary": row["salary_in_usd"],
             "min_salary": row["salary_in_usd"],
             "area": {"name": row["employee_residence"]},
@@ -84,14 +104,14 @@ def _normalize_kaggle_records(df: pd.DataFrame) -> list[dict]:
                 "responsibility": f"company_location={row['company_location']}"
             },
             "published_at": row["work_year"]
-        })
+        }
+        records.append(rec)
     return records
 
 
 def fetch_and_combine(query: str = "аналитик данных",
                       area: int = 1,
                       csv_filename: str = "data-science-job-salaries.csv") -> pd.DataFrame:
-
     # Kaggle
     kaggle_df = fetch_kaggle_dataset_local(csv_filename)
     kaggle_raw = _normalize_kaggle_records(kaggle_df)
@@ -99,21 +119,27 @@ def fetch_and_combine(query: str = "аналитик данных",
     df_kaggle["source"] = "kaggle"
     df_kaggle["min_salary"] = df_kaggle["salary"].apply(extract_min_salary)
 
-    # HH API
-    hh_raw = fetch_all_vacancies(query=query, area=area)
-    hh_raw = enrich_hh_descriptions(hh_raw)
+    hh_all = fetch_all_vacancies(query=query, area=area)
 
-
-    analytics_keywords = [
-        "аналитик", "analyst", "data", "machine learning", "ml", "business intelligence", "bi", "data scientist"
+    title_keywords = [
+        "аналитик", "analyst", "data", "bi", "machine learning"
     ]
-    hh_raw = [
-        vac for vac in hh_raw
-        if any(kw in vac.get("name", "").lower() for kw in analytics_keywords)
-        or any(kw in (vac.get("description") or "").lower() for kw in ["sql", "power bi", "python", "аналитик", "отчет", "дашборд", "таблица"])
+    stopwords = [
+        "директор", "manager", "менеджер", "qa", "тестировщик", "юрис", "маркетинг", "админ", "руководитель"
     ]
 
-    df_hh = process_data(hh_raw)
+    def is_relevant(vac):
+        title = (vac.get("name") or "").lower()
+        if not any(kw in title for kw in title_keywords):
+            return False
+        if any(sw in title for sw in stopwords):
+            return False
+        return True
+
+    hh_filtered = [v for v in hh_all if is_relevant(v)]
+    hh_enriched = enrich_hh_descriptions(hh_filtered)
+
+    df_hh = process_data(hh_enriched)
     df_hh["source"] = "hh_api"
     df_hh["min_salary"] = df_hh["salary"].apply(extract_min_salary)
 
@@ -144,6 +170,7 @@ def fetch_and_combine(query: str = "аналитик данных",
         inplace=True
     )
 
+    # Валюта и пересчет в USD
     combined["salary_currency"] = combined["salary"].apply(
         lambda x: x.split()[-1] if isinstance(x, str) and len(x.split()) > 1 else "USD"
     )
@@ -154,14 +181,14 @@ def fetch_and_combine(query: str = "аналитик данных",
         "EN": "Junior", "MI": "Mid", "SE": "Senior", "EX": "Executive",
         "Junior": "Junior", "Mid": "Mid", "Senior": "Senior", "Executive": "Executive"
     }
-    combined["experience_level"] = combined["experience_level"].map(experience_map).fillna("Unknown")
-
     employment_map = {
         "FT": "Full-time", "PT": "Part-time", "CT": "Contract", "FL": "Freelance",
         "Full-time": "Full-time", "Part-time": "Part-time", "Contract": "Contract", "Freelance": "Freelance"
     }
+    combined["experience_level"] = combined["experience_level"].map(experience_map).fillna("Unknown")
     combined["employment_type"] = combined["employment_type"].map(employment_map).fillna("Unknown")
 
+    # Доп. извлечения
     combined["remote_ratio"] = combined["requirement"].str.extract(r"remote_ratio=(\d+)").astype("Int64")
     combined["company_location"] = combined["responsibility"].str.extract(r"company_location=([A-Z]{2})")
     combined.loc[combined["source"] == "hh_api", "company_location"] = "RU"
@@ -175,9 +202,9 @@ def fetch_and_combine(query: str = "аналитик данных",
         "BR": "Brazil", "MX": "Mexico", "AU": "Australia", "IE": "Ireland",
         "LT": "Lithuania", "CZ": "Czech Republic", "AT": "Austria", "SE": "Sweden"
     }
-    combined["employee_residence"] = combined["employee_residence"].map(country_map).fillna(combined["employee_residence"])
+    combined["employee_residence"] = combined["employee_residence"].map(country_map).fillna(
+        combined["employee_residence"])
     combined["company_location"] = combined["company_location"].map(country_map).fillna(combined["company_location"])
-
     combined["work_year"] = combined["work_year"].astype(str).str[:4]
 
     required_columns = [
@@ -188,10 +215,12 @@ def fetch_and_combine(query: str = "аналитик данных",
     ]
     combined = combined[required_columns]
 
+    from src.data_processing import infer_missing_fields_from_text
+    combined = infer_missing_fields_from_text(combined)
     proc_dir = os.path.join(os.path.dirname(__file__), "data", "processed")
     os.makedirs(proc_dir, exist_ok=True)
     out_csv = os.path.join(proc_dir, "combined_dataset_KT_format.csv")
     combined.to_csv(out_csv, index=False)
-    print(f"Финальный датасет сохранён в: {out_csv}")
+    print(f"✅ Финальный датасет сохранён в: {out_csv}")
 
     return combined
