@@ -155,9 +155,6 @@ def infer_missing_fields_from_text(df: pd.DataFrame) -> pd.DataFrame:
     df.loc[hh_mask, "experience_level"] = experience_extracted.combine_first(df.loc[hh_mask, "experience_level"])
     df.loc[hh_mask, "employment_type"] = employment_extracted.combine_first(df.loc[hh_mask, "employment_type"])
 
-    print("NLP: найдено уровней опыта —", experience_extracted.notna().sum())
-    print("NLP: найдено типов занятости —", employment_extracted.notna().sum())
-
     return df
 
 

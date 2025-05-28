@@ -11,7 +11,7 @@ from tqdm import tqdm
 def enrich_hh_descriptions(vacancies: list[dict], sleep_sec: float = 0.2) -> list[dict]:
     enriched = []
 
-    print(f"\n🔍 Обогащаем вакансии HH подробными описаниями ({len(vacancies)} вакансий)...")
+    print(f"\n Обогащаем вакансии HH подробными описаниями ({len(vacancies)} вакансий)...")
     for vac in tqdm(vacancies, desc="Обработка вакансий", unit="вакансий"):
         vacancy_id = vac.get("id")
         if not vacancy_id:
@@ -33,14 +33,14 @@ def enrich_hh_descriptions(vacancies: list[dict], sleep_sec: float = 0.2) -> lis
         enriched.append(vac)
         time.sleep(sleep_sec)  # защита от блокировки API
 
-    print(" писание добавлено к вакансиям.")
+    print("описание добавлено к вакансиям.")
     return enriched
 
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 
-def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 2) -> list[dict]:
+def fetch_all_vacancies(query: str = "аналитик данных", area: int = 1, max_pages: int = 50) -> list[dict]:
     url = "https://api.hh.ru/vacancies"
     all_vacancies = []
     page = 0
@@ -144,8 +144,40 @@ def assign_company_size_from_lists(df: pd.DataFrame) -> pd.DataFrame:
     df.loc[mask, "company_size"] = df.loc[mask, "employer"].apply(detect_size)
 
     return df
+def load_custom_dataset(filename="data_science_salaries.csv") -> pd.DataFrame:
+    path = os.path.join(os.path.dirname(__file__), "data", "raw", "kaggle", filename)
+    df = pd.read_csv(path)
+
+    remote_map = {
+        "Remote": 100,
+        "On-site": 0,
+        "Hybrid": 50
+    }
+    df["remote_ratio"] = df["work_models"].map(remote_map)
+    df.drop(columns=["work_models"], inplace=True)
+
+    company_size_map = {"Medium": "M", "Large": "L", "Small": "S", "Unknown": "Unknown"}
+    df["company_size"] = df["company_size"].map(company_size_map)
 
 
+    exp_map = {
+        "Junior-level": "Junior",
+        "Mid-level": "Mid",
+        "Senior-level": "Senior",
+        "Executive-level": "Executive"
+    }
+    df["experience_level"] = df["experience_level"].map(exp_map).fillna("Unknown")
+
+    df["source"] = "kaggle"
+    df["employer"] = None
+    df["requirement"] = None
+    df["skills"] = None
+
+    return df[[
+        "job_title", "experience_level", "employment_type", "work_year",
+        "employee_residence", "salary", "salary_currency", "salary_in_usd",
+        "company_location", "company_size", "source", "employer", "requirement", "skills", "remote_ratio"
+    ]]
 def fetch_and_combine(
     query: str = "аналитик данных",
     area: int = 1,
@@ -253,6 +285,8 @@ def fetch_and_combine(
         "employee_residence", "remote_ratio", "company_location", "company_size",
         "source", "employer", "requirement", "skills"
     ]
+    custom_df = load_custom_dataset("data_science_salaries.csv")
+    combined = pd.concat([combined, custom_df], ignore_index=True)
     combined = combined[final_cols]
     combined["skills"] = combined["requirement"].fillna("").astype(str).apply(extract_skills)
     combined.drop(columns=["responsibility"], errors="ignore", inplace=True)
@@ -265,6 +299,5 @@ def fetch_and_combine(
     out_csv = os.path.join(proc_dir, "combined_dataset_KT_format.csv")
     combined.to_csv(out_csv, index=False)
 
-    print(f" Финальный датасет сохранён в: {out_csv}")
     return combined
 
