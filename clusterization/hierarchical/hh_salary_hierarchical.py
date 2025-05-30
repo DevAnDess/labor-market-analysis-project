@@ -1,10 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
+from scipy.cluster.hierarchy import linkage, fcluster
+from sklearn.preprocessing import StandardScaler
 
-def hh_salary():
+def hh_salary_hierarchical():
     df = pd.read_csv("../src/data/processed/combined_dataset_KT_format.csv")
-    df = df[(df['source'] == 'hh_api') & (df['experience_level'] != 'Unknown') & (df['salary_in_usd'] != 'Unknown') & (df['company_size'] != 'Unknown')]
+    df = df[(df['source'] == 'hh_api') & (df['experience_level'] != 'Unknown') & (df['salary_in_usd'] != 'Unknown') & (
+                df['company_size'] != 'Unknown')]
 
     df['salary_in_usd'] = df['salary_in_usd'] * 12
 
@@ -16,34 +18,30 @@ def hh_salary():
     x = selected_df[['company_size', 'experience_level', 'salary_in_usd']]
 
 
-    kmeans = KMeans(n_clusters=3, random_state=0)
-    kmeans.fit(x)
-    labels = kmeans.labels_
+    scaler = StandardScaler()
+    x_scaled = scaler.fit_transform(x)
 
+    linkage_matrix = linkage(x_scaled, method='ward')
+
+    labels = fcluster(linkage_matrix, t=8, criterion='distance')
     selected_df['cluster'] = labels
 
     fig = plt.figure(figsize=(8, 7))
     ax = fig.add_subplot(111, projection='3d')
-
     ax.scatter(
-        x['company_size'],
-        x['experience_level'],
-        x['salary_in_usd'],
+        selected_df['company_size'],
+        selected_df['experience_level'],
+        selected_df['salary_in_usd'],
         c=labels,
         cmap='viridis',
         s=50
     )
-
     ax.set_title("Company size vs Experience Level vs Salary")
-    ax.set_xlabel("Small, Medium, Large")
+    ax.set_xlabel("Company size")
     ax.set_ylabel("Junior, Mid, Senior, Executive")
     ax.set_zlabel("Salary in USD")
     plt.show()
 
-    kmeans = KMeans(n_clusters=4, random_state=0)
-    kmeans.fit(x)
-    labels = kmeans.labels_
-    selected_df['cluster'] = labels
 
     plt.figure(figsize=(8, 6))
     plt.scatter(
@@ -54,10 +52,11 @@ def hh_salary():
         s=50
     )
     plt.title("Company size vs Salary")
-    plt.xlabel("Small, Medium, Large")
+    plt.xlabel("Company size")
     plt.ylabel("Salary in USD")
     plt.grid(True)
     plt.show()
+
 
     plt.figure(figsize=(8, 6))
     plt.scatter(
