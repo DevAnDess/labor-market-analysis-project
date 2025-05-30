@@ -4,14 +4,13 @@ from sklearn.cluster import KMeans
 
 def kaagle_salary():
     df = pd.read_csv("../src/data/processed/combined_dataset_KT_format.csv")
-    index = df[df['work_year'] == 2025].index[0]
-    df = df.loc[:index - 1]
+    df = df[(df['source'] == 'kaggle') & (df['experience_level'] != 'Unknown')]
 
-    df['work_year'] = df['work_year'].astype(int)
     df['experience_level'] = df['experience_level'].astype('category').cat.codes
 
     selected_df = df[['work_year', 'experience_level', 'salary_in_usd']].copy()
     x = selected_df[['work_year', 'experience_level', 'salary_in_usd']]
+
 
     kmeans = KMeans(n_clusters=3, random_state=0)
     kmeans.fit(x)
@@ -35,12 +34,8 @@ def kaagle_salary():
     ax.set_xlabel("Work Year")
     ax.set_ylabel("Junior, Mid, Senior, Executive")
     ax.set_zlabel("Salary in USD")
-
     plt.show()
 
-
-    selected_df = df[['work_year', 'salary_in_usd', 'experience_level']].copy()
-    x = selected_df[['work_year', 'salary_in_usd', 'experience_level']]
 
     kmeans = KMeans(n_clusters=4, random_state=0)
     kmeans.fit(x)
@@ -60,6 +55,7 @@ def kaagle_salary():
     plt.ylabel("Salary in USD")
     plt.grid(True)
     plt.show()
+
 
     plt.figure(figsize=(8, 6))
     plt.scatter(
