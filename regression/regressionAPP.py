@@ -9,9 +9,20 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
+from sqlalchemy import create_engine
 
 def load_data(file_path):
-    df = pd.read_csv(file_path)
+    user = "sql7782452"
+    password = "6HC3yNXWYM"
+    host = "sql7.freesqldatabase.com"
+    database = "sql7782452"
+
+    engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
+
+    query = "SELECT * FROM combined_dataset_KT_format"
+
+    df = pd.read_sql(query, engine)
+
     df = df.dropna(subset=["salary_in_usd"])
     df = df[(df["salary_in_usd"] >= 10000) & (df["salary_in_usd"] <= 400000)]
     df = df.fillna({

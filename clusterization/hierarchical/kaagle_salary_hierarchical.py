@@ -2,12 +2,26 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import linkage, fcluster
 from sklearn.preprocessing import StandardScaler
+from sqlalchemy import create_engine
 
 def kaagle_salary_hierarchical():
-    df = pd.read_csv("../src/data/processed/combined_dataset_KT_format.csv")
+    user = "sql7782452"
+    password = "6HC3yNXWYM"
+    host = "sql7.freesqldatabase.com"
+    database = "sql7782452"
+
+    engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
+
+    query = "SELECT * FROM combined_dataset_KT_format"
+
+    df = pd.read_sql(query, engine)
+
+
     df = df[(df['source'] == 'kaggle') & (df['experience_level'] != 'Unknown')]
 
-    df['experience_level'] = df['experience_level'].astype('category').cat.codes
+    desired_order = ['Junior', 'Mid', 'Senior', 'Executive']
+    df['experience_level'] = pd.Categorical(df['experience_level'], categories=desired_order, ordered=True)
+    df['experience_level'] = df['experience_level'].cat.codes
 
     selected_df = df[['work_year', 'experience_level', 'salary_in_usd']].copy()
     x = selected_df[['work_year', 'experience_level', 'salary_in_usd']]

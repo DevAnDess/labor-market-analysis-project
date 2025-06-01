@@ -9,10 +9,21 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.linear_model import Ridge
 from sklearn.ensemble import RandomForestRegressor
 from catboost import CatBoostRegressor
+from sqlalchemy import create_engine
 
 
 def load_data(path, title_filter=None):
-    df = pd.read_csv(path)
+    user = "sql7782452"
+    password = "6HC3yNXWYM"
+    host = "sql7.freesqldatabase.com"
+    database = "sql7782452"
+
+    engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
+
+    query = "SELECT * FROM combined_dataset_KT_format"
+
+    df = pd.read_sql(query, engine)
+
     df = df.dropna(subset=["salary_in_usd"])
     df["Salary"] = pd.to_numeric(df["salary_in_usd"], errors="coerce")
     df = df[(df["Salary"] >= 10000) & (df["Salary"] <= 300000)]

@@ -7,10 +7,20 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import OneHotEncoder
+from sqlalchemy import create_engine
 
 
 def load_data(file_path: str, title_filter: str = None) -> pd.DataFrame:
-    df = pd.read_csv(file_path)
+    user = "sql7782452"
+    password = "6HC3yNXWYM"
+    host = "sql7.freesqldatabase.com"
+    database = "sql7782452"
+
+    engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
+
+    query = "SELECT * FROM combined_dataset_KT_format"
+
+    df = pd.read_sql(query, engine)
 
     df = df[df["source"].str.lower() == "kaggle"]
     df = df.dropna(subset=["salary_in_usd"])

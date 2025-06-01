@@ -1,16 +1,32 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
+from sqlalchemy import create_engine
 
 def hh_salary():
-    df = pd.read_csv("../src/data/processed/combined_dataset_KT_format.csv")
+    user = "sql7782452"
+    password = "6HC3yNXWYM"
+    host = "sql7.freesqldatabase.com"
+    database = "sql7782452"
+
+    engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
+
+    query = "SELECT * FROM combined_dataset_KT_format"
+
+    df = pd.read_sql(query, engine)
+
+
     df = df[(df['source'] == 'hh_api') & (df['experience_level'] != 'Unknown') & (df['salary_in_usd'] != 'Unknown') & (df['company_size'] != 'Unknown')]
 
     df['salary_in_usd'] = df['salary_in_usd'] * 12
 
-    df['experience_level'] = df['experience_level'].astype('category').cat.codes
+    desired_order = ['Junior', 'Mid', 'Senior', 'Executive']
+    df['experience_level'] = pd.Categorical(df['experience_level'], categories=desired_order, ordered=True)
+    df['experience_level'] = df['experience_level'].cat.codes
 
-    df['company_size'] = df['company_size'].astype('category').cat.codes
+    desired_order = ['S', 'M', 'L']
+    df['company_size'] = pd.Categorical(df['company_size'], categories=desired_order, ordered=True)
+    df['company_size'] = df['company_size'].cat.codes
 
     selected_df = df[['company_size', 'experience_level', 'salary_in_usd']].copy()
     x = selected_df[['company_size', 'experience_level', 'salary_in_usd']]
