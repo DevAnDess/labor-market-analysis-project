@@ -175,7 +175,7 @@ def main():
     for name, model in models.items():
         model.fit(X_train, y_train_log)
         mse, r2, y_test, y_pred = evaluate_model(model, X_test, y_test_log)
-        print(f"\n🔍 {name} Results:")
+        print(f"\n {name} Results:")
         print(f"  RMSE: {np.sqrt(mse):,.2f} USD | R²: {r2:.2f}")
         cross_validate(model, X, y_log, name)
         plot_predictions(y_test, y_pred, name, base_dir)
