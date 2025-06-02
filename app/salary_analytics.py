@@ -9,7 +9,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 st.set_page_config(page_title="Software for Data Analytics Labor Market Analysis", layout="wide")
 
-# ✅ Стили
 st.markdown("""
     <style>
         body {
@@ -31,10 +30,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Заголовок
 st.markdown("<h1 style='color: white;'>Software for Data Analytics Labor Market Analysis</h1>", unsafe_allow_html=True)
 
-# Подключение к базе данных
 user = "sql7782452"
 password = "6HC3yNXWYM"
 host = "sql7.freesqldatabase.com"
@@ -44,7 +41,6 @@ engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{databa
 query = "SELECT * FROM combined_dataset_KT_format"
 df = pd.read_sql(query, engine)
 
-# ✅ Session state для фильтров
 if 'filters_applied' not in st.session_state:
     st.session_state['filters_applied'] = False
 if 'last_data_source' not in st.session_state:
@@ -52,7 +48,6 @@ if 'last_data_source' not in st.session_state:
 if 'last_select_all_states' not in st.session_state:
     st.session_state['last_select_all_states'] = {"job": True, "res": True, "loc": True}
 
-# Выбор источника данных
 st.sidebar.markdown('**(press "apply filter" at the bottom after changes)**')
 st.sidebar.markdown("<div class='sidebar-header-black'>Select Dataset</div>", unsafe_allow_html=True)
 view_option = st.sidebar.radio("Choose data source:", ("HeadHunter (Russia, Active)", "Kaggle (Global, Historical)"))
@@ -63,7 +58,6 @@ if view_option != st.session_state['last_data_source']:
 
 df_filtered = df[df['source'] == 'hh_api'] if view_option.startswith("HeadHunter") else df[df['source'] == 'kaggle']
 
-# ✅ Обработка Select All для job/residence/location
 select_all_job = st.sidebar.checkbox("Select All Job Titles", value=True)
 select_all_res = st.sidebar.checkbox("Select All Employee Residence", value=True)
 select_all_loc = st.sidebar.checkbox("Select All Company Location", value=True)
@@ -81,11 +75,9 @@ st.session_state['last_select_all_states'] = {
     "loc": select_all_loc
 }
 
-# ✅ Форма фильтров
 with st.sidebar.form("filter_form"):
     st.markdown("<div class='sidebar-header-black'>Filter Options</div>", unsafe_allow_html=True)
 
-    # 🔍 Job Title
     search_job = st.text_input("Search Job Title")
     job_titles_all = sorted(df_filtered['job_title'].dropna().unique())
     job_titles_filtered = [jt for jt in job_titles_all if search_job.lower() in jt.lower()]
@@ -94,19 +86,15 @@ with st.sidebar.form("filter_form"):
     else:
         selected_jobs = st.multiselect("Job Title", job_titles_filtered, default=job_titles_filtered[:5])
 
-    # Experience
     experience_levels_all = sorted(df_filtered['experience_level'].dropna().unique())
     selected_levels = st.multiselect("Experience Level", experience_levels_all, default=experience_levels_all)
 
-    # Remote %
     remote_ratios_all = sorted(df_filtered['remote_ratio'].dropna().unique())
     selected_remote = st.multiselect("Remote %", remote_ratios_all, default=remote_ratios_all)
 
-    # Employment Type
     employment_types = sorted(df_filtered['employment_type'].dropna().unique())
     selected_employment = st.multiselect("Employment Type", employment_types, default=employment_types)
 
-    # 🔍 Employee Residence
     search_residence = st.text_input("Search Employee Residence")
     employee_residence_all = sorted(df_filtered['employee_residence'].dropna().unique())
     residence_filtered = [r for r in employee_residence_all if search_residence.lower() in r.lower()]
@@ -115,7 +103,6 @@ with st.sidebar.form("filter_form"):
     else:
         selected_residence = st.multiselect("Employee Residence", residence_filtered, default=residence_filtered[:5])
 
-    # 🔍 Company Location
     search_location = st.text_input("Search Company Location")
     company_location_all = sorted(df_filtered['company_location'].dropna().unique())
     location_filtered = [l for l in company_location_all if search_location.lower() in l.lower()]
@@ -124,20 +111,16 @@ with st.sidebar.form("filter_form"):
     else:
         selected_company_location = st.multiselect("Company Location", location_filtered, default=location_filtered[:5])
 
-    # Company Size
     company_sizes = sorted(df_filtered['company_size'].dropna().unique())
     selected_company_size = st.multiselect("Company Size", company_sizes, default=company_sizes)
 
-    # Salary & Sort
     min_salary, max_salary = int(df_filtered['salary_in_usd'].min()), int(df_filtered['salary_in_usd'].max())
     salary_range = st.slider("Salary Per Year (USD)", min_value=min_salary, max_value=max_salary, value=(min_salary, max_salary))
     sort_column = st.selectbox("Sort by", df_filtered.columns)
     sort_asc = st.checkbox("Sort ascending?", value=False)
 
-    # Кнопка
     apply_filters = st.form_submit_button("Apply Filter")
 
-# ✅ Применение фильтров
 if apply_filters or st.session_state['filters_applied']:
     st.session_state['filters_applied'] = True
     filtered_data = df_filtered[
@@ -155,19 +138,15 @@ if apply_filters or st.session_state['filters_applied']:
 else:
     filtered_data = df_filtered.copy()
 
-# ✅ Подстраховка
 if 'filtered_data' not in locals():
     filtered_data = df_filtered.copy()
 
-# ✅ Очистка тегов
 if 'requirement' in filtered_data.columns:
     filtered_data['requirement'] = filtered_data['requirement'].str.replace(r'</?highlighttext>', '', regex=True)
 
-# ✅ Таблица
 st.markdown("<h3 style='color: white;'>Filtered Job Listings</h3>", unsafe_allow_html=True)
 st.dataframe(filtered_data, use_container_width=True)
 
-# ✅ График
 st.markdown("<h3 style='color: white;'>Average Salary by Job Title</h3>", unsafe_allow_html=True)
 salary_chart = (
     df_filtered.groupby('job_title')['salary_in_usd']
@@ -182,7 +161,6 @@ fig = px.bar(salary_chart, x='job_title', y='salary_in_usd',
              title="Top 10 Job Titles by Average Salary")
 st.plotly_chart(fig, use_container_width=True)
 
-# ✅ Кластеризация
 st.markdown("<h3 style='color: white;'>Clustering Analysis</h3>", unsafe_allow_html=True)
 
 cluster_algo = st.selectbox("Clustering Method", ["KMeans", "Hierarchical"])
