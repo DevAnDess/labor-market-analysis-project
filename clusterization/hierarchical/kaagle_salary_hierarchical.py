@@ -1,10 +1,11 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.express as px
 from scipy.cluster.hierarchy import linkage, fcluster
 from sklearn.preprocessing import StandardScaler
 from sqlalchemy import create_engine
+import streamlit as st
 
-def kaagle_salary_hierarchical():
+def kaagle_salary_hierarchical(selected_filters1, selected_filters2, salary_range):
     user = "sql7782452"
     password = "6HC3yNXWYM"
     host = "sql7.freesqldatabase.com"
@@ -16,6 +17,11 @@ def kaagle_salary_hierarchical():
 
     df = pd.read_sql(query, engine)
 
+    df = df[
+        df['work_year'].isin(selected_filters1) &
+        df['experience_level'].isin(selected_filters2) &
+        df['salary_in_usd'].between(salary_range[0], salary_range[1])
+        ]
 
     df = df[(df['source'] == 'kaggle') & (df['experience_level'] != 'Unknown')]
 
@@ -26,6 +32,9 @@ def kaagle_salary_hierarchical():
     selected_df = df[['work_year', 'experience_level', 'salary_in_usd']].copy()
     x = selected_df[['work_year', 'experience_level', 'salary_in_usd']]
 
+    if x.shape[0] < 10:
+        st.warning("No data matching the selected filters. Please adjust your filters. You need at least 10 data samples")
+        return
 
     scaler = StandardScaler()
     x_scaled = scaler.fit_transform(x)
@@ -35,48 +44,33 @@ def kaagle_salary_hierarchical():
     labels = fcluster(linkage_matrix, t=8, criterion='distance')
     selected_df['cluster'] = labels
 
-    fig = plt.figure(figsize=(8, 7))
-    ax = fig.add_subplot(111, projection='3d')
-    ax.scatter(
-        selected_df['work_year'],
-        selected_df['experience_level'],
-        selected_df['salary_in_usd'],
-        c=labels,
-        cmap='viridis',
-        s=50
+    fig = px.scatter_3d(
+        selected_df,
+        x="work_year",
+        y="experience_level",
+        z="salary_in_usd",
+        color="cluster",
+        title="Work Year vs Experience Level vs Salary (3D)",
+        labels={"experience_level": "Junior, Mid, Senior, Executive", "salary_in_usd": "Salary in USD", "work_year": "Work Year"},
     )
-    ax.set_title("Work Year vs Experience Level vs Salary")
-    ax.set_xlabel("Work Year")
-    ax.set_ylabel("Junior, Mid, Senior, Executive")
-    ax.set_zlabel("Salary in USD")
-    plt.show()
+    st.plotly_chart(fig)
 
-
-    plt.figure(figsize=(8, 6))
-    plt.scatter(
-        selected_df['work_year'],
-        selected_df['salary_in_usd'],
-        c=labels,
-        cmap='viridis',
-        s=50
+    fig = px.scatter(
+        selected_df,
+        x="work_year",
+        y="salary_in_usd",
+        color="cluster",
+        title="Work Year vs Salary",
+        labels={"salary_in_usd": "Salary in USD", "work_year": "Work Year"},
     )
-    plt.title("Work Year vs Salary")
-    plt.xlabel("Work Year")
-    plt.ylabel("Salary in USD")
-    plt.grid(True)
-    plt.show()
+    st.plotly_chart(fig)
 
-
-    plt.figure(figsize=(8, 6))
-    plt.scatter(
-        selected_df['experience_level'],
-        selected_df['salary_in_usd'],
-        c=labels,
-        cmap='viridis',
-        s=50
+    fig = px.scatter(
+        selected_df,
+        x="experience_level",
+        y="salary_in_usd",
+        color="cluster",
+        title="Experience Level vs Salary",
+        labels={"experience_level": "Junior, Mid, Senior, Executive", "salary_in_usd": "Salary in USD"},
     )
-    plt.title("Experience Level vs Salary")
-    plt.xlabel("Junior, Mid, Senior, Executive")
-    plt.ylabel("Salary in USD")
-    plt.grid(True)
-    plt.show()
+    st.plotly_chart(fig)
