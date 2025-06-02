@@ -1,0 +1,8 @@
+streamlit
+pandas
+sqlalchemy
+plotly
+scikit-learn
+catboost
+numpy
+mysql-connector-python
