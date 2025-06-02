@@ -18,15 +18,15 @@ st.set_page_config(page_title="Software for Data Analytics Labor Market Analysis
 
 st.markdown("""
     <style>
-        body {
-            background-color: #181818;
-            color: #cccccc;
-        }
         .stApp {
             background-color: #181818;
+            color: white;
         }
-        h1 {
-            color: #fff !important;
+        h1, h2, h3, h4, h5, h6, h7, h8 {
+            color: white !important;
+        }
+        section[data-testid="stSidebar"] * {
+            color: black !important;
         }
         .sidebar-header-black {
             color: black !important;
@@ -34,8 +34,20 @@ st.markdown("""
             font-weight: 600 !important;
             margin-bottom: 0.5rem;
         }
+        input, select, textarea, .stMultiSelect div, .stSlider, .stSelectbox {
+            color: white !important;
+        }
+        button {
+            color: black !important;
+        }
+        section[data-testid="stSidebar"] .stMultiSelect div[role="button"],
+        section[data-testid="stSidebar"] .stMultiSelect input,
+        section[data-testid="stSidebar"] .stMultiSelect div[data-baseweb="tag"] {
+            color: white !important;
+        }
     </style>
 """, unsafe_allow_html=True)
+
 
 st.markdown("<h1 style='color: white;'>Software for Data Analytics Labor Market Analysis</h1>", unsafe_allow_html=True)
 
@@ -55,7 +67,6 @@ if 'last_data_source' not in st.session_state:
 if 'last_select_all_states' not in st.session_state:
     st.session_state['last_select_all_states'] = {"job": True, "res": True, "loc": True}
 
-st.sidebar.markdown('**(press "apply filter" at the bottom after changes)**')
 st.sidebar.markdown("<div class='sidebar-header-black'>Select Dataset</div>", unsafe_allow_html=True)
 view_option = st.sidebar.radio("Choose data source:", ("HeadHunter (Russia, Active)", "Kaggle (Global, Historical)"))
 
@@ -84,6 +95,7 @@ st.session_state['last_select_all_states'] = {
 
 with st.sidebar.form("filter_form"):
     st.markdown("<div class='sidebar-header-black'>Filter Options</div>", unsafe_allow_html=True)
+    st.markdown('**(press "apply filter" at the bottom after changes)**')
 
     search_job = st.text_input("Search Job Title")
     job_titles_all = sorted(df_filtered['job_title'].dropna().unique())
@@ -168,114 +180,163 @@ fig = px.bar(salary_chart, x='job_title', y='salary_in_usd',
              title="Top 10 Job Titles by Average Salary")
 st.plotly_chart(fig, use_container_width=True)
 
+if view_option.startswith("Kaggle"):
+    st.markdown("<h3 style='color: white;'>Average Salary by Company Location (Kaggle)</h3>", unsafe_allow_html=True)
+    salary_by_location = (
+        df_filtered.groupby('company_location')['salary_in_usd']
+        .mean()
+        .sort_values(ascending=False)
+        .head(10)
+        .reset_index()
+    )
+    fig_loc = px.bar(salary_by_location, x='company_location', y='salary_in_usd',
+                     labels={'salary_in_usd': 'Avg Salary (USD)', 'company_location': 'Company Location'},
+                     title="Top 10 Company Locations by Average Salary (Kaggle)")
+    st.plotly_chart(fig_loc, use_container_width=True)
+
+if view_option.startswith("HeadHunter"):
+    st.markdown("<h3 style='color: white;'>Average Salary by Skill (HeadHunter)</h3>", unsafe_allow_html=True)
+    if 'skills' in df_filtered.columns:
+        skill_df = df_filtered.copy()
+        skill_df = skill_df.dropna(subset=['skills'])
+        skill_df['skills'] = (
+            skill_df['skills']
+            .str.replace(r"[\[\]']", "", regex=True)
+            .str.split(',\s*')
+        )
+        exploded = skill_df.explode('skills')
+        salary_by_skill = (
+            exploded.groupby('skills')['salary_in_usd']
+            .mean()
+            .sort_values(ascending=False)
+            .head(10)
+            .reset_index()
+        )
+        fig_skill = px.bar(salary_by_skill, x='skills', y='salary_in_usd',
+                           labels={'salary_in_usd': 'Avg Salary (USD)', 'skills': 'Skill'},
+                           title="Top 10 Skills by Average Salary (HeadHunter)")
+        st.plotly_chart(fig_skill, use_container_width=True)
+
 st.markdown("<h3 style='color: white;'>Clustering Analysis</h3>", unsafe_allow_html=True)
 
-cluster_algo = st.selectbox("Clustering Method", ["KMeans", "Hierarchical"])
-if view_option.startswith("HeadHunter"):
-    st.markdown("**Filters for HeadHunter:**")
-    cluster_exp = st.multiselect("Experience Level", experience_levels_all, default=experience_levels_all)
-    cluster_comp_size = st.multiselect("Company Size", company_sizes, default=company_sizes)
-    cluster_salary = st.slider("Salary Range", min_value=min_salary, max_value=max_salary, value=(min_salary, max_salary))
+with st.form("cluster_form"):
+    st.markdown("<span style='color: white;'>Clustering Method</span>", unsafe_allow_html=True)
+    cluster_algo = st.selectbox("", ["KMeans", "Hierarchical"])
 
-    run_cluster = st.button("Run Clustering")
+    if view_option.startswith("HeadHunter"):
+        st.markdown("<span style='color: white; font-weight: bold;'>Filters for HeadHunter:</span>", unsafe_allow_html=True)
+        st.markdown("<span style='color: white;'>Experience Level</span>", unsafe_allow_html=True)
+        cluster_exp = st.multiselect("", experience_levels_all, default=experience_levels_all)
+        st.markdown("<span style='color: white;'>Company Size</span>", unsafe_allow_html=True)
+        cluster_comp_size = st.multiselect("", company_sizes, default=company_sizes)
+        st.markdown("<span style='color: white;'>Salary Range</span>", unsafe_allow_html=True)
+        cluster_salary = st.slider("", min_value=min_salary, max_value=max_salary, value=(min_salary, max_salary))
 
-    if run_cluster:
-        from clusterization.k_means.hh_salary import hh_salary
-        from clusterization.hierarchical.hh_salary_hierarchical import hh_salary_hierarchical
+    else:
+        st.markdown("<span style='color: white; font-weight: bold;'>Filters for Kaggle:</span>", unsafe_allow_html=True)
+        work_years = sorted(df_filtered['work_year'].dropna().unique())
+        st.markdown("<span style='color: white;'>Work Year</span>", unsafe_allow_html=True)
+        cluster_work_year = st.multiselect("", work_years, default=work_years)
+        st.markdown("<span style='color: white;'>Experience Level</span>", unsafe_allow_html=True)
+        cluster_exp = st.multiselect("", experience_levels_all, default=experience_levels_all)
+        st.markdown("<span style='color: white;'>Salary Range</span>", unsafe_allow_html=True)
+        cluster_salary = st.slider("", min_value=min_salary, max_value=max_salary, value=(min_salary, max_salary))
+
+    run_cluster = st.form_submit_button("Run Clustering")
+
+
+if run_cluster:
+    if view_option.startswith("HeadHunter"):
         if cluster_algo == "KMeans":
+            from clusterization.k_means.hh_salary import hh_salary
             hh_salary(cluster_exp, cluster_comp_size, cluster_salary)
         else:
+            from clusterization.hierarchical.hh_salary_hierarchical import hh_salary_hierarchical
             hh_salary_hierarchical(cluster_exp, cluster_comp_size, cluster_salary)
-
-else:
-    st.markdown("**Filters for Kaggle:**")
-    work_years = sorted(df_filtered['work_year'].dropna().unique())
-    cluster_work_year = st.multiselect("Work Year", work_years, default=work_years)
-    cluster_exp = st.multiselect("Experience Level", experience_levels_all, default=experience_levels_all)
-    cluster_salary = st.slider("Salary Range", min_value=min_salary, max_value=max_salary, value=(min_salary, max_salary))
-
-    run_cluster = st.button("Run Clustering")
-
-    if run_cluster:
-        from clusterization.k_means.kaagle_salary import kaagle_salary
-        from clusterization.hierarchical.kaagle_salary_hierarchical import kaagle_salary_hierarchical
+    else:
         if cluster_algo == "KMeans":
+            from clusterization.k_means.kaagle_salary import kaagle_salary
             kaagle_salary(cluster_work_year, cluster_exp, cluster_salary)
         else:
+            from clusterization.hierarchical.kaagle_salary_hierarchical import kaagle_salary_hierarchical
             kaagle_salary_hierarchical(cluster_work_year, cluster_exp, cluster_salary)
 
 
 
 
-st.sidebar.title("Regression Model")
-model_type = st.sidebar.radio("Choose model:", ("RandomForest", "Ridge", "CatBoost"))
 
-df['work_year'] = pd.to_numeric(df['work_year'], errors='coerce')
-df = df.dropna(subset=['salary_in_usd', 'work_year'])
-df = df[(df['salary_in_usd'] >= 10000) & (df['salary_in_usd'] <= 300000)]
+with st.sidebar.form("regression_form"):
+    st.markdown("<div class='sidebar-header-black'>Regression Model</div>", unsafe_allow_html=True)
+    model_type = st.radio("Choose model:", ("RandomForest", "Ridge", "CatBoost"))
+    run_regression = st.form_submit_button("Run Regression")
 
-cat_features = ['job_title', 'employee_residence', 'experience_level', 'employment_type', 'company_size']
-num_features = ['remote_ratio', 'work_year']
-X_cat = df[cat_features].fillna("Unknown")
-X_num = df[num_features].replace("", np.nan).astype(float).fillna(0)
-y = df['salary_in_usd']
+if run_regression:
+    df['work_year'] = pd.to_numeric(df['work_year'], errors='coerce')
+    df = df.dropna(subset=['salary_in_usd', 'work_year'])
+    df = df[(df['salary_in_usd'] >= 10000) & (df['salary_in_usd'] <= 300000)]
 
-encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
-X_cat_encoded = encoder.fit_transform(X_cat)
-X = pd.DataFrame(X_cat_encoded).join(X_num.reset_index(drop=True))
-X.columns = X.columns.astype(str)
+    cat_features = ['job_title', 'employee_residence', 'experience_level', 'employment_type', 'company_size']
+    num_features = ['remote_ratio', 'work_year']
+    X_cat = df[cat_features].fillna("Unknown")
+    X_num = df[num_features].replace("", np.nan).astype(float).fillna(0)
+    y = df['salary_in_usd']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
+    X_cat_encoded = encoder.fit_transform(X_cat)
+    X = pd.DataFrame(X_cat_encoded).join(X_num.reset_index(drop=True))
+    X.columns = X.columns.astype(str)
 
-if model_type == "RandomForest":
-    model = RandomForestRegressor(n_estimators=100, random_state=42)
-elif model_type == "Ridge":
-    model = Ridge(alpha=1.0)
-else:
-    model = CatBoostRegressor(verbose=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-model.fit(X_train, y_train)
-y_pred = model.predict(X_test)
+    if model_type == "RandomForest":
+        model = RandomForestRegressor(n_estimators=100, random_state=42)
+    elif model_type == "Ridge":
+        model = Ridge(alpha=1.0)
+    else:
+        model = CatBoostRegressor(verbose=0)
 
-mse = mean_squared_error(y_test, y_pred)
-r2 = r2_score(y_test, y_pred)
-cv_scores = cross_val_score(model, X, y, cv=5)
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
 
-st.subheader("Model Evaluation")
-st.markdown(f"Model: {model_type}")
-st.markdown(f"R² Score: {r2:.2f}")
-st.markdown(f"Mean Squared Error: {mse:,.0f}")
-st.markdown(f"Cross-Validation R²: {cv_scores.mean():.2f} ± {cv_scores.std():.2f}")
+    mse = mean_squared_error(y_test, y_pred)
+    r2 = r2_score(y_test, y_pred)
+    cv_scores = cross_val_score(model, X, y, cv=5)
 
-pred_chart = pd.DataFrame({"Actual": y_test, "Predicted": y_pred})
-fig_pred = px.scatter(pred_chart, x="Actual", y="Predicted",
-                     title="Predicted vs Actual Salary",
-                     labels={"Actual": "Actual Salary", "Predicted": "Predicted Salary"})
-fig_pred.add_shape(type="line", x0=y.min(), x1=y.max(), y0=y.min(), y1=y.max(), line=dict(color="red", dash="dash"))
-st.plotly_chart(fig_pred, use_container_width=True)
+    st.subheader("Model Evaluation")
+    st.markdown(f"Model: {model_type}")
+    st.markdown(f"R² Score: {r2:.2f}")
+    st.markdown(f"Mean Squared Error: {mse:,.0f}")
+    st.markdown(f"Cross-Validation R²: {cv_scores.mean():.2f} ± {cv_scores.std():.2f}")
 
-if hasattr(model, "feature_importances_"):
-    importances = model.feature_importances_
-    feat_names = list(encoder.get_feature_names_out(cat_features)) + num_features
-    imp_df = pd.DataFrame({"Feature": feat_names, "Importance": importances})
-    top_imp = imp_df.sort_values(by="Importance", ascending=False).head(15)
-    fig_imp = px.bar(top_imp, x="Importance", y="Feature", orientation="h",
-                     title="Top Feature Importances")
-    st.plotly_chart(fig_imp, use_container_width=True)
+    pred_chart = pd.DataFrame({"Actual": y_test, "Predicted": y_pred})
+    fig_pred = px.scatter(pred_chart, x="Actual", y="Predicted",
+                         title="Predicted vs Actual Salary",
+                         labels={"Actual": "Actual Salary", "Predicted": "Predicted Salary"})
+    fig_pred.add_shape(type="line", x0=y.min(), x1=y.max(), y0=y.min(), y1=y.max(), line=dict(color="red", dash="dash"))
+    st.plotly_chart(fig_pred, use_container_width=True)
 
-st.subheader("Average salary prediction by year")
-historical = df[df['work_year'] <= 2024]
-yearly = historical.groupby("work_year")["salary_in_usd"].mean().reset_index()
-X_year = yearly["work_year"].values.reshape(-1, 1)
-y_year = yearly["salary_in_usd"].values
-model_year = Ridge()
-model_year.fit(X_year, y_year)
-future_years = np.arange(2025, 2031).reshape(-1, 1)
-future_pred = model_year.predict(future_years)
-future_df = pd.DataFrame({"work_year": future_years.flatten(), "salary_in_usd": future_pred})
-fig2 = px.line(yearly, x="work_year", y="salary_in_usd", markers=True,
-               title="Average salary by year with prediction")
-fig2.add_scatter(x=future_df["work_year"], y=future_df["salary_in_usd"],
-                 mode="lines+markers", name="Прогноз до 2030",
-                 line=dict(color="red", dash="dot"))
-st.plotly_chart(fig2, use_container_width=True)
+    if hasattr(model, "feature_importances_"):
+        importances = model.feature_importances_
+        feat_names = list(encoder.get_feature_names_out(cat_features)) + num_features
+        imp_df = pd.DataFrame({"Feature": feat_names, "Importance": importances})
+        top_imp = imp_df.sort_values(by="Importance", ascending=False).head(15)
+        fig_imp = px.bar(top_imp, x="Importance", y="Feature", orientation="h",
+                         title="Top Feature Importances")
+        st.plotly_chart(fig_imp, use_container_width=True)
+
+    st.subheader("Average salary prediction by year")
+    historical = df[df['work_year'] <= 2024]
+    yearly = historical.groupby("work_year")["salary_in_usd"].mean().reset_index()
+    X_year = yearly["work_year"].values.reshape(-1, 1)
+    y_year = yearly["salary_in_usd"].values
+    model_year = Ridge()
+    model_year.fit(X_year, y_year)
+    future_years = np.arange(2025, 2031).reshape(-1, 1)
+    future_pred = model_year.predict(future_years)
+    future_df = pd.DataFrame({"work_year": future_years.flatten(), "salary_in_usd": future_pred})
+    fig2 = px.line(yearly, x="work_year", y="salary_in_usd", markers=True,
+                   title="Average salary by year with prediction")
+    fig2.add_scatter(x=future_df["work_year"], y=future_df["salary_in_usd"],
+                     mode="lines+markers", name="Прогноз до 2030",
+                     line=dict(color="red", dash="dot"))
+    st.plotly_chart(fig2, use_container_width=True)
