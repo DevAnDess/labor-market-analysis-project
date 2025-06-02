@@ -64,6 +64,9 @@ def preprocess_data(df):
 
     X_cat = df[cat_features]
     X_num = df[num_features]
+    X_num = X_num.replace("", np.nan)
+    X_num = X_num.astype(float)
+    X_num = X_num.fillna(0)
     y_log = np.log1p(df["Salary"])
 
     encoder = OneHotEncoder(sparse_output=False, handle_unknown="ignore")
