@@ -1,9 +1,16 @@
+import sys
+import os
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine
 import plotly.express as px
-import sys
-import os
+from sklearn.linear_model import Ridge
+from sklearn.ensemble import RandomForestRegressor
+from catboost import CatBoostRegressor
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.preprocessing import OneHotEncoder
+import numpy as np
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
@@ -199,3 +206,76 @@ else:
 
 
 
+
+st.sidebar.title("Regression Model")
+model_type = st.sidebar.radio("Choose model:", ("RandomForest", "Ridge", "CatBoost"))
+
+df['work_year'] = pd.to_numeric(df['work_year'], errors='coerce')
+df = df.dropna(subset=['salary_in_usd', 'work_year'])
+df = df[(df['salary_in_usd'] >= 10000) & (df['salary_in_usd'] <= 300000)]
+
+cat_features = ['job_title', 'employee_residence', 'experience_level', 'employment_type', 'company_size']
+num_features = ['remote_ratio', 'work_year']
+X_cat = df[cat_features].fillna("Unknown")
+X_num = df[num_features].replace("", np.nan).astype(float).fillna(0)
+y = df['salary_in_usd']
+
+encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
+X_cat_encoded = encoder.fit_transform(X_cat)
+X = pd.DataFrame(X_cat_encoded).join(X_num.reset_index(drop=True))
+X.columns = X.columns.astype(str)
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+if model_type == "RandomForest":
+    model = RandomForestRegressor(n_estimators=100, random_state=42)
+elif model_type == "Ridge":
+    model = Ridge(alpha=1.0)
+else:
+    model = CatBoostRegressor(verbose=0)
+
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+cv_scores = cross_val_score(model, X, y, cv=5)
+
+st.subheader("Model Evaluation")
+st.markdown(f"Model: {model_type}")
+st.markdown(f"R² Score: {r2:.2f}")
+st.markdown(f"Mean Squared Error: {mse:,.0f}")
+st.markdown(f"Cross-Validation R²: {cv_scores.mean():.2f} ± {cv_scores.std():.2f}")
+
+pred_chart = pd.DataFrame({"Actual": y_test, "Predicted": y_pred})
+fig_pred = px.scatter(pred_chart, x="Actual", y="Predicted",
+                     title="Predicted vs Actual Salary",
+                     labels={"Actual": "Actual Salary", "Predicted": "Predicted Salary"})
+fig_pred.add_shape(type="line", x0=y.min(), x1=y.max(), y0=y.min(), y1=y.max(), line=dict(color="red", dash="dash"))
+st.plotly_chart(fig_pred, use_container_width=True)
+
+if hasattr(model, "feature_importances_"):
+    importances = model.feature_importances_
+    feat_names = list(encoder.get_feature_names_out(cat_features)) + num_features
+    imp_df = pd.DataFrame({"Feature": feat_names, "Importance": importances})
+    top_imp = imp_df.sort_values(by="Importance", ascending=False).head(15)
+    fig_imp = px.bar(top_imp, x="Importance", y="Feature", orientation="h",
+                     title="Top Feature Importances")
+    st.plotly_chart(fig_imp, use_container_width=True)
+
+st.subheader("Average salary prediction by year")
+historical = df[df['work_year'] <= 2024]
+yearly = historical.groupby("work_year")["salary_in_usd"].mean().reset_index()
+X_year = yearly["work_year"].values.reshape(-1, 1)
+y_year = yearly["salary_in_usd"].values
+model_year = Ridge()
+model_year.fit(X_year, y_year)
+future_years = np.arange(2025, 2031).reshape(-1, 1)
+future_pred = model_year.predict(future_years)
+future_df = pd.DataFrame({"work_year": future_years.flatten(), "salary_in_usd": future_pred})
+fig2 = px.line(yearly, x="work_year", y="salary_in_usd", markers=True,
+               title="Average salary by year with prediction")
+fig2.add_scatter(x=future_df["work_year"], y=future_df["salary_in_usd"],
+                 mode="lines+markers", name="Прогноз до 2030",
+                 line=dict(color="red", dash="dot"))
+st.plotly_chart(fig2, use_container_width=True)
