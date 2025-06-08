@@ -284,8 +284,28 @@ if run_cluster:
 
 st.markdown("<h3 style='color: white;'>Regression Model</h3>", unsafe_allow_html=True)
 
+st.markdown(
+    """
+    <style>
+    div[data-testid="stSelectbox"] label {
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 with st.form("regression_form"):
     model_type = st.radio("Choose model:", ("RandomForest", "Ridge", "CatBoost"))
+    hh_jobs = df.loc[df['source'] == 'kaggle', 'job_title'].dropna().unique()
+    professions = sorted(hh_jobs)
+    default_profession = "Data Scientist"
+    default_index = professions.index(default_profession) if default_profession in professions else 0
+    selected_profession = st.selectbox(
+        "Select job title for prediction:",
+        professions,
+        index = default_index
+        )
     run_regression = st.form_submit_button("Run Regression")
 
 if run_regression:
@@ -315,6 +335,26 @@ if run_regression:
 
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
+
+    default_row = {}
+    for col in num_features:
+        df[col] = pd.to_numeric(df[col], errors='coerce')
+    for cat in cat_features:
+        if cat == 'job_title':
+            default_row[cat] = selected_profession
+        else:
+            default_row[cat] = df[cat].mode()[0]
+    for num in num_features:
+        default_row[num] = df[num].median()
+    sample_df = pd.DataFrame([default_row])
+    X_cat_samp = sample_df[cat_features]
+    X_num_samp = sample_df[num_features]
+    X_cat_enc_samp = encoder.transform(X_cat_samp)
+    X_samp = pd.DataFrame(X_cat_enc_samp).join(X_num_samp.reset_index(drop=True))
+    X_samp.columns = X_samp.columns.astype(str)
+    pred_salary = model.predict(X_samp)[0]
+    st.subheader(f"Predicted Salary for **{selected_profession}**")
+    st.write(f" **${pred_salary:,.0f} USD**")
 
     mse = mean_squared_error(y_test, y_pred)
     r2 = r2_score(y_test, y_pred)
