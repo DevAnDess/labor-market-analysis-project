@@ -6,10 +6,10 @@ from sqlalchemy import create_engine
 import streamlit as st
 
 def kaagle_salary_hierarchical(selected_filters1, selected_filters2, salary_range):
-    user = "sql7782452"
-    password = "6HC3yNXWYM"
-    host = "sql7.freesqldatabase.com"
-    database = "sql7782452"
+    host = "sql10.freesqldatabase.com"
+    user = "sql10783708"
+    password = "7Izwc6qDZN"
+    database = "sql10783708"
 
     engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
 

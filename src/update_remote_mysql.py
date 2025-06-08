@@ -8,10 +8,10 @@ df = pd.read_csv(csv_path)
 
 try:
     conn = mysql.connector.connect(
-        host="sql7.freesqldatabase.com",
-        user="sql7782452",
-        password="6HC3yNXWYM",
-        database="sql7782452"
+        host="sql10.freesqldatabase.com",
+        user="sql10783708",
+        password="7Izwc6qDZN",
+        database="sql10783708"
     )
     cursor = conn.cursor()
     print("Подключение успешно")

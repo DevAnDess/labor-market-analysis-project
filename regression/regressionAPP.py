@@ -12,10 +12,10 @@ from sklearn.pipeline import Pipeline
 from sqlalchemy import create_engine
 
 def load_data(file_path):
-    user = "sql7782452"
-    password = "6HC3yNXWYM"
-    host = "sql7.freesqldatabase.com"
-    database = "sql7782452"
+    host = "sql10.freesqldatabase.com"
+    user = "sql10783708"
+    password = "7Izwc6qDZN"
+    database = "sql10783708"
 
     engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
 
