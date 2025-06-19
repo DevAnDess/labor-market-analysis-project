@@ -57,10 +57,10 @@ st.markdown("<h1 style='color: white;'>Software for Data Analytics Labor Market 
 
 view_option = st.radio("Choose data source:", ("HeadHunter (Russia, Active)", "Kaggle (Global, Historical)"))
 
-host = "sql10.freesqldatabase.com"
-user = "sql10783708"
-password = "7Izwc6qDZN"
-database = "sql10783708"
+host = "sql7.freesqldatabase.com"
+user = "sql7785672"
+password = "DaVFNATBHJ"
+database = "sql7785672"
 engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
 
 query = "SELECT * FROM combined_dataset_KT_format"
